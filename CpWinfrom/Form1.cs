@@ -35,7 +35,8 @@ namespace CpWinfrom
         {
 
         }
-        public void Print() {
+        public void Print()
+        {
             StringBuilder conres = new StringBuilder();
             foreach (var item in delnumber)
             {
@@ -52,43 +53,45 @@ namespace CpWinfrom
             }
 
             this.tb_res.Text = sbres.ToString();
-            this.tb_con.Text =  conres.ToString();
+            this.tb_con.Text = conres.ToString();
             this.lb_count.Text = allnumber.Count.ToString();
 
 
         }
-        public void Del(NumberModel model) {
+        public void Del(NumberModel model)
+        {
 
-            if (delnumber.Where(S=>S.N1==model.N1 && S.N2 == model.N2 && S.N3 == model.N3 && S.N4 == model.N4 ).ToList().Count>0)
+            if (delnumber.Where(S => S.N1 == model.N1 && S.N2 == model.N2 && S.N3 == model.N3 && S.N4 == model.N4).ToList().Count > 0)
             {
                 return;
             }
             delnumber.Add(model);
         }
-        private void Export(string filePath,string value)
+        private void Export(string filePath, string value)
         {
-         
-            using (StreamWriter sw = File.CreateText(filePath)) {
+
+            using (StreamWriter sw = File.CreateText(filePath))
+            {
                 sw.WriteLine(value);
                 sw.Close();
             }
 
         }
 
-         
+
 
         private void btn_shabaozi_Click(object sender, EventArgs e)
         {
-            
-            foreach (var item in  allnumber )
+
+            foreach (var item in allnumber)
             {
-                if (item.N1==item.N2 && item.N2==item.N3 && item.N3==item.N4)
+                if (item.N1 == item.N2 && item.N2 == item.N3 && item.N3 == item.N4)
                 {
                     Del(item);
                 }
             }
 
-           
+
             Print();
 
         }
@@ -170,7 +173,7 @@ namespace CpWinfrom
                     Del(item);
                 }
             }
-           
+
 
             Print();
         }
@@ -198,7 +201,7 @@ namespace CpWinfrom
         /// <param name="e"></param>
         private void button5_Click(object sender, EventArgs e)
         {
-           
+
             foreach (var item in allnumber)
             {
                 if (Tool.CheckSmall(item))
@@ -231,7 +234,7 @@ namespace CpWinfrom
         {
             foreach (var item in allnumber)
             {
-                if (item.N1+1==item.N2 && item.N2+1==item.N3 &&item.N3+1==item.N4)
+                if (item.N1 + 1 == item.N2 && item.N2 + 1 == item.N3 && item.N3 + 1 == item.N4)
                 {
                     Del(item);
                 }
@@ -269,14 +272,24 @@ namespace CpWinfrom
         {
             foreach (var item in allnumber)
             {
-                if (item.N2 == item.N1+1 && item.N3 == item.N2+1 && item.N4 == item.N3 + 1)
+                if (item.N2 == item.N1 + 1 && item.N3 == item.N2 + 1 && item.N4 == item.N3 + 1)
                 {
                     Del(item);
                 }
-
-                if (item.N1==7 && item.N2 == 8 && item.N3 == 9 && item.N4 == 0)
+                if (cb_is09.Checked)
                 {
-                    Del(item);
+                    if (item.N1 == 7 && item.N2 == 8 && item.N3 == 9 && item.N4 == 0)
+                    {
+                        Del(item);
+                    }
+                    if (item.N1 == 8 && item.N2 == 9 && item.N3 == 0 && item.N4 == 1)
+                    {
+                        Del(item);
+                    }
+                    if (item.N1 == 9 && item.N2 == 0 && item.N3 == 1 && item.N4 == 2)
+                    {
+                        Del(item);
+                    }
                 }
             }
 
@@ -287,14 +300,24 @@ namespace CpWinfrom
         {
             foreach (var item in allnumber)
             {
-                if (item.N3 == item.N2 + 1 && item.N4 == item.N3 + 1 && item.N1== item.N4 + 1)
+                if (item.N3 == item.N2 + 1 && item.N4 == item.N3 + 1 && item.N1 == item.N4 + 1)
                 {
                     Del(item);
                 }
-
-                if (item.N1 == 0 && item.N2 == 7 && item.N3 == 8 && item.N4 == 9)
+                if (cb_is09.Checked)
                 {
-                    Del(item);
+                    if (item.N1 == 0 && item.N2 == 7 && item.N3 == 8 && item.N4 == 9)
+                    {
+                        Del(item);
+                    }
+                    if (item.N1 == 1 && item.N2 == 8 && item.N3 == 9 && item.N4 == 0)
+                    {
+                        Del(item);
+                    }
+                    if (item.N1 == 2 && item.N2 == 9 && item.N3 == 0 && item.N4 == 1)
+                    {
+                        Del(item);
+                    }
                 }
             }
 
@@ -309,10 +332,20 @@ namespace CpWinfrom
                 {
                     Del(item);
                 }
-
-                if (item.N1 == 9 && item.N2 == 0 && item.N3 ==7 && item.N4 == 8)
+                if (cb_is09.Checked)
                 {
-                    Del(item);
+                    if (item.N1 == 9 && item.N2 == 0 && item.N3 == 7 && item.N4 == 8)
+                    {
+                        Del(item);
+                    }
+                    if (item.N1 == 0 && item.N2 == 1 && item.N3 == 8 && item.N4 == 9)
+                    {
+                        Del(item);
+                    }
+                    if (item.N1 == 1 && item.N2 == 2 && item.N3 == 9 && item.N4 == 0)
+                    {
+                        Del(item);
+                    }
                 }
             }
 
@@ -328,9 +361,22 @@ namespace CpWinfrom
                     Del(item);
                 }
 
-                if (item.N1 == 8 && item.N2 == 9 && item.N3 == 0 && item.N4 == 7)
+
+                if (cb_is09.Checked)
                 {
-                    Del(item);
+
+                    if (item.N1 == 8 && item.N2 == 9 && item.N3 == 0 && item.N4 == 7)
+                    {
+                        Del(item);
+                    }
+                    if (item.N1 == 9 && item.N2 == 0 && item.N3 == 1 && item.N4 == 8)
+                    {
+                        Del(item);
+                    }
+                    if (item.N1 == 0 && item.N2 == 1 && item.N3 == 2 && item.N4 == 9)
+                    {
+                        Del(item);
+                    }
                 }
             }
 
@@ -355,7 +401,7 @@ namespace CpWinfrom
 
             foreach (var item in allnumber)
             {
-                if (item.N1+item.N2+item.N3+item.N4>sum)
+                if (item.N1 + item.N2 + item.N3 + item.N4 > sum)
                 {
                     Del(item);
                 }
@@ -517,7 +563,7 @@ namespace CpWinfrom
 
             foreach (var item in allnumber)
             {
-                if (item.N4== sum)
+                if (item.N4 == sum)
                 {
                     Del(item);
                 }
@@ -981,7 +1027,7 @@ namespace CpWinfrom
             }
 
             foreach (var item in allnumber)
-            { 
+            {
                 if (!list_qian.Contains(item.N1))
                 {
                     Del(item);
@@ -1083,7 +1129,7 @@ namespace CpWinfrom
 
             foreach (var item in allnumber)
             {
-                if (item.N1 + item.N2 + item.N3==sum)
+                if (item.N1 + item.N2 + item.N3 == sum)
                 {
                     Del(item);
                 }
@@ -1105,7 +1151,7 @@ namespace CpWinfrom
 
             foreach (var item in allnumber)
             {
-                if (item.N1 + item.N2 + item.N3< sum)
+                if (item.N1 + item.N2 + item.N3 < sum)
                 {
                     Del(item);
                 }
@@ -1127,7 +1173,7 @@ namespace CpWinfrom
 
             foreach (var item in allnumber)
             {
-                if (item.N2 + item.N3 + item.N4>sum)
+                if (item.N2 + item.N3 + item.N4 > sum)
                 {
                     Del(item);
                 }
@@ -1185,7 +1231,7 @@ namespace CpWinfrom
         {
             string[] strarray = this.tb_lajihao.Text.Split(',');
 
-            if (strarray.Length<=0)
+            if (strarray.Length <= 0)
             {
                 MessageBox.Show("请填写删除的垃圾号，以逗号分割");
                 return;
@@ -1193,7 +1239,7 @@ namespace CpWinfrom
 
             for (int i = 0; i < strarray.Length; i++)
             {
-             
+
                 NumberModel n = NumberModel.ToParse(strarray[i]);
                 Del(n);
             }
@@ -1216,7 +1262,7 @@ namespace CpWinfrom
                 string path = foldPath + "\\" + filename;
                 Export(path, value);
 
-                MessageBox.Show("导出成功:"+path);
+                MessageBox.Show("导出成功:" + path);
 
             }
         }
@@ -1228,6 +1274,121 @@ namespace CpWinfrom
                 if (item.N1 == item.N3 && item.N2 == item.N4)
                 {
                     Del(item);
+                }
+            }
+
+            Print();
+        }
+
+        private void button40_Click(object sender, EventArgs e)
+        {
+            foreach (var item in allnumber)
+            {
+                if (item.N2 == item.N1 -1 && item.N3 == item.N2 - 1 && item.N4 == item.N3 - 1)
+                {
+                    Del(item);
+                }
+                if (cb_is09.Checked)
+                {
+                    if (item.N1 == 0 && item.N2 == 9 && item.N3 == 8 && item.N4 == 7)
+                    {
+                        Del(item);
+                    }
+                    if (item.N1 == 1 && item.N2 == 0 && item.N3 == 9 && item.N4 == 8)
+                    {
+                        Del(item);
+                    }
+                    if (item.N1 == 2 && item.N2 == 1 && item.N3 == 0 && item.N4 == 9)
+                    {
+                        Del(item);
+                    }
+                }
+            }
+
+            Print();
+        }
+
+        private void button41_Click(object sender, EventArgs e)
+        {
+            foreach (var item in allnumber)
+            {
+                if (item.N3 == item.N2- 1 && item.N4 == item.N3 - 1 && item.N1 == item.N4 - 1)
+                {
+                    Del(item);
+                }
+                if (cb_is09.Checked)
+                {
+                    if (item.N1 == 7 && item.N2 ==0 && item.N3 ==9 && item.N4 == 8)
+                    {
+                        Del(item);
+                    }
+                    if (item.N1 == 8 && item.N2 == 7 && item.N3 == 0 && item.N4 == 9)
+                    {
+                        Del(item);
+                    }
+                    if (item.N1 == 9 && item.N2 == 8&& item.N3 == 7&& item.N4 == 0)
+                    {
+                        Del(item);
+                    }
+                }
+            }
+
+            Print();
+        }
+
+        private void button42_Click(object sender, EventArgs e)
+        {
+            foreach (var item in allnumber)
+            {
+                if (item.N4 == item.N3 - 1 && item.N1 == item.N4 - 1 && item.N2 == item.N1 - 1)
+                {
+                    Del(item);
+                }
+                if (cb_is09.Checked)
+                {
+                    if (item.N1 == 8 && item.N2 == 7 && item.N3 == 0 && item.N4 ==9)
+                    {
+                        Del(item);
+                    }
+                    if (item.N1 == 9 && item.N2 ==8 && item.N3 == 7 && item.N4 == 0)
+                    {
+                        Del(item);
+                    }
+                    if (item.N1 ==0 && item.N2 == 9 && item.N3 == 8 && item.N4 == 7)
+                    {
+                        Del(item);
+                    }
+                }
+            }
+
+            Print();
+        }
+
+        private void button43_Click(object sender, EventArgs e)
+        {
+            foreach (var item in allnumber)
+            {
+                if (item.N1 == item.N4 - 1 && item.N2 == item.N1 -1 && item.N3 == item.N2 - 1)
+                {
+                    Del(item);
+                }
+
+
+                if (cb_is09.Checked)
+                {
+
+                    if (item.N1 == 9 && item.N2 == 8 && item.N3 == 7 && item.N4 == 0)
+                    {
+                        Del(item);
+                    }
+                    if (item.N1 == 0 && item.N2 == 9 && item.N3 == 8 && item.N4 == 7)
+                    {
+                        Del(item);
+                    }
+                    if (item.N1 == 7 && item.N2 == 0 && item.N3 == 9 && item.N4 == 8)
+                    {
+                        Del(item);
+                    }
                 }
             }
 

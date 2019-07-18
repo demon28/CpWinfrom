@@ -581,13 +581,144 @@ namespace CpWinfrom
                 Diansha.L012enter(array, ref DelnumberModels);
 
             }
+            if (ck_垃圾号.Checked && !string.IsNullOrEmpty(this.tb_垃圾号.Text))
+            {
+                string[] array = this.tb_垃圾号.Text.Split(',');
+                lajihao.Enter(array, ref DelnumberModels);
 
+            }
 
 
             #endregion
 
+            #region 和值区域
+
+            if (ck_四位和值.Checked && !string.IsNullOrEmpty(tb_四位和值.Text))
+            {
+                string[] array = this.tb_四位和值.Text.Split(',');
+                int []  iNums = Array.ConvertAll(array, int.Parse);
+
+                hezhishahao.四位和值(iNums,ref DelnumberModels);
+            }
 
 
+            if (ck_前三和值.Checked && !string.IsNullOrEmpty(tb_前三和值.Text))
+            {
+                string[] array = this.tb_前三和值.Text.Split(',');
+                int[] iNums = Array.ConvertAll(array, int.Parse);
+
+                hezhishahao.前三和值(iNums, ref DelnumberModels);
+            }
+            if (ck_后三和值.Checked && !string.IsNullOrEmpty(tb_后三和值.Text))
+            {
+                string[] array = this.tb_后三和值.Text.Split(',');
+                int[] iNums = Array.ConvertAll(array, int.Parse);
+
+                hezhishahao.后三和值(iNums, ref DelnumberModels);
+            }
+
+            if (ck_前二和值.Checked && !string.IsNullOrEmpty(tb_前二和值.Text))
+            {
+                string[] array = this.tb_前二和值.Text.Split(',');
+                int[] iNums = Array.ConvertAll(array, int.Parse);
+
+                hezhishahao.前二和值(iNums, ref DelnumberModels);
+            }
+            if (ck_中二和值.Checked && !string.IsNullOrEmpty(tb_中二和值.Text))
+            {
+                string[] array = this.tb_中二和值.Text.Split(',');
+                int[] iNums = Array.ConvertAll(array, int.Parse);
+
+                hezhishahao.中二和值(iNums, ref DelnumberModels);
+            }
+            if (ck_后二和值.Checked && !string.IsNullOrEmpty(tb_后二和值.Text))
+            {
+                string[] array = this.tb_后二和值.Text.Split(',');
+                int[] iNums = Array.ConvertAll(array, int.Parse);
+
+                hezhishahao.后二和值(iNums, ref DelnumberModels);
+            }
+            if (ck_千百个和值.Checked && !string.IsNullOrEmpty(tb_千百个和值.Text))
+            {
+                string[] array = this.tb_千百个和值.Text.Split(',');
+                int[] iNums = Array.ConvertAll(array, int.Parse);
+
+                hezhishahao.千百个和值(iNums, ref DelnumberModels);
+            }
+            if (ck_千十个和值.Checked && !string.IsNullOrEmpty(tb_千十个和值.Text))
+            {
+                string[] array = this.tb_千十个和值.Text.Split(',');
+                int[] iNums = Array.ConvertAll(array, int.Parse);
+
+                hezhishahao.千十个和值(iNums, ref DelnumberModels);
+            }
+
+
+            #endregion
+
+            #region 杀定位区域
+
+            if (ck_杀定位.Checked)
+            {
+                List<int> qian = new List<int>();
+                List<int> bai = new List<int>();
+                List<int> shi = new List<int>();
+                List<int> ge = new List<int>();
+
+                foreach (var item in panel_qian.Controls)
+                {
+                    if (item is CheckBox)
+                    {
+                        CheckBox cb = (CheckBox)item;
+                        if (cb.Checked)
+                        {
+                            qian.Add(int.Parse(cb.Text));
+                        }
+                    }
+
+                }
+                foreach (var item in panel_bai.Controls)
+                {
+                    if (item is CheckBox)
+                    {
+                        CheckBox cb = (CheckBox)item;
+                        if (cb.Checked)
+                        {
+                            bai.Add(int.Parse(cb.Text));
+                        }
+                    }
+
+                }
+                foreach (var item in panel_shi.Controls)
+                {
+                    if (item is CheckBox)
+                    {
+                        CheckBox cb = (CheckBox)item;
+                        if (cb.Checked)
+                        {
+                            shi.Add(int.Parse(cb.Text));
+                        }
+                    }
+
+                }
+                foreach (var item in panel_ge.Controls)
+                {
+                    if (item is CheckBox)
+                    {
+                        CheckBox cb = (CheckBox)item;
+                        if (cb.Checked)
+                        {
+                            ge.Add(int.Parse(cb.Text));
+                        }
+                    }
+
+                }
+                shadingwei.Enter(qian, bai, shi, ge, ref DelnumberModels);
+            }
+
+         
+
+            #endregion
         }
 
         private void button14_Click(object sender, EventArgs e)

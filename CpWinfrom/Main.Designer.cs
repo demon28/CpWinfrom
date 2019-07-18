@@ -54,13 +54,13 @@
             this.lb_被杀数量 = new System.Windows.Forms.Label();
             this.btn_计算 = new System.Windows.Forms.Button();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
-            this.ck垃圾号 = new System.Windows.Forms.CheckBox();
+            this.ck_垃圾号 = new System.Windows.Forms.CheckBox();
             this.tb_垃圾号 = new System.Windows.Forms.TextBox();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.ck杀定位 = new System.Windows.Forms.CheckBox();
+            this.ck_杀定位 = new System.Windows.Forms.CheckBox();
             this.button29 = new System.Windows.Forms.Button();
             this.label13 = new System.Windows.Forms.Label();
             this.cb_qian9 = new System.Windows.Forms.CheckBox();
@@ -201,6 +201,10 @@
             this.button13 = new System.Windows.Forms.Button();
             this.button14 = new System.Windows.Forms.Button();
             this.button16 = new System.Windows.Forms.Button();
+            this.panel_qian = new System.Windows.Forms.Panel();
+            this.panel_bai = new System.Windows.Forms.Panel();
+            this.panel_shi = new System.Windows.Forms.Panel();
+            this.panel_ge = new System.Windows.Forms.Panel();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -212,6 +216,10 @@
             this.groupBox9.SuspendLayout();
             this.groupBox10.SuspendLayout();
             this.groupBox11.SuspendLayout();
+            this.panel_qian.SuspendLayout();
+            this.panel_bai.SuspendLayout();
+            this.panel_shi.SuspendLayout();
+            this.panel_ge.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -473,7 +481,7 @@
             // 
             // groupBox5
             // 
-            this.groupBox5.Controls.Add(this.ck垃圾号);
+            this.groupBox5.Controls.Add(this.ck_垃圾号);
             this.groupBox5.Controls.Add(this.tb_垃圾号);
             this.groupBox5.Location = new System.Drawing.Point(34, 271);
             this.groupBox5.Name = "groupBox5";
@@ -481,15 +489,17 @@
             this.groupBox5.TabIndex = 18;
             this.groupBox5.TabStop = false;
             // 
-            // ck垃圾号
+            // ck_垃圾号
             // 
-            this.ck垃圾号.AutoSize = true;
-            this.ck垃圾号.Location = new System.Drawing.Point(11, 0);
-            this.ck垃圾号.Name = "ck垃圾号";
-            this.ck垃圾号.Size = new System.Drawing.Size(168, 16);
-            this.ck垃圾号.TabIndex = 6;
-            this.ck垃圾号.Text = "垃圾号（逗号“，”分割）";
-            this.ck垃圾号.UseVisualStyleBackColor = true;
+            this.ck_垃圾号.AutoSize = true;
+            this.ck_垃圾号.Checked = true;
+            this.ck_垃圾号.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.ck_垃圾号.Location = new System.Drawing.Point(11, 0);
+            this.ck_垃圾号.Name = "ck_垃圾号";
+            this.ck_垃圾号.Size = new System.Drawing.Size(168, 16);
+            this.ck_垃圾号.TabIndex = 6;
+            this.ck_垃圾号.Text = "垃圾号（逗号“，”分割）";
+            this.ck_垃圾号.UseVisualStyleBackColor = true;
             // 
             // tb_垃圾号
             // 
@@ -501,64 +511,20 @@
             // 
             // groupBox6
             // 
-            this.groupBox6.Controls.Add(this.button3);
-            this.groupBox6.Controls.Add(this.button2);
-            this.groupBox6.Controls.Add(this.button1);
-            this.groupBox6.Controls.Add(this.ck杀定位);
-            this.groupBox6.Controls.Add(this.button29);
-            this.groupBox6.Controls.Add(this.label13);
-            this.groupBox6.Controls.Add(this.cb_qian9);
-            this.groupBox6.Controls.Add(this.cb_qian8);
-            this.groupBox6.Controls.Add(this.cb_qian7);
-            this.groupBox6.Controls.Add(this.cb_qian6);
-            this.groupBox6.Controls.Add(this.cb_qian5);
-            this.groupBox6.Controls.Add(this.cb_qian4);
-            this.groupBox6.Controls.Add(this.cb_qian3);
-            this.groupBox6.Controls.Add(this.cb_qian2);
-            this.groupBox6.Controls.Add(this.cb_qian1);
-            this.groupBox6.Controls.Add(this.cb_qian0);
-            this.groupBox6.Controls.Add(this.label12);
-            this.groupBox6.Controls.Add(this.cb_bai9);
-            this.groupBox6.Controls.Add(this.cb_bai8);
-            this.groupBox6.Controls.Add(this.cb_bai7);
-            this.groupBox6.Controls.Add(this.cb_bai6);
-            this.groupBox6.Controls.Add(this.cb_bai5);
-            this.groupBox6.Controls.Add(this.cb_bai4);
-            this.groupBox6.Controls.Add(this.cb_bai3);
-            this.groupBox6.Controls.Add(this.cb_bai2);
-            this.groupBox6.Controls.Add(this.cb_bai1);
-            this.groupBox6.Controls.Add(this.cb_bai0);
-            this.groupBox6.Controls.Add(this.label11);
-            this.groupBox6.Controls.Add(this.cb_shi9);
-            this.groupBox6.Controls.Add(this.cb_shi8);
-            this.groupBox6.Controls.Add(this.cb_shi7);
-            this.groupBox6.Controls.Add(this.cb_shi6);
-            this.groupBox6.Controls.Add(this.cb_shi5);
-            this.groupBox6.Controls.Add(this.cb_shi4);
-            this.groupBox6.Controls.Add(this.cb_shi3);
-            this.groupBox6.Controls.Add(this.cb_shi2);
-            this.groupBox6.Controls.Add(this.cb_shi1);
-            this.groupBox6.Controls.Add(this.cb_shi0);
-            this.groupBox6.Controls.Add(this.label10);
-            this.groupBox6.Controls.Add(this.cb_ge9);
-            this.groupBox6.Controls.Add(this.cb_ge8);
-            this.groupBox6.Controls.Add(this.cb_ge7);
-            this.groupBox6.Controls.Add(this.cb_ge6);
-            this.groupBox6.Controls.Add(this.cb_ge5);
-            this.groupBox6.Controls.Add(this.cb_ge4);
-            this.groupBox6.Controls.Add(this.cb_ge3);
-            this.groupBox6.Controls.Add(this.cb_ge2);
-            this.groupBox6.Controls.Add(this.cb_ge1);
-            this.groupBox6.Controls.Add(this.cb_ge0);
-            this.groupBox6.Location = new System.Drawing.Point(399, 431);
+            this.groupBox6.Controls.Add(this.panel_ge);
+            this.groupBox6.Controls.Add(this.panel_bai);
+            this.groupBox6.Controls.Add(this.panel_shi);
+            this.groupBox6.Controls.Add(this.panel_qian);
+            this.groupBox6.Controls.Add(this.ck_杀定位);
+            this.groupBox6.Location = new System.Drawing.Point(399, 414);
             this.groupBox6.Name = "groupBox6";
-            this.groupBox6.Size = new System.Drawing.Size(480, 142);
+            this.groupBox6.Size = new System.Drawing.Size(480, 166);
             this.groupBox6.TabIndex = 19;
             this.groupBox6.TabStop = false;
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(419, 100);
+            this.button3.Location = new System.Drawing.Point(415, 1);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(53, 23);
             this.button3.TabIndex = 64;
@@ -568,7 +534,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(419, 75);
+            this.button2.Location = new System.Drawing.Point(415, 3);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(53, 23);
             this.button2.TabIndex = 63;
@@ -578,7 +544,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(419, 50);
+            this.button1.Location = new System.Drawing.Point(414, 4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(53, 23);
             this.button1.TabIndex = 62;
@@ -586,19 +552,19 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // ck杀定位
+            // ck_杀定位
             // 
-            this.ck杀定位.AutoSize = true;
-            this.ck杀定位.Location = new System.Drawing.Point(11, 0);
-            this.ck杀定位.Name = "ck杀定位";
-            this.ck杀定位.Size = new System.Drawing.Size(60, 16);
-            this.ck杀定位.TabIndex = 13;
-            this.ck杀定位.Text = "杀定位";
-            this.ck杀定位.UseVisualStyleBackColor = true;
+            this.ck_杀定位.AutoSize = true;
+            this.ck_杀定位.Location = new System.Drawing.Point(11, 0);
+            this.ck_杀定位.Name = "ck_杀定位";
+            this.ck_杀定位.Size = new System.Drawing.Size(60, 16);
+            this.ck_杀定位.TabIndex = 13;
+            this.ck_杀定位.Text = "杀定位";
+            this.ck_杀定位.UseVisualStyleBackColor = true;
             // 
             // button29
             // 
-            this.button29.Location = new System.Drawing.Point(420, 24);
+            this.button29.Location = new System.Drawing.Point(415, 3);
             this.button29.Name = "button29";
             this.button29.Size = new System.Drawing.Size(53, 23);
             this.button29.TabIndex = 61;
@@ -609,7 +575,7 @@
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(6, 30);
+            this.label13.Location = new System.Drawing.Point(1, 9);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(29, 12);
             this.label13.TabIndex = 53;
@@ -618,7 +584,7 @@
             // cb_qian9
             // 
             this.cb_qian9.AutoSize = true;
-            this.cb_qian9.Location = new System.Drawing.Point(384, 29);
+            this.cb_qian9.Location = new System.Drawing.Point(379, 8);
             this.cb_qian9.Name = "cb_qian9";
             this.cb_qian9.Size = new System.Drawing.Size(30, 16);
             this.cb_qian9.TabIndex = 54;
@@ -628,7 +594,7 @@
             // cb_qian8
             // 
             this.cb_qian8.AutoSize = true;
-            this.cb_qian8.Location = new System.Drawing.Point(348, 29);
+            this.cb_qian8.Location = new System.Drawing.Point(343, 8);
             this.cb_qian8.Name = "cb_qian8";
             this.cb_qian8.Size = new System.Drawing.Size(30, 16);
             this.cb_qian8.TabIndex = 52;
@@ -638,7 +604,7 @@
             // cb_qian7
             // 
             this.cb_qian7.AutoSize = true;
-            this.cb_qian7.Location = new System.Drawing.Point(312, 29);
+            this.cb_qian7.Location = new System.Drawing.Point(307, 8);
             this.cb_qian7.Name = "cb_qian7";
             this.cb_qian7.Size = new System.Drawing.Size(30, 16);
             this.cb_qian7.TabIndex = 51;
@@ -648,7 +614,7 @@
             // cb_qian6
             // 
             this.cb_qian6.AutoSize = true;
-            this.cb_qian6.Location = new System.Drawing.Point(276, 29);
+            this.cb_qian6.Location = new System.Drawing.Point(271, 8);
             this.cb_qian6.Name = "cb_qian6";
             this.cb_qian6.Size = new System.Drawing.Size(30, 16);
             this.cb_qian6.TabIndex = 50;
@@ -658,7 +624,7 @@
             // cb_qian5
             // 
             this.cb_qian5.AutoSize = true;
-            this.cb_qian5.Location = new System.Drawing.Point(240, 29);
+            this.cb_qian5.Location = new System.Drawing.Point(235, 8);
             this.cb_qian5.Name = "cb_qian5";
             this.cb_qian5.Size = new System.Drawing.Size(30, 16);
             this.cb_qian5.TabIndex = 49;
@@ -668,7 +634,7 @@
             // cb_qian4
             // 
             this.cb_qian4.AutoSize = true;
-            this.cb_qian4.Location = new System.Drawing.Point(204, 29);
+            this.cb_qian4.Location = new System.Drawing.Point(199, 8);
             this.cb_qian4.Name = "cb_qian4";
             this.cb_qian4.Size = new System.Drawing.Size(30, 16);
             this.cb_qian4.TabIndex = 48;
@@ -678,7 +644,7 @@
             // cb_qian3
             // 
             this.cb_qian3.AutoSize = true;
-            this.cb_qian3.Location = new System.Drawing.Point(163, 29);
+            this.cb_qian3.Location = new System.Drawing.Point(158, 8);
             this.cb_qian3.Name = "cb_qian3";
             this.cb_qian3.Size = new System.Drawing.Size(30, 16);
             this.cb_qian3.TabIndex = 47;
@@ -688,7 +654,7 @@
             // cb_qian2
             // 
             this.cb_qian2.AutoSize = true;
-            this.cb_qian2.Location = new System.Drawing.Point(123, 29);
+            this.cb_qian2.Location = new System.Drawing.Point(118, 8);
             this.cb_qian2.Name = "cb_qian2";
             this.cb_qian2.Size = new System.Drawing.Size(30, 16);
             this.cb_qian2.TabIndex = 46;
@@ -698,7 +664,7 @@
             // cb_qian1
             // 
             this.cb_qian1.AutoSize = true;
-            this.cb_qian1.Location = new System.Drawing.Point(87, 29);
+            this.cb_qian1.Location = new System.Drawing.Point(82, 8);
             this.cb_qian1.Name = "cb_qian1";
             this.cb_qian1.Size = new System.Drawing.Size(30, 16);
             this.cb_qian1.TabIndex = 45;
@@ -708,7 +674,7 @@
             // cb_qian0
             // 
             this.cb_qian0.AutoSize = true;
-            this.cb_qian0.Location = new System.Drawing.Point(51, 29);
+            this.cb_qian0.Location = new System.Drawing.Point(46, 8);
             this.cb_qian0.Name = "cb_qian0";
             this.cb_qian0.Size = new System.Drawing.Size(30, 16);
             this.cb_qian0.TabIndex = 44;
@@ -718,7 +684,7 @@
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(6, 54);
+            this.label12.Location = new System.Drawing.Point(1, 11);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(29, 12);
             this.label12.TabIndex = 42;
@@ -727,7 +693,7 @@
             // cb_bai9
             // 
             this.cb_bai9.AutoSize = true;
-            this.cb_bai9.Location = new System.Drawing.Point(384, 53);
+            this.cb_bai9.Location = new System.Drawing.Point(378, 9);
             this.cb_bai9.Name = "cb_bai9";
             this.cb_bai9.Size = new System.Drawing.Size(30, 16);
             this.cb_bai9.TabIndex = 43;
@@ -737,7 +703,7 @@
             // cb_bai8
             // 
             this.cb_bai8.AutoSize = true;
-            this.cb_bai8.Location = new System.Drawing.Point(348, 53);
+            this.cb_bai8.Location = new System.Drawing.Point(343, 9);
             this.cb_bai8.Name = "cb_bai8";
             this.cb_bai8.Size = new System.Drawing.Size(30, 16);
             this.cb_bai8.TabIndex = 41;
@@ -747,7 +713,7 @@
             // cb_bai7
             // 
             this.cb_bai7.AutoSize = true;
-            this.cb_bai7.Location = new System.Drawing.Point(312, 53);
+            this.cb_bai7.Location = new System.Drawing.Point(307, 9);
             this.cb_bai7.Name = "cb_bai7";
             this.cb_bai7.Size = new System.Drawing.Size(30, 16);
             this.cb_bai7.TabIndex = 40;
@@ -757,7 +723,7 @@
             // cb_bai6
             // 
             this.cb_bai6.AutoSize = true;
-            this.cb_bai6.Location = new System.Drawing.Point(276, 53);
+            this.cb_bai6.Location = new System.Drawing.Point(271, 9);
             this.cb_bai6.Name = "cb_bai6";
             this.cb_bai6.Size = new System.Drawing.Size(30, 16);
             this.cb_bai6.TabIndex = 39;
@@ -767,7 +733,7 @@
             // cb_bai5
             // 
             this.cb_bai5.AutoSize = true;
-            this.cb_bai5.Location = new System.Drawing.Point(240, 53);
+            this.cb_bai5.Location = new System.Drawing.Point(235, 9);
             this.cb_bai5.Name = "cb_bai5";
             this.cb_bai5.Size = new System.Drawing.Size(30, 16);
             this.cb_bai5.TabIndex = 38;
@@ -777,7 +743,7 @@
             // cb_bai4
             // 
             this.cb_bai4.AutoSize = true;
-            this.cb_bai4.Location = new System.Drawing.Point(204, 53);
+            this.cb_bai4.Location = new System.Drawing.Point(199, 9);
             this.cb_bai4.Name = "cb_bai4";
             this.cb_bai4.Size = new System.Drawing.Size(30, 16);
             this.cb_bai4.TabIndex = 37;
@@ -787,7 +753,7 @@
             // cb_bai3
             // 
             this.cb_bai3.AutoSize = true;
-            this.cb_bai3.Location = new System.Drawing.Point(163, 53);
+            this.cb_bai3.Location = new System.Drawing.Point(158, 9);
             this.cb_bai3.Name = "cb_bai3";
             this.cb_bai3.Size = new System.Drawing.Size(30, 16);
             this.cb_bai3.TabIndex = 36;
@@ -797,7 +763,7 @@
             // cb_bai2
             // 
             this.cb_bai2.AutoSize = true;
-            this.cb_bai2.Location = new System.Drawing.Point(123, 53);
+            this.cb_bai2.Location = new System.Drawing.Point(118, 9);
             this.cb_bai2.Name = "cb_bai2";
             this.cb_bai2.Size = new System.Drawing.Size(30, 16);
             this.cb_bai2.TabIndex = 35;
@@ -807,7 +773,7 @@
             // cb_bai1
             // 
             this.cb_bai1.AutoSize = true;
-            this.cb_bai1.Location = new System.Drawing.Point(87, 53);
+            this.cb_bai1.Location = new System.Drawing.Point(82, 9);
             this.cb_bai1.Name = "cb_bai1";
             this.cb_bai1.Size = new System.Drawing.Size(30, 16);
             this.cb_bai1.TabIndex = 34;
@@ -817,7 +783,7 @@
             // cb_bai0
             // 
             this.cb_bai0.AutoSize = true;
-            this.cb_bai0.Location = new System.Drawing.Point(51, 53);
+            this.cb_bai0.Location = new System.Drawing.Point(46, 9);
             this.cb_bai0.Name = "cb_bai0";
             this.cb_bai0.Size = new System.Drawing.Size(30, 16);
             this.cb_bai0.TabIndex = 33;
@@ -827,7 +793,7 @@
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(6, 77);
+            this.label11.Location = new System.Drawing.Point(2, 8);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(29, 12);
             this.label11.TabIndex = 31;
@@ -836,7 +802,7 @@
             // cb_shi9
             // 
             this.cb_shi9.AutoSize = true;
-            this.cb_shi9.Location = new System.Drawing.Point(384, 76);
+            this.cb_shi9.Location = new System.Drawing.Point(379, 7);
             this.cb_shi9.Name = "cb_shi9";
             this.cb_shi9.Size = new System.Drawing.Size(30, 16);
             this.cb_shi9.TabIndex = 32;
@@ -846,7 +812,7 @@
             // cb_shi8
             // 
             this.cb_shi8.AutoSize = true;
-            this.cb_shi8.Location = new System.Drawing.Point(348, 76);
+            this.cb_shi8.Location = new System.Drawing.Point(343, 7);
             this.cb_shi8.Name = "cb_shi8";
             this.cb_shi8.Size = new System.Drawing.Size(30, 16);
             this.cb_shi8.TabIndex = 30;
@@ -856,7 +822,7 @@
             // cb_shi7
             // 
             this.cb_shi7.AutoSize = true;
-            this.cb_shi7.Location = new System.Drawing.Point(312, 76);
+            this.cb_shi7.Location = new System.Drawing.Point(307, 7);
             this.cb_shi7.Name = "cb_shi7";
             this.cb_shi7.Size = new System.Drawing.Size(30, 16);
             this.cb_shi7.TabIndex = 29;
@@ -866,7 +832,7 @@
             // cb_shi6
             // 
             this.cb_shi6.AutoSize = true;
-            this.cb_shi6.Location = new System.Drawing.Point(276, 76);
+            this.cb_shi6.Location = new System.Drawing.Point(271, 7);
             this.cb_shi6.Name = "cb_shi6";
             this.cb_shi6.Size = new System.Drawing.Size(30, 16);
             this.cb_shi6.TabIndex = 28;
@@ -876,7 +842,7 @@
             // cb_shi5
             // 
             this.cb_shi5.AutoSize = true;
-            this.cb_shi5.Location = new System.Drawing.Point(240, 76);
+            this.cb_shi5.Location = new System.Drawing.Point(235, 7);
             this.cb_shi5.Name = "cb_shi5";
             this.cb_shi5.Size = new System.Drawing.Size(30, 16);
             this.cb_shi5.TabIndex = 27;
@@ -886,7 +852,7 @@
             // cb_shi4
             // 
             this.cb_shi4.AutoSize = true;
-            this.cb_shi4.Location = new System.Drawing.Point(204, 76);
+            this.cb_shi4.Location = new System.Drawing.Point(199, 7);
             this.cb_shi4.Name = "cb_shi4";
             this.cb_shi4.Size = new System.Drawing.Size(30, 16);
             this.cb_shi4.TabIndex = 26;
@@ -896,7 +862,7 @@
             // cb_shi3
             // 
             this.cb_shi3.AutoSize = true;
-            this.cb_shi3.Location = new System.Drawing.Point(163, 76);
+            this.cb_shi3.Location = new System.Drawing.Point(158, 7);
             this.cb_shi3.Name = "cb_shi3";
             this.cb_shi3.Size = new System.Drawing.Size(30, 16);
             this.cb_shi3.TabIndex = 25;
@@ -906,7 +872,7 @@
             // cb_shi2
             // 
             this.cb_shi2.AutoSize = true;
-            this.cb_shi2.Location = new System.Drawing.Point(123, 76);
+            this.cb_shi2.Location = new System.Drawing.Point(118, 7);
             this.cb_shi2.Name = "cb_shi2";
             this.cb_shi2.Size = new System.Drawing.Size(30, 16);
             this.cb_shi2.TabIndex = 24;
@@ -916,7 +882,7 @@
             // cb_shi1
             // 
             this.cb_shi1.AutoSize = true;
-            this.cb_shi1.Location = new System.Drawing.Point(87, 76);
+            this.cb_shi1.Location = new System.Drawing.Point(82, 7);
             this.cb_shi1.Name = "cb_shi1";
             this.cb_shi1.Size = new System.Drawing.Size(30, 16);
             this.cb_shi1.TabIndex = 23;
@@ -926,7 +892,7 @@
             // cb_shi0
             // 
             this.cb_shi0.AutoSize = true;
-            this.cb_shi0.Location = new System.Drawing.Point(51, 76);
+            this.cb_shi0.Location = new System.Drawing.Point(45, 7);
             this.cb_shi0.Name = "cb_shi0";
             this.cb_shi0.Size = new System.Drawing.Size(30, 16);
             this.cb_shi0.TabIndex = 22;
@@ -936,7 +902,7 @@
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(6, 101);
+            this.label10.Location = new System.Drawing.Point(4, 6);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(29, 12);
             this.label10.TabIndex = 21;
@@ -945,7 +911,7 @@
             // cb_ge9
             // 
             this.cb_ge9.AutoSize = true;
-            this.cb_ge9.Location = new System.Drawing.Point(384, 100);
+            this.cb_ge9.Location = new System.Drawing.Point(380, 5);
             this.cb_ge9.Name = "cb_ge9";
             this.cb_ge9.Size = new System.Drawing.Size(30, 16);
             this.cb_ge9.TabIndex = 21;
@@ -955,7 +921,7 @@
             // cb_ge8
             // 
             this.cb_ge8.AutoSize = true;
-            this.cb_ge8.Location = new System.Drawing.Point(348, 100);
+            this.cb_ge8.Location = new System.Drawing.Point(344, 5);
             this.cb_ge8.Name = "cb_ge8";
             this.cb_ge8.Size = new System.Drawing.Size(30, 16);
             this.cb_ge8.TabIndex = 20;
@@ -965,7 +931,7 @@
             // cb_ge7
             // 
             this.cb_ge7.AutoSize = true;
-            this.cb_ge7.Location = new System.Drawing.Point(312, 100);
+            this.cb_ge7.Location = new System.Drawing.Point(308, 5);
             this.cb_ge7.Name = "cb_ge7";
             this.cb_ge7.Size = new System.Drawing.Size(30, 16);
             this.cb_ge7.TabIndex = 19;
@@ -975,7 +941,7 @@
             // cb_ge6
             // 
             this.cb_ge6.AutoSize = true;
-            this.cb_ge6.Location = new System.Drawing.Point(276, 100);
+            this.cb_ge6.Location = new System.Drawing.Point(272, 5);
             this.cb_ge6.Name = "cb_ge6";
             this.cb_ge6.Size = new System.Drawing.Size(30, 16);
             this.cb_ge6.TabIndex = 18;
@@ -985,7 +951,7 @@
             // cb_ge5
             // 
             this.cb_ge5.AutoSize = true;
-            this.cb_ge5.Location = new System.Drawing.Point(240, 100);
+            this.cb_ge5.Location = new System.Drawing.Point(236, 5);
             this.cb_ge5.Name = "cb_ge5";
             this.cb_ge5.Size = new System.Drawing.Size(30, 16);
             this.cb_ge5.TabIndex = 17;
@@ -995,7 +961,7 @@
             // cb_ge4
             // 
             this.cb_ge4.AutoSize = true;
-            this.cb_ge4.Location = new System.Drawing.Point(204, 100);
+            this.cb_ge4.Location = new System.Drawing.Point(200, 5);
             this.cb_ge4.Name = "cb_ge4";
             this.cb_ge4.Size = new System.Drawing.Size(30, 16);
             this.cb_ge4.TabIndex = 16;
@@ -1005,7 +971,7 @@
             // cb_ge3
             // 
             this.cb_ge3.AutoSize = true;
-            this.cb_ge3.Location = new System.Drawing.Point(163, 100);
+            this.cb_ge3.Location = new System.Drawing.Point(159, 5);
             this.cb_ge3.Name = "cb_ge3";
             this.cb_ge3.Size = new System.Drawing.Size(30, 16);
             this.cb_ge3.TabIndex = 15;
@@ -1015,7 +981,7 @@
             // cb_ge2
             // 
             this.cb_ge2.AutoSize = true;
-            this.cb_ge2.Location = new System.Drawing.Point(123, 100);
+            this.cb_ge2.Location = new System.Drawing.Point(119, 5);
             this.cb_ge2.Name = "cb_ge2";
             this.cb_ge2.Size = new System.Drawing.Size(30, 16);
             this.cb_ge2.TabIndex = 14;
@@ -1025,7 +991,7 @@
             // cb_ge1
             // 
             this.cb_ge1.AutoSize = true;
-            this.cb_ge1.Location = new System.Drawing.Point(87, 100);
+            this.cb_ge1.Location = new System.Drawing.Point(83, 5);
             this.cb_ge1.Name = "cb_ge1";
             this.cb_ge1.Size = new System.Drawing.Size(30, 16);
             this.cb_ge1.TabIndex = 13;
@@ -1035,7 +1001,7 @@
             // cb_ge0
             // 
             this.cb_ge0.AutoSize = true;
-            this.cb_ge0.Location = new System.Drawing.Point(51, 100);
+            this.cb_ge0.Location = new System.Drawing.Point(46, 5);
             this.cb_ge0.Name = "cb_ge0";
             this.cb_ge0.Size = new System.Drawing.Size(30, 16);
             this.cb_ge0.TabIndex = 12;
@@ -1729,7 +1695,7 @@
             this.groupBox10.Controls.Add(this.ck_胆码2);
             this.groupBox10.Controls.Add(this.ck_胆码1);
             this.groupBox10.Controls.Add(this.ck_胆码0);
-            this.groupBox10.Location = new System.Drawing.Point(399, 579);
+            this.groupBox10.Location = new System.Drawing.Point(399, 586);
             this.groupBox10.Name = "groupBox10";
             this.groupBox10.Size = new System.Drawing.Size(480, 67);
             this.groupBox10.TabIndex = 65;
@@ -2043,6 +2009,82 @@
             this.button16.UseVisualStyleBackColor = true;
             this.button16.Click += new System.EventHandler(this.button16_Click);
             // 
+            // panel_qian
+            // 
+            this.panel_qian.Controls.Add(this.button29);
+            this.panel_qian.Controls.Add(this.cb_qian0);
+            this.panel_qian.Controls.Add(this.cb_qian1);
+            this.panel_qian.Controls.Add(this.cb_qian2);
+            this.panel_qian.Controls.Add(this.cb_qian3);
+            this.panel_qian.Controls.Add(this.label13);
+            this.panel_qian.Controls.Add(this.cb_qian4);
+            this.panel_qian.Controls.Add(this.cb_qian9);
+            this.panel_qian.Controls.Add(this.cb_qian5);
+            this.panel_qian.Controls.Add(this.cb_qian8);
+            this.panel_qian.Controls.Add(this.cb_qian6);
+            this.panel_qian.Controls.Add(this.cb_qian7);
+            this.panel_qian.Location = new System.Drawing.Point(5, 20);
+            this.panel_qian.Name = "panel_qian";
+            this.panel_qian.Size = new System.Drawing.Size(472, 30);
+            this.panel_qian.TabIndex = 70;
+            // 
+            // panel_bai
+            // 
+            this.panel_bai.Controls.Add(this.label12);
+            this.panel_bai.Controls.Add(this.cb_bai0);
+            this.panel_bai.Controls.Add(this.cb_bai1);
+            this.panel_bai.Controls.Add(this.button1);
+            this.panel_bai.Controls.Add(this.cb_bai2);
+            this.panel_bai.Controls.Add(this.cb_bai3);
+            this.panel_bai.Controls.Add(this.cb_bai4);
+            this.panel_bai.Controls.Add(this.cb_bai9);
+            this.panel_bai.Controls.Add(this.cb_bai5);
+            this.panel_bai.Controls.Add(this.cb_bai8);
+            this.panel_bai.Controls.Add(this.cb_bai6);
+            this.panel_bai.Controls.Add(this.cb_bai7);
+            this.panel_bai.Location = new System.Drawing.Point(6, 56);
+            this.panel_bai.Name = "panel_bai";
+            this.panel_bai.Size = new System.Drawing.Size(472, 30);
+            this.panel_bai.TabIndex = 70;
+            // 
+            // panel_shi
+            // 
+            this.panel_shi.Controls.Add(this.label11);
+            this.panel_shi.Controls.Add(this.cb_shi0);
+            this.panel_shi.Controls.Add(this.cb_shi1);
+            this.panel_shi.Controls.Add(this.button2);
+            this.panel_shi.Controls.Add(this.cb_shi2);
+            this.panel_shi.Controls.Add(this.cb_shi3);
+            this.panel_shi.Controls.Add(this.cb_shi4);
+            this.panel_shi.Controls.Add(this.cb_shi9);
+            this.panel_shi.Controls.Add(this.cb_shi5);
+            this.panel_shi.Controls.Add(this.cb_shi8);
+            this.panel_shi.Controls.Add(this.cb_shi6);
+            this.panel_shi.Controls.Add(this.cb_shi7);
+            this.panel_shi.Location = new System.Drawing.Point(6, 92);
+            this.panel_shi.Name = "panel_shi";
+            this.panel_shi.Size = new System.Drawing.Size(472, 30);
+            this.panel_shi.TabIndex = 70;
+            // 
+            // panel_ge
+            // 
+            this.panel_ge.Controls.Add(this.label10);
+            this.panel_ge.Controls.Add(this.cb_ge0);
+            this.panel_ge.Controls.Add(this.cb_ge1);
+            this.panel_ge.Controls.Add(this.button3);
+            this.panel_ge.Controls.Add(this.cb_ge2);
+            this.panel_ge.Controls.Add(this.cb_ge3);
+            this.panel_ge.Controls.Add(this.cb_ge4);
+            this.panel_ge.Controls.Add(this.cb_ge9);
+            this.panel_ge.Controls.Add(this.cb_ge5);
+            this.panel_ge.Controls.Add(this.cb_ge8);
+            this.panel_ge.Controls.Add(this.cb_ge6);
+            this.panel_ge.Controls.Add(this.cb_ge7);
+            this.panel_ge.Location = new System.Drawing.Point(5, 128);
+            this.panel_ge.Name = "panel_ge";
+            this.panel_ge.Size = new System.Drawing.Size(472, 30);
+            this.panel_ge.TabIndex = 71;
+            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -2095,6 +2137,14 @@
             this.groupBox10.PerformLayout();
             this.groupBox11.ResumeLayout(false);
             this.groupBox11.PerformLayout();
+            this.panel_qian.ResumeLayout(false);
+            this.panel_qian.PerformLayout();
+            this.panel_bai.ResumeLayout(false);
+            this.panel_bai.PerformLayout();
+            this.panel_shi.ResumeLayout(false);
+            this.panel_shi.PerformLayout();
+            this.panel_ge.ResumeLayout(false);
+            this.panel_ge.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -2128,10 +2178,10 @@
         private System.Windows.Forms.Label lb_被杀数量;
         private System.Windows.Forms.Button btn_计算;
         private System.Windows.Forms.GroupBox groupBox5;
-        private System.Windows.Forms.CheckBox ck垃圾号;
+        private System.Windows.Forms.CheckBox ck_垃圾号;
         private System.Windows.Forms.TextBox tb_垃圾号;
         private System.Windows.Forms.GroupBox groupBox6;
-        private System.Windows.Forms.CheckBox ck杀定位;
+        private System.Windows.Forms.CheckBox ck_杀定位;
         private System.Windows.Forms.Button button29;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.CheckBox cb_qian9;
@@ -2275,5 +2325,9 @@
         private System.Windows.Forms.Button button13;
         private System.Windows.Forms.Button button14;
         private System.Windows.Forms.Button button16;
+        private System.Windows.Forms.Panel panel_qian;
+        private System.Windows.Forms.Panel panel_ge;
+        private System.Windows.Forms.Panel panel_bai;
+        private System.Windows.Forms.Panel panel_shi;
     }
 }

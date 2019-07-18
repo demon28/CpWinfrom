@@ -451,11 +451,11 @@
             // 
             // btn_导出
             // 
-            this.btn_导出.Location = new System.Drawing.Point(1247, 737);
+            this.btn_导出.Location = new System.Drawing.Point(1123, 777);
             this.btn_导出.Name = "btn_导出";
-            this.btn_导出.Size = new System.Drawing.Size(59, 28);
+            this.btn_导出.Size = new System.Drawing.Size(181, 28);
             this.btn_导出.TabIndex = 15;
-            this.btn_导出.Text = "导出";
+            this.btn_导出.Text = "导出文本";
             this.btn_导出.UseVisualStyleBackColor = true;
             this.btn_导出.Click += new System.EventHandler(this.btn_导出_Click);
             // 
@@ -471,11 +471,11 @@
             // 
             // btn_计算
             // 
-            this.btn_计算.Location = new System.Drawing.Point(1117, 737);
+            this.btn_计算.Location = new System.Drawing.Point(1122, 737);
             this.btn_计算.Name = "btn_计算";
-            this.btn_计算.Size = new System.Drawing.Size(60, 28);
+            this.btn_计算.Size = new System.Drawing.Size(87, 28);
             this.btn_计算.TabIndex = 17;
-            this.btn_计算.Text = "计算";
+            this.btn_计算.Text = "计算结果";
             this.btn_计算.UseVisualStyleBackColor = true;
             this.btn_计算.Click += new System.EventHandler(this.btn_计算_Click);
             // 
@@ -1010,7 +1010,7 @@
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(1183, 737);
+            this.button4.Location = new System.Drawing.Point(1244, 737);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(60, 28);
             this.button4.TabIndex = 20;
@@ -1695,7 +1695,7 @@
             this.groupBox10.Controls.Add(this.ck_胆码2);
             this.groupBox10.Controls.Add(this.ck_胆码1);
             this.groupBox10.Controls.Add(this.ck_胆码0);
-            this.groupBox10.Location = new System.Drawing.Point(399, 586);
+            this.groupBox10.Location = new System.Drawing.Point(399, 594);
             this.groupBox10.Name = "groupBox10";
             this.groupBox10.Size = new System.Drawing.Size(480, 67);
             this.groupBox10.TabIndex = 65;
@@ -1844,7 +1844,7 @@
             this.groupBox11.Controls.Add(this.ck_跨度2);
             this.groupBox11.Controls.Add(this.ck_跨度1);
             this.groupBox11.Controls.Add(this.ck_跨度0);
-            this.groupBox11.Location = new System.Drawing.Point(399, 662);
+            this.groupBox11.Location = new System.Drawing.Point(399, 675);
             this.groupBox11.Name = "groupBox11";
             this.groupBox11.Size = new System.Drawing.Size(480, 67);
             this.groupBox11.TabIndex = 66;

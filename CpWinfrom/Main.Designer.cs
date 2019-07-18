@@ -516,7 +516,7 @@
             this.groupBox6.Controls.Add(this.panel_shi);
             this.groupBox6.Controls.Add(this.panel_qian);
             this.groupBox6.Controls.Add(this.ck_杀定位);
-            this.groupBox6.Location = new System.Drawing.Point(399, 414);
+            this.groupBox6.Location = new System.Drawing.Point(399, 431);
             this.groupBox6.Name = "groupBox6";
             this.groupBox6.Size = new System.Drawing.Size(480, 166);
             this.groupBox6.TabIndex = 19;
@@ -1695,7 +1695,7 @@
             this.groupBox10.Controls.Add(this.ck_胆码2);
             this.groupBox10.Controls.Add(this.ck_胆码1);
             this.groupBox10.Controls.Add(this.ck_胆码0);
-            this.groupBox10.Location = new System.Drawing.Point(399, 594);
+            this.groupBox10.Location = new System.Drawing.Point(399, 617);
             this.groupBox10.Name = "groupBox10";
             this.groupBox10.Size = new System.Drawing.Size(480, 67);
             this.groupBox10.TabIndex = 65;
@@ -1844,7 +1844,7 @@
             this.groupBox11.Controls.Add(this.ck_跨度2);
             this.groupBox11.Controls.Add(this.ck_跨度1);
             this.groupBox11.Controls.Add(this.ck_跨度0);
-            this.groupBox11.Location = new System.Drawing.Point(399, 675);
+            this.groupBox11.Location = new System.Drawing.Point(399, 698);
             this.groupBox11.Name = "groupBox11";
             this.groupBox11.Size = new System.Drawing.Size(480, 67);
             this.groupBox11.TabIndex = 66;

@@ -61,6 +61,7 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Rule\Teshuhao.cs" />
     <Compile Include="Tool.cs" />
     <Compile Include="中二和值.cs">
       <SubType>Form</SubType>

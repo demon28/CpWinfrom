@@ -77,5 +77,12 @@ namespace CpWinfrom
             }
             return false;
         }
+
+        public static List<NumberModel>  ListSort( List<NumberModel> numberModels) {
+            List<NumberModel> numbers =numberModels.OrderBy(S=>S.GetInt()).ToList();
+
+            return numbers;
+
+        }
     }
 }

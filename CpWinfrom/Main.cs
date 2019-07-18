@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CpWinfrom.Rule;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -19,21 +20,21 @@ namespace CpWinfrom
         }
 
 
-        
+
         private void btn_点杀大小_Click(object sender, EventArgs e)
         {
             点杀大小 f1 = new 点杀大小();
 
-           
 
-            if (f1.ShowDialog()==DialogResult.OK)
+
+            if (f1.ShowDialog() == DialogResult.OK)
             {
                 List<CheckBox> checkBoxes = f1.cks;
 
                 this.tb_点杀大小.Text = string.Empty;
                 foreach (var item in checkBoxes)
                 {
-                    this.tb_点杀大小.Text += item.Text+",";
+                    this.tb_点杀大小.Text += item.Text + ",";
                 }
                 this.tb_点杀大小.Text = this.tb_点杀大小.Text.TrimEnd(',');
 
@@ -147,15 +148,15 @@ namespace CpWinfrom
         private void button1_Click(object sender, EventArgs e)
         {
             cb_bai0.Checked = false;
-           cb_bai1.Checked = false;
-           cb_bai2.Checked = false;
-           cb_bai3.Checked = false;
-           cb_bai4.Checked = false;
-           cb_bai5.Checked = false;
-           cb_bai6.Checked = false;
-           cb_bai7.Checked = false;
-           cb_bai8.Checked = false;
-           cb_bai9.Checked = false;
+            cb_bai1.Checked = false;
+            cb_bai2.Checked = false;
+            cb_bai3.Checked = false;
+            cb_bai4.Checked = false;
+            cb_bai5.Checked = false;
+            cb_bai6.Checked = false;
+            cb_bai7.Checked = false;
+            cb_bai8.Checked = false;
+            cb_bai9.Checked = false;
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -369,7 +370,18 @@ namespace CpWinfrom
 
         private void btn_计算_Click(object sender, EventArgs e)
         {
+            ResnumberModels = AllNumer.GetAllNumer();
 
+            CheckDelNumer();
+
+            foreach (var item in DelnumberModels)
+            {
+                var whereRemove = ResnumberModels.FirstOrDefault(S => S.N1 == item.N1 && S.N2 == item.N2 && S.N3 == item.N3 && S.N4 == item.N4);
+                ResnumberModels.Remove(whereRemove);
+            
+            }
+            PrintDel();
+            PrintRes();
         }
 
         private void button4_Click(object sender, EventArgs e)
@@ -405,6 +417,139 @@ namespace CpWinfrom
         }
 
         private void checkBox4_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+        List<NumberModel> DelnumberModels = new List<NumberModel>();
+        List<NumberModel> ResnumberModels = new List<NumberModel>();
+        private void button13_Click(object sender, EventArgs e)
+        {
+
+         
+
+            CheckDelNumer();
+
+            PrintDel();
+        }
+
+        /// <summary>
+        /// 输出被杀号码
+        /// </summary>
+        private void PrintDel()
+        {
+
+            this.tb_被杀号码.Text = string.Empty;
+            this.lb_被杀数量.Text = "0";
+            StringBuilder stringBuilder = new StringBuilder();
+
+            foreach (var item in DelnumberModels)
+            {
+                stringBuilder.AppendLine(item.GetString() + ",");
+            }
+            this.tb_被杀号码.Text = stringBuilder.ToString().TrimEnd(',');
+            this.lb_被杀数量.Text = DelnumberModels.Count.ToString();
+        }
+        private void PrintRes()
+        {
+
+            this.tb_结果.Text = string.Empty;
+            this.lb_结果数量.Text = "0";
+            StringBuilder stringBuilder = new StringBuilder();
+
+            foreach (var item in ResnumberModels)
+            {
+                stringBuilder.AppendLine(item.GetString() + ",");
+            }
+            this.tb_结果.Text = stringBuilder.ToString().TrimEnd(',');
+            this.lb_结果数量.Text = ResnumberModels.Count.ToString();
+        }
+
+        private void CheckDelNumer()
+        {
+            DelnumberModels.Clear();
+
+            if (ck_ABCD.Checked)
+            {
+                Rule.Teshuhao.ABCD(ref DelnumberModels);
+            }
+
+            if (ck_AABC.Checked)
+            {
+                Teshuhao.AABC(ref DelnumberModels);
+            }
+            if (ck_AABB.Checked)
+            {
+                Teshuhao.AABB(ref DelnumberModels);
+            }
+
+            if (ck_AAAB.Checked)
+            {
+                Teshuhao.AAAB(ref DelnumberModels);
+            }
+            if (ck_AAAA.Checked)
+            {
+                Teshuhao.AAAA(ref DelnumberModels);
+            }
+            if (ck_不连.Checked)
+            {
+                Teshuhao.不连(ref DelnumberModels);
+            }
+            if (ck_2个顺子.Checked)
+            {
+                Teshuhao.两个顺子(ref DelnumberModels);
+            }
+            
+            if (ck_兄弟号.Checked)
+            {
+                Teshuhao.兄弟号(ref DelnumberModels);
+            }
+
+            if (ck_非兄弟号.Checked)
+            {
+                Teshuhao.非兄弟号(ref DelnumberModels);
+            }
+
+            
+        }
+
+        private void button14_Click(object sender, EventArgs e)
+        {
+            DelnumberModels = Tool.ListSort(DelnumberModels);
+
+            PrintDel();
+        }
+
+        private void button16_Click(object sender, EventArgs e)
+        {
+            ResnumberModels = Tool.ListSort(ResnumberModels);
+            PrintRes();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            foreach (Control groupBox in Controls)
+            {
+                if (groupBox is GroupBox)
+                {
+                    foreach (Control cl in groupBox7.Controls)
+                    {
+                        if (cl is CheckBox)
+                        {
+                            CheckBox box = (CheckBox)cl;
+                            box.Checked = false;
+                        }
+
+                    }
+                }
+            }
+        }
+
+        private void ck_兄弟号_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ck_非兄弟号_CheckedChanged(object sender, EventArgs e)
         {
 
         }

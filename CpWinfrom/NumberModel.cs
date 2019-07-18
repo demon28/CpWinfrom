@@ -18,9 +18,13 @@ namespace CpWinfrom
 
         public string GetString()
         {
-
             return N1.ToString() + "" + N2.ToString() + "" + N3.ToString() + "" + N4.ToString();
         }
+        public int GetInt()
+        {
+            return N1+ N2 + N3+ N4;
+        }
+
         public static NumberModel ToParse(string val)
         {
             char[] chart = val.ToCharArray();

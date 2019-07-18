@@ -118,7 +118,6 @@
             this.ck_正向2连 = new System.Windows.Forms.CheckBox();
             this.label4 = new System.Windows.Forms.Label();
             this.ck_2个顺子 = new System.Windows.Forms.CheckBox();
-            this.ck_2个对子 = new System.Windows.Forms.CheckBox();
             this.ck_无序4连 = new System.Windows.Forms.CheckBox();
             this.ck_无序3连 = new System.Windows.Forms.CheckBox();
             this.ck_无序2连 = new System.Windows.Forms.CheckBox();
@@ -126,7 +125,7 @@
             this.ck_AAAA = new System.Windows.Forms.CheckBox();
             this.ck_AAAB = new System.Windows.Forms.CheckBox();
             this.ck_AABB = new System.Windows.Forms.CheckBox();
-            this.cb_AABC = new System.Windows.Forms.CheckBox();
+            this.ck_AABC = new System.Windows.Forms.CheckBox();
             this.ck_ABCD = new System.Windows.Forms.CheckBox();
             this.button5 = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
@@ -199,6 +198,9 @@
             this.ck_跨度2 = new System.Windows.Forms.CheckBox();
             this.ck_跨度1 = new System.Windows.Forms.CheckBox();
             this.ck_跨度0 = new System.Windows.Forms.CheckBox();
+            this.button13 = new System.Windows.Forms.Button();
+            this.button14 = new System.Windows.Forms.Button();
+            this.button16 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -1057,12 +1059,11 @@
             this.groupBox7.Controls.Add(this.ck全小);
             this.groupBox7.Controls.Add(this.ck_全大);
             this.groupBox7.Controls.Add(this.ck_2个顺子);
-            this.groupBox7.Controls.Add(this.ck_2个对子);
             this.groupBox7.Controls.Add(this.ck_不连);
             this.groupBox7.Controls.Add(this.ck_AAAA);
             this.groupBox7.Controls.Add(this.ck_AAAB);
             this.groupBox7.Controls.Add(this.ck_AABB);
-            this.groupBox7.Controls.Add(this.cb_AABC);
+            this.groupBox7.Controls.Add(this.ck_AABC);
             this.groupBox7.Controls.Add(this.ck_ABCD);
             this.groupBox7.Controls.Add(this.button5);
             this.groupBox7.Location = new System.Drawing.Point(483, 23);
@@ -1173,16 +1174,6 @@
             this.ck_2个顺子.Text = "2个顺子";
             this.ck_2个顺子.UseVisualStyleBackColor = true;
             // 
-            // ck_2个对子
-            // 
-            this.ck_2个对子.AutoSize = true;
-            this.ck_2个对子.Location = new System.Drawing.Point(158, 73);
-            this.ck_2个对子.Name = "ck_2个对子";
-            this.ck_2个对子.Size = new System.Drawing.Size(66, 16);
-            this.ck_2个对子.TabIndex = 55;
-            this.ck_2个对子.Text = "2个对子";
-            this.ck_2个对子.UseVisualStyleBackColor = true;
-            // 
             // ck_无序4连
             // 
             this.ck_无序4连.AutoSize = true;
@@ -1253,15 +1244,15 @@
             this.ck_AABB.Text = "AABB";
             this.ck_AABB.UseVisualStyleBackColor = true;
             // 
-            // cb_AABC
+            // ck_AABC
             // 
-            this.cb_AABC.AutoSize = true;
-            this.cb_AABC.Location = new System.Drawing.Point(88, 36);
-            this.cb_AABC.Name = "cb_AABC";
-            this.cb_AABC.Size = new System.Drawing.Size(48, 16);
-            this.cb_AABC.TabIndex = 46;
-            this.cb_AABC.Text = "AABC";
-            this.cb_AABC.UseVisualStyleBackColor = true;
+            this.ck_AABC.AutoSize = true;
+            this.ck_AABC.Location = new System.Drawing.Point(88, 36);
+            this.ck_AABC.Name = "ck_AABC";
+            this.ck_AABC.Size = new System.Drawing.Size(48, 16);
+            this.ck_AABC.TabIndex = 46;
+            this.ck_AABC.Text = "AABC";
+            this.ck_AABC.UseVisualStyleBackColor = true;
             // 
             // ck_ABCD
             // 
@@ -1281,6 +1272,7 @@
             this.button5.TabIndex = 6;
             this.button5.Text = "清空";
             this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // label2
             // 
@@ -1645,22 +1637,24 @@
             // ck_非兄弟号
             // 
             this.ck_非兄弟号.AutoSize = true;
-            this.ck_非兄弟号.Location = new System.Drawing.Point(294, 73);
+            this.ck_非兄弟号.Location = new System.Drawing.Point(231, 73);
             this.ck_非兄弟号.Name = "ck_非兄弟号";
             this.ck_非兄弟号.Size = new System.Drawing.Size(72, 16);
             this.ck_非兄弟号.TabIndex = 71;
             this.ck_非兄弟号.Text = "非兄弟号";
             this.ck_非兄弟号.UseVisualStyleBackColor = true;
+            this.ck_非兄弟号.CheckedChanged += new System.EventHandler(this.ck_非兄弟号_CheckedChanged);
             // 
             // ck_兄弟号
             // 
             this.ck_兄弟号.AutoSize = true;
-            this.ck_兄弟号.Location = new System.Drawing.Point(231, 73);
+            this.ck_兄弟号.Location = new System.Drawing.Point(157, 73);
             this.ck_兄弟号.Name = "ck_兄弟号";
             this.ck_兄弟号.Size = new System.Drawing.Size(60, 16);
             this.ck_兄弟号.TabIndex = 70;
             this.ck_兄弟号.Text = "兄弟号";
             this.ck_兄弟号.UseVisualStyleBackColor = true;
+            this.ck_兄弟号.CheckedChanged += new System.EventHandler(this.ck_兄弟号_CheckedChanged);
             // 
             // ck_杀05
             // 
@@ -1675,7 +1669,7 @@
             // ck_杀16
             // 
             this.ck_杀16.AutoSize = true;
-            this.ck_杀16.Location = new System.Drawing.Point(91, 141);
+            this.ck_杀16.Location = new System.Drawing.Point(87, 141);
             this.ck_杀16.Name = "ck_杀16";
             this.ck_杀16.Size = new System.Drawing.Size(48, 16);
             this.ck_杀16.TabIndex = 73;
@@ -2011,11 +2005,44 @@
             this.ck_跨度0.Text = "0";
             this.ck_跨度0.UseVisualStyleBackColor = true;
             // 
+            // button13
+            // 
+            this.button13.Location = new System.Drawing.Point(905, 737);
+            this.button13.Name = "button13";
+            this.button13.Size = new System.Drawing.Size(90, 28);
+            this.button13.TabIndex = 67;
+            this.button13.Text = "计算杀号";
+            this.button13.UseVisualStyleBackColor = true;
+            this.button13.Click += new System.EventHandler(this.button13_Click);
+            // 
+            // button14
+            // 
+            this.button14.Location = new System.Drawing.Point(1020, 19);
+            this.button14.Name = "button14";
+            this.button14.Size = new System.Drawing.Size(60, 28);
+            this.button14.TabIndex = 68;
+            this.button14.Text = "排序";
+            this.button14.UseVisualStyleBackColor = true;
+            this.button14.Click += new System.EventHandler(this.button14_Click);
+            // 
+            // button16
+            // 
+            this.button16.Location = new System.Drawing.Point(1235, 18);
+            this.button16.Name = "button16";
+            this.button16.Size = new System.Drawing.Size(60, 28);
+            this.button16.TabIndex = 69;
+            this.button16.Text = "排序";
+            this.button16.UseVisualStyleBackColor = true;
+            this.button16.Click += new System.EventHandler(this.button16_Click);
+            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1316, 817);
+            this.Controls.Add(this.button16);
+            this.Controls.Add(this.button14);
+            this.Controls.Add(this.button13);
             this.Controls.Add(this.groupBox11);
             this.Controls.Add(this.groupBox10);
             this.Controls.Add(this.groupBox8);
@@ -2148,7 +2175,6 @@
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.GroupBox groupBox7;
         private System.Windows.Forms.CheckBox ck_2个顺子;
-        private System.Windows.Forms.CheckBox ck_2个对子;
         private System.Windows.Forms.CheckBox ck_无序4连;
         private System.Windows.Forms.CheckBox ck_无序3连;
         private System.Windows.Forms.CheckBox ck_无序2连;
@@ -2156,7 +2182,7 @@
         private System.Windows.Forms.CheckBox ck_AAAA;
         private System.Windows.Forms.CheckBox ck_AAAB;
         private System.Windows.Forms.CheckBox ck_AABB;
-        private System.Windows.Forms.CheckBox cb_AABC;
+        private System.Windows.Forms.CheckBox ck_AABC;
         private System.Windows.Forms.CheckBox ck_ABCD;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Label label2;
@@ -2238,5 +2264,8 @@
         private System.Windows.Forms.CheckBox ck_跨度2;
         private System.Windows.Forms.CheckBox ck_跨度1;
         private System.Windows.Forms.CheckBox ck_跨度0;
+        private System.Windows.Forms.Button button13;
+        private System.Windows.Forms.Button button14;
+        private System.Windows.Forms.Button button16;
     }
 }

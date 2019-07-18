@@ -324,6 +324,7 @@
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btn_确定);
             this.Name = "中二和值";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "中二和值";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

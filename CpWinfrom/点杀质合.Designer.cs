@@ -288,6 +288,7 @@
             this.Controls.Add(this.btn_取消);
             this.Controls.Add(this.btn_确定);
             this.Name = "点杀质合";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "点杀质合";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

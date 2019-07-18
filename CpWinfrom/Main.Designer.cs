@@ -108,6 +108,26 @@
             this.cb_ge0 = new System.Windows.Forms.CheckBox();
             this.button4 = new System.Windows.Forms.Button();
             this.groupBox7 = new System.Windows.Forms.GroupBox();
+            this.ck_杀49 = new System.Windows.Forms.CheckBox();
+            this.ck_杀38 = new System.Windows.Forms.CheckBox();
+            this.ck_杀27 = new System.Windows.Forms.CheckBox();
+            this.ck_杀16 = new System.Windows.Forms.CheckBox();
+            this.ck_杀05 = new System.Windows.Forms.CheckBox();
+            this.ck_非兄弟号 = new System.Windows.Forms.CheckBox();
+            this.ck_兄弟号 = new System.Windows.Forms.CheckBox();
+            this.ck_对数 = new System.Windows.Forms.CheckBox();
+            this.ck_全偶 = new System.Windows.Forms.CheckBox();
+            this.ck_全奇 = new System.Windows.Forms.CheckBox();
+            this.ck_全小 = new System.Windows.Forms.CheckBox();
+            this.ck_全大 = new System.Windows.Forms.CheckBox();
+            this.ck_2个顺子 = new System.Windows.Forms.CheckBox();
+            this.ck_不连 = new System.Windows.Forms.CheckBox();
+            this.ck_AAAA = new System.Windows.Forms.CheckBox();
+            this.ck_AAAB = new System.Windows.Forms.CheckBox();
+            this.ck_AABB = new System.Windows.Forms.CheckBox();
+            this.ck_AABC = new System.Windows.Forms.CheckBox();
+            this.ck_ABCD = new System.Windows.Forms.CheckBox();
+            this.button5 = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
             this.ck_反向4连 = new System.Windows.Forms.CheckBox();
             this.ck_反向3连 = new System.Windows.Forms.CheckBox();
@@ -117,59 +137,39 @@
             this.ck_正向3连 = new System.Windows.Forms.CheckBox();
             this.ck_正向2连 = new System.Windows.Forms.CheckBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.ck_2个顺子 = new System.Windows.Forms.CheckBox();
             this.ck_无序4连 = new System.Windows.Forms.CheckBox();
             this.ck_无序3连 = new System.Windows.Forms.CheckBox();
             this.ck_无序2连 = new System.Windows.Forms.CheckBox();
-            this.ck_不连 = new System.Windows.Forms.CheckBox();
-            this.ck_AAAA = new System.Windows.Forms.CheckBox();
-            this.ck_AAAB = new System.Windows.Forms.CheckBox();
-            this.ck_AABB = new System.Windows.Forms.CheckBox();
-            this.ck_AABC = new System.Windows.Forms.CheckBox();
-            this.ck_ABCD = new System.Windows.Forms.CheckBox();
-            this.button5 = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.tb_被杀号码 = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.ck_全大 = new System.Windows.Forms.CheckBox();
-            this.ck全小 = new System.Windows.Forms.CheckBox();
-            this.ck全奇 = new System.Windows.Forms.CheckBox();
-            this.ck_全偶 = new System.Windows.Forms.CheckBox();
             this.groupBox8 = new System.Windows.Forms.GroupBox();
-            this.button36 = new System.Windows.Forms.Button();
-            this.tb_后三和值 = new System.Windows.Forms.TextBox();
-            this.button33 = new System.Windows.Forms.Button();
-            this.tb_前三和值 = new System.Windows.Forms.TextBox();
-            this.button12 = new System.Windows.Forms.Button();
-            this.tb_四位和值 = new System.Windows.Forms.TextBox();
-            this.ck_四位和值 = new System.Windows.Forms.CheckBox();
-            this.ck_前三和值 = new System.Windows.Forms.CheckBox();
-            this.ck_后三和值 = new System.Windows.Forms.CheckBox();
-            this.ck_前二和值 = new System.Windows.Forms.CheckBox();
-            this.button6 = new System.Windows.Forms.Button();
-            this.tb_前二和值 = new System.Windows.Forms.TextBox();
-            this.ck_中二和值 = new System.Windows.Forms.CheckBox();
-            this.button7 = new System.Windows.Forms.Button();
-            this.tb_中二和值 = new System.Windows.Forms.TextBox();
-            this.ck_后二和值 = new System.Windows.Forms.CheckBox();
-            this.button8 = new System.Windows.Forms.Button();
-            this.tb_后二和值 = new System.Windows.Forms.TextBox();
             this.ck_千十个和值 = new System.Windows.Forms.CheckBox();
             this.ck_千百个和值 = new System.Windows.Forms.CheckBox();
             this.button10 = new System.Windows.Forms.Button();
             this.tb_千十个和值 = new System.Windows.Forms.TextBox();
             this.button11 = new System.Windows.Forms.Button();
             this.tb_千百个和值 = new System.Windows.Forms.TextBox();
-            this.ck_对数 = new System.Windows.Forms.CheckBox();
+            this.ck_后二和值 = new System.Windows.Forms.CheckBox();
+            this.button8 = new System.Windows.Forms.Button();
+            this.tb_后二和值 = new System.Windows.Forms.TextBox();
+            this.ck_中二和值 = new System.Windows.Forms.CheckBox();
+            this.button7 = new System.Windows.Forms.Button();
+            this.tb_中二和值 = new System.Windows.Forms.TextBox();
+            this.ck_前二和值 = new System.Windows.Forms.CheckBox();
+            this.button6 = new System.Windows.Forms.Button();
+            this.tb_前二和值 = new System.Windows.Forms.TextBox();
+            this.ck_后三和值 = new System.Windows.Forms.CheckBox();
+            this.ck_前三和值 = new System.Windows.Forms.CheckBox();
+            this.ck_四位和值 = new System.Windows.Forms.CheckBox();
+            this.button36 = new System.Windows.Forms.Button();
+            this.tb_后三和值 = new System.Windows.Forms.TextBox();
+            this.button33 = new System.Windows.Forms.Button();
+            this.tb_前三和值 = new System.Windows.Forms.TextBox();
+            this.button12 = new System.Windows.Forms.Button();
+            this.tb_四位和值 = new System.Windows.Forms.TextBox();
             this.groupBox9 = new System.Windows.Forms.GroupBox();
             this.ck_09相连 = new System.Windows.Forms.CheckBox();
-            this.ck_非兄弟号 = new System.Windows.Forms.CheckBox();
-            this.ck_兄弟号 = new System.Windows.Forms.CheckBox();
-            this.ck_杀05 = new System.Windows.Forms.CheckBox();
-            this.ck_杀16 = new System.Windows.Forms.CheckBox();
-            this.ck_杀27 = new System.Windows.Forms.CheckBox();
-            this.杀38 = new System.Windows.Forms.CheckBox();
-            this.ck_杀49 = new System.Windows.Forms.CheckBox();
             this.groupBox10 = new System.Windows.Forms.GroupBox();
             this.ck_杀胆码 = new System.Windows.Forms.CheckBox();
             this.button15 = new System.Windows.Forms.Button();
@@ -229,6 +229,8 @@
             // ck_点杀大小
             // 
             this.ck_点杀大小.AutoSize = true;
+            this.ck_点杀大小.Checked = true;
+            this.ck_点杀大小.CheckState = System.Windows.Forms.CheckState.Checked;
             this.ck_点杀大小.Location = new System.Drawing.Point(9, 5);
             this.ck_点杀大小.Name = "ck_点杀大小";
             this.ck_点杀大小.Size = new System.Drawing.Size(15, 14);
@@ -279,6 +281,8 @@
             // ck_点杀奇偶
             // 
             this.ck_点杀奇偶.AutoSize = true;
+            this.ck_点杀奇偶.Checked = true;
+            this.ck_点杀奇偶.CheckState = System.Windows.Forms.CheckState.Checked;
             this.ck_点杀奇偶.Location = new System.Drawing.Point(9, 5);
             this.ck_点杀奇偶.Name = "ck_点杀奇偶";
             this.ck_点杀奇偶.Size = new System.Drawing.Size(15, 14);
@@ -329,6 +333,8 @@
             // ck_点杀012
             // 
             this.ck_点杀012.AutoSize = true;
+            this.ck_点杀012.Checked = true;
+            this.ck_点杀012.CheckState = System.Windows.Forms.CheckState.Checked;
             this.ck_点杀012.Location = new System.Drawing.Point(9, 5);
             this.ck_点杀012.Name = "ck_点杀012";
             this.ck_点杀012.Size = new System.Drawing.Size(15, 14);
@@ -379,6 +385,8 @@
             // ck_点杀质合
             // 
             this.ck_点杀质合.AutoSize = true;
+            this.ck_点杀质合.Checked = true;
+            this.ck_点杀质合.CheckState = System.Windows.Forms.CheckState.Checked;
             this.ck_点杀质合.Location = new System.Drawing.Point(9, 5);
             this.ck_点杀质合.Name = "ck_点杀质合";
             this.ck_点杀质合.Size = new System.Drawing.Size(15, 14);
@@ -1047,7 +1055,7 @@
             // groupBox7
             // 
             this.groupBox7.Controls.Add(this.ck_杀49);
-            this.groupBox7.Controls.Add(this.杀38);
+            this.groupBox7.Controls.Add(this.ck_杀38);
             this.groupBox7.Controls.Add(this.ck_杀27);
             this.groupBox7.Controls.Add(this.ck_杀16);
             this.groupBox7.Controls.Add(this.ck_杀05);
@@ -1055,8 +1063,8 @@
             this.groupBox7.Controls.Add(this.ck_兄弟号);
             this.groupBox7.Controls.Add(this.ck_对数);
             this.groupBox7.Controls.Add(this.ck_全偶);
-            this.groupBox7.Controls.Add(this.ck全奇);
-            this.groupBox7.Controls.Add(this.ck全小);
+            this.groupBox7.Controls.Add(this.ck_全奇);
+            this.groupBox7.Controls.Add(this.ck_全小);
             this.groupBox7.Controls.Add(this.ck_全大);
             this.groupBox7.Controls.Add(this.ck_2个顺子);
             this.groupBox7.Controls.Add(this.ck_不连);
@@ -1073,6 +1081,208 @@
             this.groupBox7.TabStop = false;
             this.groupBox7.Text = "杀特殊条件";
             this.groupBox7.Enter += new System.EventHandler(this.groupBox7_Enter);
+            // 
+            // ck_杀49
+            // 
+            this.ck_杀49.AutoSize = true;
+            this.ck_杀49.Location = new System.Drawing.Point(294, 141);
+            this.ck_杀49.Name = "ck_杀49";
+            this.ck_杀49.Size = new System.Drawing.Size(48, 16);
+            this.ck_杀49.TabIndex = 77;
+            this.ck_杀49.Text = "杀49";
+            this.ck_杀49.UseVisualStyleBackColor = true;
+            // 
+            // ck_杀38
+            // 
+            this.ck_杀38.AutoSize = true;
+            this.ck_杀38.Location = new System.Drawing.Point(231, 141);
+            this.ck_杀38.Name = "ck_杀38";
+            this.ck_杀38.Size = new System.Drawing.Size(48, 16);
+            this.ck_杀38.TabIndex = 76;
+            this.ck_杀38.Text = "杀38";
+            this.ck_杀38.UseVisualStyleBackColor = true;
+            // 
+            // ck_杀27
+            // 
+            this.ck_杀27.AutoSize = true;
+            this.ck_杀27.Location = new System.Drawing.Point(158, 141);
+            this.ck_杀27.Name = "ck_杀27";
+            this.ck_杀27.Size = new System.Drawing.Size(48, 16);
+            this.ck_杀27.TabIndex = 74;
+            this.ck_杀27.Text = "杀27";
+            this.ck_杀27.UseVisualStyleBackColor = true;
+            // 
+            // ck_杀16
+            // 
+            this.ck_杀16.AutoSize = true;
+            this.ck_杀16.Location = new System.Drawing.Point(87, 141);
+            this.ck_杀16.Name = "ck_杀16";
+            this.ck_杀16.Size = new System.Drawing.Size(48, 16);
+            this.ck_杀16.TabIndex = 73;
+            this.ck_杀16.Text = "杀16";
+            this.ck_杀16.UseVisualStyleBackColor = true;
+            // 
+            // ck_杀05
+            // 
+            this.ck_杀05.AutoSize = true;
+            this.ck_杀05.Location = new System.Drawing.Point(21, 141);
+            this.ck_杀05.Name = "ck_杀05";
+            this.ck_杀05.Size = new System.Drawing.Size(48, 16);
+            this.ck_杀05.TabIndex = 72;
+            this.ck_杀05.Text = "杀05";
+            this.ck_杀05.UseVisualStyleBackColor = true;
+            // 
+            // ck_非兄弟号
+            // 
+            this.ck_非兄弟号.AutoSize = true;
+            this.ck_非兄弟号.Location = new System.Drawing.Point(231, 73);
+            this.ck_非兄弟号.Name = "ck_非兄弟号";
+            this.ck_非兄弟号.Size = new System.Drawing.Size(72, 16);
+            this.ck_非兄弟号.TabIndex = 71;
+            this.ck_非兄弟号.Text = "非兄弟号";
+            this.ck_非兄弟号.UseVisualStyleBackColor = true;
+            this.ck_非兄弟号.CheckedChanged += new System.EventHandler(this.ck_非兄弟号_CheckedChanged);
+            // 
+            // ck_兄弟号
+            // 
+            this.ck_兄弟号.AutoSize = true;
+            this.ck_兄弟号.Location = new System.Drawing.Point(157, 73);
+            this.ck_兄弟号.Name = "ck_兄弟号";
+            this.ck_兄弟号.Size = new System.Drawing.Size(60, 16);
+            this.ck_兄弟号.TabIndex = 70;
+            this.ck_兄弟号.Text = "兄弟号";
+            this.ck_兄弟号.UseVisualStyleBackColor = true;
+            this.ck_兄弟号.CheckedChanged += new System.EventHandler(this.ck_兄弟号_CheckedChanged);
+            // 
+            // ck_对数
+            // 
+            this.ck_对数.AutoSize = true;
+            this.ck_对数.Location = new System.Drawing.Point(294, 108);
+            this.ck_对数.Name = "ck_对数";
+            this.ck_对数.Size = new System.Drawing.Size(48, 16);
+            this.ck_对数.TabIndex = 69;
+            this.ck_对数.Text = "对数";
+            this.ck_对数.UseVisualStyleBackColor = true;
+            // 
+            // ck_全偶
+            // 
+            this.ck_全偶.AutoSize = true;
+            this.ck_全偶.Location = new System.Drawing.Point(231, 108);
+            this.ck_全偶.Name = "ck_全偶";
+            this.ck_全偶.Size = new System.Drawing.Size(48, 16);
+            this.ck_全偶.TabIndex = 68;
+            this.ck_全偶.Text = "全偶";
+            this.ck_全偶.UseVisualStyleBackColor = true;
+            // 
+            // ck_全奇
+            // 
+            this.ck_全奇.AutoSize = true;
+            this.ck_全奇.Location = new System.Drawing.Point(158, 108);
+            this.ck_全奇.Name = "ck_全奇";
+            this.ck_全奇.Size = new System.Drawing.Size(48, 16);
+            this.ck_全奇.TabIndex = 67;
+            this.ck_全奇.Text = "全奇";
+            this.ck_全奇.UseVisualStyleBackColor = true;
+            // 
+            // ck_全小
+            // 
+            this.ck_全小.AutoSize = true;
+            this.ck_全小.Location = new System.Drawing.Point(87, 108);
+            this.ck_全小.Name = "ck_全小";
+            this.ck_全小.Size = new System.Drawing.Size(48, 16);
+            this.ck_全小.TabIndex = 66;
+            this.ck_全小.Text = "全小";
+            this.ck_全小.UseVisualStyleBackColor = true;
+            // 
+            // ck_全大
+            // 
+            this.ck_全大.AutoSize = true;
+            this.ck_全大.Location = new System.Drawing.Point(21, 108);
+            this.ck_全大.Name = "ck_全大";
+            this.ck_全大.Size = new System.Drawing.Size(48, 16);
+            this.ck_全大.TabIndex = 65;
+            this.ck_全大.Text = "全大";
+            this.ck_全大.UseVisualStyleBackColor = true;
+            // 
+            // ck_2个顺子
+            // 
+            this.ck_2个顺子.AutoSize = true;
+            this.ck_2个顺子.Location = new System.Drawing.Point(87, 73);
+            this.ck_2个顺子.Name = "ck_2个顺子";
+            this.ck_2个顺子.Size = new System.Drawing.Size(66, 16);
+            this.ck_2个顺子.TabIndex = 56;
+            this.ck_2个顺子.Text = "2个顺子";
+            this.ck_2个顺子.UseVisualStyleBackColor = true;
+            // 
+            // ck_不连
+            // 
+            this.ck_不连.AutoSize = true;
+            this.ck_不连.Location = new System.Drawing.Point(21, 73);
+            this.ck_不连.Name = "ck_不连";
+            this.ck_不连.Size = new System.Drawing.Size(48, 16);
+            this.ck_不连.TabIndex = 51;
+            this.ck_不连.Text = "不连";
+            this.ck_不连.UseVisualStyleBackColor = true;
+            // 
+            // ck_AAAA
+            // 
+            this.ck_AAAA.AutoSize = true;
+            this.ck_AAAA.Location = new System.Drawing.Point(294, 36);
+            this.ck_AAAA.Name = "ck_AAAA";
+            this.ck_AAAA.Size = new System.Drawing.Size(48, 16);
+            this.ck_AAAA.TabIndex = 49;
+            this.ck_AAAA.Text = "AAAA";
+            this.ck_AAAA.UseVisualStyleBackColor = true;
+            // 
+            // ck_AAAB
+            // 
+            this.ck_AAAB.AutoSize = true;
+            this.ck_AAAB.Location = new System.Drawing.Point(231, 36);
+            this.ck_AAAB.Name = "ck_AAAB";
+            this.ck_AAAB.Size = new System.Drawing.Size(48, 16);
+            this.ck_AAAB.TabIndex = 48;
+            this.ck_AAAB.Text = "AAAB";
+            this.ck_AAAB.UseVisualStyleBackColor = true;
+            // 
+            // ck_AABB
+            // 
+            this.ck_AABB.AutoSize = true;
+            this.ck_AABB.Location = new System.Drawing.Point(158, 36);
+            this.ck_AABB.Name = "ck_AABB";
+            this.ck_AABB.Size = new System.Drawing.Size(48, 16);
+            this.ck_AABB.TabIndex = 47;
+            this.ck_AABB.Text = "AABB";
+            this.ck_AABB.UseVisualStyleBackColor = true;
+            // 
+            // ck_AABC
+            // 
+            this.ck_AABC.AutoSize = true;
+            this.ck_AABC.Location = new System.Drawing.Point(88, 36);
+            this.ck_AABC.Name = "ck_AABC";
+            this.ck_AABC.Size = new System.Drawing.Size(48, 16);
+            this.ck_AABC.TabIndex = 46;
+            this.ck_AABC.Text = "AABC";
+            this.ck_AABC.UseVisualStyleBackColor = true;
+            // 
+            // ck_ABCD
+            // 
+            this.ck_ABCD.AutoSize = true;
+            this.ck_ABCD.Location = new System.Drawing.Point(22, 36);
+            this.ck_ABCD.Name = "ck_ABCD";
+            this.ck_ABCD.Size = new System.Drawing.Size(48, 16);
+            this.ck_ABCD.TabIndex = 45;
+            this.ck_ABCD.Text = "ABCD";
+            this.ck_ABCD.UseVisualStyleBackColor = true;
+            // 
+            // button5
+            // 
+            this.button5.Location = new System.Drawing.Point(310, 1);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(47, 23);
+            this.button5.TabIndex = 6;
+            this.button5.Text = "清空";
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // label6
             // 
@@ -1164,16 +1374,6 @@
             this.label4.TabIndex = 25;
             this.label4.Text = "正向连号：";
             // 
-            // ck_2个顺子
-            // 
-            this.ck_2个顺子.AutoSize = true;
-            this.ck_2个顺子.Location = new System.Drawing.Point(87, 73);
-            this.ck_2个顺子.Name = "ck_2个顺子";
-            this.ck_2个顺子.Size = new System.Drawing.Size(66, 16);
-            this.ck_2个顺子.TabIndex = 56;
-            this.ck_2个顺子.Text = "2个顺子";
-            this.ck_2个顺子.UseVisualStyleBackColor = true;
-            // 
             // ck_无序4连
             // 
             this.ck_无序4连.AutoSize = true;
@@ -1204,76 +1404,6 @@
             this.ck_无序2连.Text = "2连";
             this.ck_无序2连.UseVisualStyleBackColor = true;
             // 
-            // ck_不连
-            // 
-            this.ck_不连.AutoSize = true;
-            this.ck_不连.Location = new System.Drawing.Point(21, 73);
-            this.ck_不连.Name = "ck_不连";
-            this.ck_不连.Size = new System.Drawing.Size(48, 16);
-            this.ck_不连.TabIndex = 51;
-            this.ck_不连.Text = "不连";
-            this.ck_不连.UseVisualStyleBackColor = true;
-            // 
-            // ck_AAAA
-            // 
-            this.ck_AAAA.AutoSize = true;
-            this.ck_AAAA.Location = new System.Drawing.Point(294, 36);
-            this.ck_AAAA.Name = "ck_AAAA";
-            this.ck_AAAA.Size = new System.Drawing.Size(48, 16);
-            this.ck_AAAA.TabIndex = 49;
-            this.ck_AAAA.Text = "AAAA";
-            this.ck_AAAA.UseVisualStyleBackColor = true;
-            // 
-            // ck_AAAB
-            // 
-            this.ck_AAAB.AutoSize = true;
-            this.ck_AAAB.Location = new System.Drawing.Point(231, 36);
-            this.ck_AAAB.Name = "ck_AAAB";
-            this.ck_AAAB.Size = new System.Drawing.Size(48, 16);
-            this.ck_AAAB.TabIndex = 48;
-            this.ck_AAAB.Text = "AAAB";
-            this.ck_AAAB.UseVisualStyleBackColor = true;
-            // 
-            // ck_AABB
-            // 
-            this.ck_AABB.AutoSize = true;
-            this.ck_AABB.Location = new System.Drawing.Point(158, 36);
-            this.ck_AABB.Name = "ck_AABB";
-            this.ck_AABB.Size = new System.Drawing.Size(48, 16);
-            this.ck_AABB.TabIndex = 47;
-            this.ck_AABB.Text = "AABB";
-            this.ck_AABB.UseVisualStyleBackColor = true;
-            // 
-            // ck_AABC
-            // 
-            this.ck_AABC.AutoSize = true;
-            this.ck_AABC.Location = new System.Drawing.Point(88, 36);
-            this.ck_AABC.Name = "ck_AABC";
-            this.ck_AABC.Size = new System.Drawing.Size(48, 16);
-            this.ck_AABC.TabIndex = 46;
-            this.ck_AABC.Text = "AABC";
-            this.ck_AABC.UseVisualStyleBackColor = true;
-            // 
-            // ck_ABCD
-            // 
-            this.ck_ABCD.AutoSize = true;
-            this.ck_ABCD.Location = new System.Drawing.Point(22, 36);
-            this.ck_ABCD.Name = "ck_ABCD";
-            this.ck_ABCD.Size = new System.Drawing.Size(48, 16);
-            this.ck_ABCD.TabIndex = 45;
-            this.ck_ABCD.Text = "ABCD";
-            this.ck_ABCD.UseVisualStyleBackColor = true;
-            // 
-            // button5
-            // 
-            this.button5.Location = new System.Drawing.Point(310, 1);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(47, 23);
-            this.button5.TabIndex = 6;
-            this.button5.Text = "清空";
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
-            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -1302,46 +1432,6 @@
             this.label3.Size = new System.Drawing.Size(65, 12);
             this.label3.TabIndex = 24;
             this.label3.Text = "被杀号码：";
-            // 
-            // ck_全大
-            // 
-            this.ck_全大.AutoSize = true;
-            this.ck_全大.Location = new System.Drawing.Point(21, 108);
-            this.ck_全大.Name = "ck_全大";
-            this.ck_全大.Size = new System.Drawing.Size(48, 16);
-            this.ck_全大.TabIndex = 65;
-            this.ck_全大.Text = "全大";
-            this.ck_全大.UseVisualStyleBackColor = true;
-            // 
-            // ck全小
-            // 
-            this.ck全小.AutoSize = true;
-            this.ck全小.Location = new System.Drawing.Point(87, 108);
-            this.ck全小.Name = "ck全小";
-            this.ck全小.Size = new System.Drawing.Size(48, 16);
-            this.ck全小.TabIndex = 66;
-            this.ck全小.Text = "全小";
-            this.ck全小.UseVisualStyleBackColor = true;
-            // 
-            // ck全奇
-            // 
-            this.ck全奇.AutoSize = true;
-            this.ck全奇.Location = new System.Drawing.Point(158, 108);
-            this.ck全奇.Name = "ck全奇";
-            this.ck全奇.Size = new System.Drawing.Size(48, 16);
-            this.ck全奇.TabIndex = 67;
-            this.ck全奇.Text = "全奇";
-            this.ck全奇.UseVisualStyleBackColor = true;
-            // 
-            // ck_全偶
-            // 
-            this.ck_全偶.AutoSize = true;
-            this.ck_全偶.Location = new System.Drawing.Point(231, 108);
-            this.ck_全偶.Name = "ck_全偶";
-            this.ck_全偶.Size = new System.Drawing.Size(48, 16);
-            this.ck_全偶.TabIndex = 68;
-            this.ck_全偶.Text = "全偶";
-            this.ck_全偶.UseVisualStyleBackColor = true;
             // 
             // groupBox8
             // 
@@ -1375,168 +1465,6 @@
             this.groupBox8.TabIndex = 25;
             this.groupBox8.TabStop = false;
             this.groupBox8.Text = "和值杀号";
-            // 
-            // button36
-            // 
-            this.button36.Location = new System.Drawing.Point(270, 101);
-            this.button36.Name = "button36";
-            this.button36.Size = new System.Drawing.Size(48, 23);
-            this.button36.TabIndex = 36;
-            this.button36.Text = "选择";
-            this.button36.UseVisualStyleBackColor = true;
-            this.button36.Click += new System.EventHandler(this.button36_Click);
-            // 
-            // tb_后三和值
-            // 
-            this.tb_后三和值.Location = new System.Drawing.Point(89, 103);
-            this.tb_后三和值.Name = "tb_后三和值";
-            this.tb_后三和值.Size = new System.Drawing.Size(175, 21);
-            this.tb_后三和值.TabIndex = 33;
-            // 
-            // button33
-            // 
-            this.button33.Location = new System.Drawing.Point(270, 70);
-            this.button33.Name = "button33";
-            this.button33.Size = new System.Drawing.Size(48, 23);
-            this.button33.TabIndex = 27;
-            this.button33.Text = "选择";
-            this.button33.UseVisualStyleBackColor = true;
-            this.button33.Click += new System.EventHandler(this.button33_Click);
-            // 
-            // tb_前三和值
-            // 
-            this.tb_前三和值.Location = new System.Drawing.Point(89, 72);
-            this.tb_前三和值.Name = "tb_前三和值";
-            this.tb_前三和值.Size = new System.Drawing.Size(175, 21);
-            this.tb_前三和值.TabIndex = 24;
-            // 
-            // button12
-            // 
-            this.button12.Location = new System.Drawing.Point(270, 27);
-            this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(48, 23);
-            this.button12.TabIndex = 18;
-            this.button12.Text = "选择";
-            this.button12.UseVisualStyleBackColor = true;
-            this.button12.Click += new System.EventHandler(this.button12_Click);
-            // 
-            // tb_四位和值
-            // 
-            this.tb_四位和值.Location = new System.Drawing.Point(89, 29);
-            this.tb_四位和值.Name = "tb_四位和值";
-            this.tb_四位和值.Size = new System.Drawing.Size(175, 21);
-            this.tb_四位和值.TabIndex = 3;
-            // 
-            // ck_四位和值
-            // 
-            this.ck_四位和值.AutoSize = true;
-            this.ck_四位和值.Location = new System.Drawing.Point(11, 33);
-            this.ck_四位和值.Name = "ck_四位和值";
-            this.ck_四位和值.Size = new System.Drawing.Size(72, 16);
-            this.ck_四位和值.TabIndex = 65;
-            this.ck_四位和值.Text = "四位和值";
-            this.ck_四位和值.UseVisualStyleBackColor = true;
-            // 
-            // ck_前三和值
-            // 
-            this.ck_前三和值.AutoSize = true;
-            this.ck_前三和值.Location = new System.Drawing.Point(11, 76);
-            this.ck_前三和值.Name = "ck_前三和值";
-            this.ck_前三和值.Size = new System.Drawing.Size(72, 16);
-            this.ck_前三和值.TabIndex = 66;
-            this.ck_前三和值.Text = "前三和值";
-            this.ck_前三和值.UseVisualStyleBackColor = true;
-            // 
-            // ck_后三和值
-            // 
-            this.ck_后三和值.AutoSize = true;
-            this.ck_后三和值.Location = new System.Drawing.Point(11, 106);
-            this.ck_后三和值.Name = "ck_后三和值";
-            this.ck_后三和值.Size = new System.Drawing.Size(72, 16);
-            this.ck_后三和值.TabIndex = 67;
-            this.ck_后三和值.Text = "后三和值";
-            this.ck_后三和值.UseVisualStyleBackColor = true;
-            // 
-            // ck_前二和值
-            // 
-            this.ck_前二和值.AutoSize = true;
-            this.ck_前二和值.Location = new System.Drawing.Point(11, 149);
-            this.ck_前二和值.Name = "ck_前二和值";
-            this.ck_前二和值.Size = new System.Drawing.Size(72, 16);
-            this.ck_前二和值.TabIndex = 70;
-            this.ck_前二和值.Text = "前二和值";
-            this.ck_前二和值.UseVisualStyleBackColor = true;
-            // 
-            // button6
-            // 
-            this.button6.Location = new System.Drawing.Point(164, 145);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(58, 23);
-            this.button6.TabIndex = 69;
-            this.button6.Text = "选择";
-            this.button6.UseVisualStyleBackColor = true;
-            this.button6.Click += new System.EventHandler(this.button6_Click);
-            // 
-            // tb_前二和值
-            // 
-            this.tb_前二和值.Location = new System.Drawing.Point(89, 146);
-            this.tb_前二和值.Name = "tb_前二和值";
-            this.tb_前二和值.Size = new System.Drawing.Size(69, 21);
-            this.tb_前二和值.TabIndex = 68;
-            // 
-            // ck_中二和值
-            // 
-            this.ck_中二和值.AutoSize = true;
-            this.ck_中二和值.Location = new System.Drawing.Point(11, 173);
-            this.ck_中二和值.Name = "ck_中二和值";
-            this.ck_中二和值.Size = new System.Drawing.Size(72, 16);
-            this.ck_中二和值.TabIndex = 73;
-            this.ck_中二和值.Text = "中二和值";
-            this.ck_中二和值.UseVisualStyleBackColor = true;
-            // 
-            // button7
-            // 
-            this.button7.Location = new System.Drawing.Point(164, 169);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(58, 23);
-            this.button7.TabIndex = 72;
-            this.button7.Text = "选择";
-            this.button7.UseVisualStyleBackColor = true;
-            this.button7.Click += new System.EventHandler(this.button7_Click);
-            // 
-            // tb_中二和值
-            // 
-            this.tb_中二和值.Location = new System.Drawing.Point(89, 170);
-            this.tb_中二和值.Name = "tb_中二和值";
-            this.tb_中二和值.Size = new System.Drawing.Size(69, 21);
-            this.tb_中二和值.TabIndex = 71;
-            // 
-            // ck_后二和值
-            // 
-            this.ck_后二和值.AutoSize = true;
-            this.ck_后二和值.Location = new System.Drawing.Point(11, 198);
-            this.ck_后二和值.Name = "ck_后二和值";
-            this.ck_后二和值.Size = new System.Drawing.Size(72, 16);
-            this.ck_后二和值.TabIndex = 76;
-            this.ck_后二和值.Text = "后二和值";
-            this.ck_后二和值.UseVisualStyleBackColor = true;
-            // 
-            // button8
-            // 
-            this.button8.Location = new System.Drawing.Point(164, 194);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(58, 23);
-            this.button8.TabIndex = 75;
-            this.button8.Text = "选择";
-            this.button8.UseVisualStyleBackColor = true;
-            this.button8.Click += new System.EventHandler(this.button8_Click);
-            // 
-            // tb_后二和值
-            // 
-            this.tb_后二和值.Location = new System.Drawing.Point(89, 195);
-            this.tb_后二和值.Name = "tb_后二和值";
-            this.tb_后二和值.Size = new System.Drawing.Size(69, 21);
-            this.tb_后二和值.TabIndex = 74;
             // 
             // ck_千十个和值
             // 
@@ -1592,15 +1520,167 @@
             this.tb_千百个和值.Size = new System.Drawing.Size(175, 21);
             this.tb_千百个和值.TabIndex = 77;
             // 
-            // ck_对数
+            // ck_后二和值
             // 
-            this.ck_对数.AutoSize = true;
-            this.ck_对数.Location = new System.Drawing.Point(294, 108);
-            this.ck_对数.Name = "ck_对数";
-            this.ck_对数.Size = new System.Drawing.Size(48, 16);
-            this.ck_对数.TabIndex = 69;
-            this.ck_对数.Text = "对数";
-            this.ck_对数.UseVisualStyleBackColor = true;
+            this.ck_后二和值.AutoSize = true;
+            this.ck_后二和值.Location = new System.Drawing.Point(11, 198);
+            this.ck_后二和值.Name = "ck_后二和值";
+            this.ck_后二和值.Size = new System.Drawing.Size(72, 16);
+            this.ck_后二和值.TabIndex = 76;
+            this.ck_后二和值.Text = "后二和值";
+            this.ck_后二和值.UseVisualStyleBackColor = true;
+            // 
+            // button8
+            // 
+            this.button8.Location = new System.Drawing.Point(164, 194);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(58, 23);
+            this.button8.TabIndex = 75;
+            this.button8.Text = "选择";
+            this.button8.UseVisualStyleBackColor = true;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
+            // 
+            // tb_后二和值
+            // 
+            this.tb_后二和值.Location = new System.Drawing.Point(89, 195);
+            this.tb_后二和值.Name = "tb_后二和值";
+            this.tb_后二和值.Size = new System.Drawing.Size(69, 21);
+            this.tb_后二和值.TabIndex = 74;
+            // 
+            // ck_中二和值
+            // 
+            this.ck_中二和值.AutoSize = true;
+            this.ck_中二和值.Location = new System.Drawing.Point(11, 173);
+            this.ck_中二和值.Name = "ck_中二和值";
+            this.ck_中二和值.Size = new System.Drawing.Size(72, 16);
+            this.ck_中二和值.TabIndex = 73;
+            this.ck_中二和值.Text = "中二和值";
+            this.ck_中二和值.UseVisualStyleBackColor = true;
+            // 
+            // button7
+            // 
+            this.button7.Location = new System.Drawing.Point(164, 169);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(58, 23);
+            this.button7.TabIndex = 72;
+            this.button7.Text = "选择";
+            this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
+            // 
+            // tb_中二和值
+            // 
+            this.tb_中二和值.Location = new System.Drawing.Point(89, 170);
+            this.tb_中二和值.Name = "tb_中二和值";
+            this.tb_中二和值.Size = new System.Drawing.Size(69, 21);
+            this.tb_中二和值.TabIndex = 71;
+            // 
+            // ck_前二和值
+            // 
+            this.ck_前二和值.AutoSize = true;
+            this.ck_前二和值.Location = new System.Drawing.Point(11, 149);
+            this.ck_前二和值.Name = "ck_前二和值";
+            this.ck_前二和值.Size = new System.Drawing.Size(72, 16);
+            this.ck_前二和值.TabIndex = 70;
+            this.ck_前二和值.Text = "前二和值";
+            this.ck_前二和值.UseVisualStyleBackColor = true;
+            // 
+            // button6
+            // 
+            this.button6.Location = new System.Drawing.Point(164, 145);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(58, 23);
+            this.button6.TabIndex = 69;
+            this.button6.Text = "选择";
+            this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
+            // 
+            // tb_前二和值
+            // 
+            this.tb_前二和值.Location = new System.Drawing.Point(89, 146);
+            this.tb_前二和值.Name = "tb_前二和值";
+            this.tb_前二和值.Size = new System.Drawing.Size(69, 21);
+            this.tb_前二和值.TabIndex = 68;
+            // 
+            // ck_后三和值
+            // 
+            this.ck_后三和值.AutoSize = true;
+            this.ck_后三和值.Location = new System.Drawing.Point(11, 106);
+            this.ck_后三和值.Name = "ck_后三和值";
+            this.ck_后三和值.Size = new System.Drawing.Size(72, 16);
+            this.ck_后三和值.TabIndex = 67;
+            this.ck_后三和值.Text = "后三和值";
+            this.ck_后三和值.UseVisualStyleBackColor = true;
+            // 
+            // ck_前三和值
+            // 
+            this.ck_前三和值.AutoSize = true;
+            this.ck_前三和值.Location = new System.Drawing.Point(11, 76);
+            this.ck_前三和值.Name = "ck_前三和值";
+            this.ck_前三和值.Size = new System.Drawing.Size(72, 16);
+            this.ck_前三和值.TabIndex = 66;
+            this.ck_前三和值.Text = "前三和值";
+            this.ck_前三和值.UseVisualStyleBackColor = true;
+            // 
+            // ck_四位和值
+            // 
+            this.ck_四位和值.AutoSize = true;
+            this.ck_四位和值.Location = new System.Drawing.Point(11, 33);
+            this.ck_四位和值.Name = "ck_四位和值";
+            this.ck_四位和值.Size = new System.Drawing.Size(72, 16);
+            this.ck_四位和值.TabIndex = 65;
+            this.ck_四位和值.Text = "四位和值";
+            this.ck_四位和值.UseVisualStyleBackColor = true;
+            // 
+            // button36
+            // 
+            this.button36.Location = new System.Drawing.Point(270, 101);
+            this.button36.Name = "button36";
+            this.button36.Size = new System.Drawing.Size(48, 23);
+            this.button36.TabIndex = 36;
+            this.button36.Text = "选择";
+            this.button36.UseVisualStyleBackColor = true;
+            this.button36.Click += new System.EventHandler(this.button36_Click);
+            // 
+            // tb_后三和值
+            // 
+            this.tb_后三和值.Location = new System.Drawing.Point(89, 103);
+            this.tb_后三和值.Name = "tb_后三和值";
+            this.tb_后三和值.Size = new System.Drawing.Size(175, 21);
+            this.tb_后三和值.TabIndex = 33;
+            // 
+            // button33
+            // 
+            this.button33.Location = new System.Drawing.Point(270, 70);
+            this.button33.Name = "button33";
+            this.button33.Size = new System.Drawing.Size(48, 23);
+            this.button33.TabIndex = 27;
+            this.button33.Text = "选择";
+            this.button33.UseVisualStyleBackColor = true;
+            this.button33.Click += new System.EventHandler(this.button33_Click);
+            // 
+            // tb_前三和值
+            // 
+            this.tb_前三和值.Location = new System.Drawing.Point(89, 72);
+            this.tb_前三和值.Name = "tb_前三和值";
+            this.tb_前三和值.Size = new System.Drawing.Size(175, 21);
+            this.tb_前三和值.TabIndex = 24;
+            // 
+            // button12
+            // 
+            this.button12.Location = new System.Drawing.Point(270, 27);
+            this.button12.Name = "button12";
+            this.button12.Size = new System.Drawing.Size(48, 23);
+            this.button12.TabIndex = 18;
+            this.button12.Text = "选择";
+            this.button12.UseVisualStyleBackColor = true;
+            this.button12.Click += new System.EventHandler(this.button12_Click);
+            // 
+            // tb_四位和值
+            // 
+            this.tb_四位和值.Location = new System.Drawing.Point(89, 29);
+            this.tb_四位和值.Name = "tb_四位和值";
+            this.tb_四位和值.Size = new System.Drawing.Size(175, 21);
+            this.tb_四位和值.TabIndex = 3;
             // 
             // groupBox9
             // 
@@ -1633,78 +1713,6 @@
             this.ck_09相连.TabIndex = 65;
             this.ck_09相连.Text = "09相连";
             this.ck_09相连.UseVisualStyleBackColor = true;
-            // 
-            // ck_非兄弟号
-            // 
-            this.ck_非兄弟号.AutoSize = true;
-            this.ck_非兄弟号.Location = new System.Drawing.Point(231, 73);
-            this.ck_非兄弟号.Name = "ck_非兄弟号";
-            this.ck_非兄弟号.Size = new System.Drawing.Size(72, 16);
-            this.ck_非兄弟号.TabIndex = 71;
-            this.ck_非兄弟号.Text = "非兄弟号";
-            this.ck_非兄弟号.UseVisualStyleBackColor = true;
-            this.ck_非兄弟号.CheckedChanged += new System.EventHandler(this.ck_非兄弟号_CheckedChanged);
-            // 
-            // ck_兄弟号
-            // 
-            this.ck_兄弟号.AutoSize = true;
-            this.ck_兄弟号.Location = new System.Drawing.Point(157, 73);
-            this.ck_兄弟号.Name = "ck_兄弟号";
-            this.ck_兄弟号.Size = new System.Drawing.Size(60, 16);
-            this.ck_兄弟号.TabIndex = 70;
-            this.ck_兄弟号.Text = "兄弟号";
-            this.ck_兄弟号.UseVisualStyleBackColor = true;
-            this.ck_兄弟号.CheckedChanged += new System.EventHandler(this.ck_兄弟号_CheckedChanged);
-            // 
-            // ck_杀05
-            // 
-            this.ck_杀05.AutoSize = true;
-            this.ck_杀05.Location = new System.Drawing.Point(21, 141);
-            this.ck_杀05.Name = "ck_杀05";
-            this.ck_杀05.Size = new System.Drawing.Size(48, 16);
-            this.ck_杀05.TabIndex = 72;
-            this.ck_杀05.Text = "杀05";
-            this.ck_杀05.UseVisualStyleBackColor = true;
-            // 
-            // ck_杀16
-            // 
-            this.ck_杀16.AutoSize = true;
-            this.ck_杀16.Location = new System.Drawing.Point(87, 141);
-            this.ck_杀16.Name = "ck_杀16";
-            this.ck_杀16.Size = new System.Drawing.Size(48, 16);
-            this.ck_杀16.TabIndex = 73;
-            this.ck_杀16.Text = "杀16";
-            this.ck_杀16.UseVisualStyleBackColor = true;
-            // 
-            // ck_杀27
-            // 
-            this.ck_杀27.AutoSize = true;
-            this.ck_杀27.Location = new System.Drawing.Point(158, 141);
-            this.ck_杀27.Name = "ck_杀27";
-            this.ck_杀27.Size = new System.Drawing.Size(48, 16);
-            this.ck_杀27.TabIndex = 74;
-            this.ck_杀27.Text = "杀27";
-            this.ck_杀27.UseVisualStyleBackColor = true;
-            // 
-            // 杀38
-            // 
-            this.杀38.AutoSize = true;
-            this.杀38.Location = new System.Drawing.Point(231, 141);
-            this.杀38.Name = "杀38";
-            this.杀38.Size = new System.Drawing.Size(48, 16);
-            this.杀38.TabIndex = 76;
-            this.杀38.Text = "杀38";
-            this.杀38.UseVisualStyleBackColor = true;
-            // 
-            // ck_杀49
-            // 
-            this.ck_杀49.AutoSize = true;
-            this.ck_杀49.Location = new System.Drawing.Point(294, 141);
-            this.ck_杀49.Name = "ck_杀49";
-            this.ck_杀49.Size = new System.Drawing.Size(48, 16);
-            this.ck_杀49.TabIndex = 77;
-            this.ck_杀49.Text = "杀49";
-            this.ck_杀49.UseVisualStyleBackColor = true;
             // 
             // groupBox10
             // 
@@ -2198,8 +2206,8 @@
         private System.Windows.Forms.CheckBox ck_正向2连;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.CheckBox ck_全偶;
-        private System.Windows.Forms.CheckBox ck全奇;
-        private System.Windows.Forms.CheckBox ck全小;
+        private System.Windows.Forms.CheckBox ck_全奇;
+        private System.Windows.Forms.CheckBox ck_全小;
         private System.Windows.Forms.CheckBox ck_全大;
         private System.Windows.Forms.GroupBox groupBox8;
         private System.Windows.Forms.CheckBox ck_后三和值;
@@ -2232,7 +2240,7 @@
         private System.Windows.Forms.CheckBox ck_非兄弟号;
         private System.Windows.Forms.CheckBox ck_兄弟号;
         private System.Windows.Forms.CheckBox ck_杀49;
-        private System.Windows.Forms.CheckBox 杀38;
+        private System.Windows.Forms.CheckBox ck_杀38;
         private System.Windows.Forms.CheckBox ck_杀27;
         private System.Windows.Forms.CheckBox ck_杀16;
         private System.Windows.Forms.CheckBox ck_杀05;

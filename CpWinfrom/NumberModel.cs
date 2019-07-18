@@ -22,7 +22,7 @@ namespace CpWinfrom
         }
         public int GetInt()
         {
-            return N1+ N2 + N3+ N4;
+            return  int.Parse( N1.ToString() + "" + N2.ToString() + "" + N3.ToString() + "" + N4.ToString());
         }
 
         public static NumberModel ToParse(string val)

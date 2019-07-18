@@ -468,6 +468,7 @@ namespace CpWinfrom
         {
             DelnumberModels.Clear();
 
+            #region 特殊杀号
             if (ck_ABCD.Checked)
             {
                 Rule.Teshuhao.ABCD(ref DelnumberModels);
@@ -508,8 +509,85 @@ namespace CpWinfrom
             {
                 Teshuhao.非兄弟号(ref DelnumberModels);
             }
+            if (ck_全大.Checked)
+            {
+                Teshuhao.全大(ref DelnumberModels);
+            }
+            if (ck_全小.Checked)
+            {
+                Teshuhao.全小(ref DelnumberModels);
+            }
+            if (ck_全奇.Checked)
+            {
+                Teshuhao.全奇(ref DelnumberModels);
+            }
+            if (ck_全偶.Checked)
+            {
+                Teshuhao.全偶(ref DelnumberModels);
+            }
+            if (ck_对数.Checked)
+            {
+                Teshuhao.对数(ref DelnumberModels); 
+            }
+            if (ck_杀05.Checked)
+            {
+                Teshuhao.M05对数(ref DelnumberModels);
+            }
+            if (ck_杀16.Checked)
+            {
+                Teshuhao.M16对数(ref DelnumberModels);
+            }
+            if (ck_杀27.Checked)
+            {
+                Teshuhao.M27对数(ref DelnumberModels);
+            }
+            if (ck_杀38.Checked)
+            {
+                Teshuhao.M38对数(ref DelnumberModels);
+            }
+            if (ck_杀49.Checked)
+            {
+                Teshuhao.M49对数(ref DelnumberModels);
+            }
 
-            
+            #endregion
+
+
+            #region 点杀区域
+
+
+            if (ck_点杀大小.Checked && !string.IsNullOrEmpty(this.tb_点杀大小.Text))
+            {
+              
+                string[] array = this.tb_点杀大小.Text.Split(',');
+                Diansha.大小enter(array, ref DelnumberModels);
+            }
+
+            if (ck_点杀奇偶.Checked &&  !string.IsNullOrEmpty(this.tb_点杀奇偶.Text))
+            {
+                string[] array = this.tb_点杀奇偶.Text.Split(',');
+                Diansha.奇偶enter(array, ref DelnumberModels);
+            }
+
+            if (ck_点杀质合.Checked && !string.IsNullOrEmpty(this.tb_点杀质合.Text))
+            {
+                string[] array = this.tb_点杀质合.Text.Split(',');
+                Diansha.质合enter(array, ref DelnumberModels);
+
+            }
+            if (ck_点杀012.Checked && !string.IsNullOrEmpty(this.tb_点杀012.Text))
+            {
+                string[] array = this.tb_点杀012.Text.Split(',');
+                Diansha.L012enter(array, ref DelnumberModels);
+
+            }
+
+
+
+            #endregion
+
+
+
         }
 
         private void button14_Click(object sender, EventArgs e)

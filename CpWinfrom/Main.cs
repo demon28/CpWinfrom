@@ -937,5 +937,64 @@ namespace CpWinfrom
             Clipboard.SetDataObject(tb_结果.Text);
             MessageBox.Show("复制成功！");
         }
+
+        private void tb_检索del_TextChanged(object sender, EventArgs e)
+        {
+            string del = this.tb_被杀号码.Text;
+            string val = this.tb_检索del.Text.Trim();
+
+            if (val.Length!=4)
+            {
+                this.lb_cunzaidel.Text = "";
+                return;
+                
+            }
+
+            
+            if (del.IndexOf(val) >= 0)
+            {
+                tb_被杀号码.Focus();
+
+                tb_被杀号码.SelectionStart = del.IndexOf(val);  //设置起始位置 
+
+                tb_被杀号码.SelectionLength = 4;  //设置长度
+
+                tb_被杀号码.ScrollToCaret();
+               
+                this.lb_cunzaidel.Text = "存在";
+                return;
+            }
+            this.lb_cunzaidel.Text = "不存在";
+        }
+
+        private void tb_检索res_TextChanged(object sender, EventArgs e)
+        {
+            string del = this.tb_结果.Text;
+            string val = this.tb_检索res.Text.Trim();
+
+            if (val.Length != 4)
+            {
+                this.lb_cunzaires.Text = "";
+                return;
+
+            }
+
+
+            if (del.IndexOf(val) >= 0)
+            {
+                tb_结果.Focus();
+
+                tb_结果.SelectionStart = del.IndexOf(val);  //设置起始位置 
+
+                tb_结果.SelectionLength =4;  //设置长度
+
+                tb_结果.ScrollToCaret();
+
+                this.lb_cunzaires.Text = "存在";
+                return;
+            }
+            this.lb_cunzaires.Text = "不存在";
+
+        }
     }
 }

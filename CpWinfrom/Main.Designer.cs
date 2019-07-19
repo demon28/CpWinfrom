@@ -173,6 +173,7 @@
             this.button12 = new System.Windows.Forms.Button();
             this.tb_四位和值 = new System.Windows.Forms.TextBox();
             this.groupBox9 = new System.Windows.Forms.GroupBox();
+            this.ck_首尾相连 = new System.Windows.Forms.CheckBox();
             this.ck_09相连 = new System.Windows.Forms.CheckBox();
             this.groupBox10 = new System.Windows.Forms.GroupBox();
             this.ck_杀胆码 = new System.Windows.Forms.CheckBox();
@@ -207,7 +208,12 @@
             this.button16 = new System.Windows.Forms.Button();
             this.button17 = new System.Windows.Forms.Button();
             this.button18 = new System.Windows.Forms.Button();
-            this.ck_首尾相连 = new System.Windows.Forms.CheckBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.tb_检索del = new System.Windows.Forms.TextBox();
+            this.tb_检索res = new System.Windows.Forms.TextBox();
+            this.lb_cunzaidel = new System.Windows.Forms.Label();
+            this.lb_cunzaires = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -435,18 +441,18 @@
             // 
             // tb_结果
             // 
-            this.tb_结果.Location = new System.Drawing.Point(1117, 51);
+            this.tb_结果.Location = new System.Drawing.Point(1117, 77);
             this.tb_结果.Multiline = true;
             this.tb_结果.Name = "tb_结果";
             this.tb_结果.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.tb_结果.Size = new System.Drawing.Size(187, 605);
+            this.tb_结果.Size = new System.Drawing.Size(187, 579);
             this.tb_结果.TabIndex = 5;
             // 
             // lb_结果数量
             // 
             this.lb_结果数量.AutoSize = true;
             this.lb_结果数量.Font = new System.Drawing.Font("宋体", 12F);
-            this.lb_结果数量.Location = new System.Drawing.Point(1188, 20);
+            this.lb_结果数量.Location = new System.Drawing.Point(1188, 16);
             this.lb_结果数量.Name = "lb_结果数量";
             this.lb_结果数量.Size = new System.Drawing.Size(16, 16);
             this.lb_结果数量.TabIndex = 8;
@@ -466,7 +472,7 @@
             // 
             this.lb_被杀数量.AutoSize = true;
             this.lb_被杀数量.Font = new System.Drawing.Font("宋体", 9F);
-            this.lb_被杀数量.Location = new System.Drawing.Point(971, 28);
+            this.lb_被杀数量.Location = new System.Drawing.Point(971, 20);
             this.lb_被杀数量.Name = "lb_被杀数量";
             this.lb_被杀数量.Size = new System.Drawing.Size(11, 12);
             this.lb_被杀数量.TabIndex = 16;
@@ -474,7 +480,7 @@
             // 
             // btn_计算
             // 
-            this.btn_计算.Location = new System.Drawing.Point(1117, 680);
+            this.btn_计算.Location = new System.Drawing.Point(1020, 680);
             this.btn_计算.Name = "btn_计算";
             this.btn_计算.Size = new System.Drawing.Size(87, 28);
             this.btn_计算.TabIndex = 17;
@@ -1091,9 +1097,9 @@
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(1119, 718);
+            this.button4.Location = new System.Drawing.Point(1127, 718);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(68, 28);
+            this.button4.Size = new System.Drawing.Size(60, 28);
             this.button4.TabIndex = 20;
             this.button4.Text = "清空";
             this.button4.UseVisualStyleBackColor = true;
@@ -1455,7 +1461,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("宋体", 9F);
-            this.label2.Location = new System.Drawing.Point(1117, 24);
+            this.label2.Location = new System.Drawing.Point(1117, 20);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(65, 12);
             this.label2.TabIndex = 22;
@@ -1463,18 +1469,18 @@
             // 
             // tb_被杀号码
             // 
-            this.tb_被杀号码.Location = new System.Drawing.Point(902, 51);
+            this.tb_被杀号码.Location = new System.Drawing.Point(902, 77);
             this.tb_被杀号码.Multiline = true;
             this.tb_被杀号码.Name = "tb_被杀号码";
             this.tb_被杀号码.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.tb_被杀号码.Size = new System.Drawing.Size(187, 605);
+            this.tb_被杀号码.Size = new System.Drawing.Size(187, 579);
             this.tb_被杀号码.TabIndex = 23;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("宋体", 9F);
-            this.label3.Location = new System.Drawing.Point(900, 28);
+            this.label3.Location = new System.Drawing.Point(900, 20);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(65, 12);
             this.label3.TabIndex = 24;
@@ -1767,6 +1773,16 @@
             this.groupBox9.TabIndex = 26;
             this.groupBox9.TabStop = false;
             this.groupBox9.Text = "杀连号";
+            // 
+            // ck_首尾相连
+            // 
+            this.ck_首尾相连.AutoSize = true;
+            this.ck_首尾相连.Location = new System.Drawing.Point(294, 0);
+            this.ck_首尾相连.Name = "ck_首尾相连";
+            this.ck_首尾相连.Size = new System.Drawing.Size(72, 16);
+            this.ck_首尾相连.TabIndex = 66;
+            this.ck_首尾相连.Text = "首尾相连";
+            this.ck_首尾相连.UseVisualStyleBackColor = true;
             // 
             // ck_09相连
             // 
@@ -2095,7 +2111,7 @@
             // 
             // button14
             // 
-            this.button14.Location = new System.Drawing.Point(1020, 19);
+            this.button14.Location = new System.Drawing.Point(1020, 12);
             this.button14.Name = "button14";
             this.button14.Size = new System.Drawing.Size(60, 28);
             this.button14.TabIndex = 68;
@@ -2105,7 +2121,7 @@
             // 
             // button16
             // 
-            this.button16.Location = new System.Drawing.Point(1235, 18);
+            this.button16.Location = new System.Drawing.Point(1235, 12);
             this.button16.Name = "button16";
             this.button16.Size = new System.Drawing.Size(60, 28);
             this.button16.TabIndex = 69;
@@ -2115,7 +2131,7 @@
             // 
             // button17
             // 
-            this.button17.Location = new System.Drawing.Point(1029, 680);
+            this.button17.Location = new System.Drawing.Point(1127, 680);
             this.button17.Name = "button17";
             this.button17.Size = new System.Drawing.Size(60, 28);
             this.button17.TabIndex = 70;
@@ -2133,21 +2149,67 @@
             this.button18.UseVisualStyleBackColor = true;
             this.button18.Click += new System.EventHandler(this.button18_Click);
             // 
-            // ck_首尾相连
+            // label8
             // 
-            this.ck_首尾相连.AutoSize = true;
-            this.ck_首尾相连.Location = new System.Drawing.Point(294, 0);
-            this.ck_首尾相连.Name = "ck_首尾相连";
-            this.ck_首尾相连.Size = new System.Drawing.Size(72, 16);
-            this.ck_首尾相连.TabIndex = 66;
-            this.ck_首尾相连.Text = "首尾相连";
-            this.ck_首尾相连.UseVisualStyleBackColor = true;
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(900, 51);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(41, 12);
+            this.label8.TabIndex = 72;
+            this.label8.Text = "检索：";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(1114, 50);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(41, 12);
+            this.label9.TabIndex = 73;
+            this.label9.Text = "检索：";
+            // 
+            // tb_检索del
+            // 
+            this.tb_检索del.Location = new System.Drawing.Point(937, 46);
+            this.tb_检索del.Name = "tb_检索del";
+            this.tb_检索del.Size = new System.Drawing.Size(110, 21);
+            this.tb_检索del.TabIndex = 74;
+            this.tb_检索del.TextChanged += new System.EventHandler(this.tb_检索del_TextChanged);
+            // 
+            // tb_检索res
+            // 
+            this.tb_检索res.Location = new System.Drawing.Point(1153, 46);
+            this.tb_检索res.Name = "tb_检索res";
+            this.tb_检索res.Size = new System.Drawing.Size(100, 21);
+            this.tb_检索res.TabIndex = 75;
+            this.tb_检索res.TextChanged += new System.EventHandler(this.tb_检索res_TextChanged);
+            // 
+            // lb_cunzaidel
+            // 
+            this.lb_cunzaidel.AutoSize = true;
+            this.lb_cunzaidel.Location = new System.Drawing.Point(1053, 51);
+            this.lb_cunzaidel.Name = "lb_cunzaidel";
+            this.lb_cunzaidel.Size = new System.Drawing.Size(0, 12);
+            this.lb_cunzaidel.TabIndex = 76;
+            // 
+            // lb_cunzaires
+            // 
+            this.lb_cunzaires.AutoSize = true;
+            this.lb_cunzaires.Location = new System.Drawing.Point(1269, 51);
+            this.lb_cunzaires.Name = "lb_cunzaires";
+            this.lb_cunzaires.Size = new System.Drawing.Size(0, 12);
+            this.lb_cunzaires.TabIndex = 77;
             // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1316, 773);
+            this.Controls.Add(this.lb_cunzaires);
+            this.Controls.Add(this.lb_cunzaidel);
+            this.Controls.Add(this.tb_检索res);
+            this.Controls.Add(this.tb_检索del);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.label8);
             this.Controls.Add(this.button18);
             this.Controls.Add(this.button17);
             this.Controls.Add(this.button16);
@@ -2392,5 +2454,11 @@
         private System.Windows.Forms.Button button17;
         private System.Windows.Forms.Button button18;
         private System.Windows.Forms.CheckBox ck_首尾相连;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.TextBox tb_检索del;
+        private System.Windows.Forms.TextBox tb_检索res;
+        private System.Windows.Forms.Label lb_cunzaidel;
+        private System.Windows.Forms.Label lb_cunzaires;
     }
 }

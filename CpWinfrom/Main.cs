@@ -488,9 +488,9 @@ namespace CpWinfrom
 
             foreach (var item in DelnumberModels)
             {
-                stringBuilder.AppendLine(item.GetString() + ",");
+                stringBuilder.Append(item.GetString() + " ");
             }
-            this.tb_被杀号码.Text = stringBuilder.ToString().TrimEnd(',');
+            this.tb_被杀号码.Text = stringBuilder.ToString().TrimEnd(' ');
             this.lb_被杀数量.Text = DelnumberModels.Count.ToString();
         }
         private void PrintRes()
@@ -502,9 +502,9 @@ namespace CpWinfrom
 
             foreach (var item in ResnumberModels)
             {
-                stringBuilder.AppendLine(item.GetString() + ",");
+                stringBuilder.Append(item.GetString() + " ");
             }
-            this.tb_结果.Text = stringBuilder.ToString().TrimEnd(',');
+            this.tb_结果.Text = stringBuilder.ToString().TrimEnd(' ');
             this.lb_结果数量.Text = ResnumberModels.Count.ToString();
         }
 
@@ -626,7 +626,7 @@ namespace CpWinfrom
             }
             if (ck_垃圾号.Checked && !string.IsNullOrEmpty(this.tb_垃圾号.Text))
             {
-                string[] array = this.tb_垃圾号.Text.Split(',');
+                string[] array = this.tb_垃圾号.Text.Split(' ');
                 lajihao.Enter(array, ref DelnumberModels);
 
             }
@@ -696,6 +696,43 @@ namespace CpWinfrom
                 hezhishahao.千十个和值(iNums, ref DelnumberModels);
             }
 
+
+            if (ck_奇数和值.Checked && !string.IsNullOrEmpty(tb_奇数和值.Text))
+            {
+                string[] array = this.tb_奇数和值.Text.Split(',');
+                int[] iNums = Array.ConvertAll(array, int.Parse);
+
+                hezhishahao.奇数和值(iNums, ref DelnumberModels);
+            }
+            if (ck_偶数和值.Checked && !string.IsNullOrEmpty(tb_偶数和值.Text))
+            {
+                string[] array = this.tb_偶数和值.Text.Split(',');
+                int[] iNums = Array.ConvertAll(array, int.Parse);
+
+                hezhishahao.偶数和值(iNums, ref DelnumberModels);
+            }
+
+            if (ck_千个和值.Checked && !string.IsNullOrEmpty(tb_千个和值.Text))
+            {
+                string[] array = this.tb_千个和值.Text.Split(',');
+                int[] iNums = Array.ConvertAll(array, int.Parse);
+
+                hezhishahao.千个和值(iNums, ref DelnumberModels);
+            }
+            if (ck_千十和值.Checked && !string.IsNullOrEmpty(tb_千十和值.Text))
+            {
+                string[] array = this.tb_千十和值.Text.Split(',');
+                int[] iNums = Array.ConvertAll(array, int.Parse);
+
+                hezhishahao.千十和值(iNums, ref DelnumberModels);
+            }
+            if (ck_百个和值.Checked && !string.IsNullOrEmpty(tb_百个和值.Text))
+            {
+                string[] array = this.tb_百个和值.Text.Split(',');
+                int[] iNums = Array.ConvertAll(array, int.Parse);
+
+                hezhishahao.百个和值(iNums, ref DelnumberModels);
+            }
 
             #endregion
 
@@ -995,6 +1032,121 @@ namespace CpWinfrom
             }
             this.lb_cunzaires.Text = "不存在";
 
+        }
+
+        private void button19_Click(object sender, EventArgs e)
+        {
+            奇数和值 f1 = new 奇数和值();
+
+
+            if (f1.ShowDialog() == DialogResult.OK)
+            {
+                List<CheckBox> checkBoxes = f1.cks;
+
+                this.tb_奇数和值.Text = string.Empty;
+                foreach (var item in checkBoxes)
+                {
+                    this.tb_奇数和值.Text += item.Text + ",";
+                }
+                this.tb_奇数和值.Text = this.tb_奇数和值.Text.TrimEnd(',');
+
+
+
+                f1.Close();
+            }
+        }
+
+        private void button20_Click(object sender, EventArgs e)
+        {
+            偶数和值 f1 = new 偶数和值();
+
+
+            if (f1.ShowDialog() == DialogResult.OK)
+            {
+                List<CheckBox> checkBoxes = f1.cks;
+
+                this.tb_偶数和值.Text = string.Empty;
+                foreach (var item in checkBoxes)
+                {
+                    this.tb_偶数和值.Text += item.Text + ",";
+                }
+                this.tb_偶数和值.Text = this.tb_偶数和值.Text.TrimEnd(',');
+
+
+
+                f1.Close();
+            }
+        }
+
+        private void groupBox8_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button21_Click(object sender, EventArgs e)
+        {
+            千个和值 f1 = new 千个和值();
+
+
+            if (f1.ShowDialog() == DialogResult.OK)
+            {
+                List<CheckBox> checkBoxes = f1.cks;
+
+                this.tb_千个和值.Text = string.Empty;
+                foreach (var item in checkBoxes)
+                {
+                    this.tb_千个和值.Text += item.Text + ",";
+                }
+                this.tb_千个和值.Text = this.tb_千个和值.Text.TrimEnd(',');
+
+
+
+                f1.Close();
+            }
+        }
+
+        private void button23_Click(object sender, EventArgs e)
+        {
+            千十和值 f1 = new 千十和值();
+
+
+            if (f1.ShowDialog() == DialogResult.OK)
+            {
+                List<CheckBox> checkBoxes = f1.cks;
+
+                this.tb_千十和值.Text = string.Empty;
+                foreach (var item in checkBoxes)
+                {
+                    this.tb_千十和值.Text += item.Text + ",";
+                }
+                this.tb_千十和值.Text = this.tb_千十和值.Text.TrimEnd(',');
+
+
+
+                f1.Close();
+            }
+        }
+
+        private void button22_Click(object sender, EventArgs e)
+        {
+            百个和值 f1 = new 百个和值();
+
+
+            if (f1.ShowDialog() == DialogResult.OK)
+            {
+                List<CheckBox> checkBoxes = f1.cks;
+
+                this.tb_百个和值.Text = string.Empty;
+                foreach (var item in checkBoxes)
+                {
+                    this.tb_百个和值.Text += item.Text + ",";
+                }
+                this.tb_百个和值.Text = this.tb_百个和值.Text.TrimEnd(',');
+
+
+
+                f1.Close();
+            }
         }
     }
 }

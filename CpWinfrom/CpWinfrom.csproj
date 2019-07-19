@@ -106,11 +106,41 @@
     <Compile Include="后三和值.Designer.cs">
       <DependentUpon>后三和值.cs</DependentUpon>
     </Compile>
+    <Compile Include="千个和值.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="千个和值.Designer.cs">
+      <DependentUpon>千个和值.cs</DependentUpon>
+    </Compile>
+    <Compile Include="千十和值.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="千十和值.Designer.cs">
+      <DependentUpon>千十和值.cs</DependentUpon>
+    </Compile>
+    <Compile Include="百个和值.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="百个和值.Designer.cs">
+      <DependentUpon>百个和值.cs</DependentUpon>
+    </Compile>
     <Compile Include="后二和值.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="后二和值.Designer.cs">
       <DependentUpon>后二和值.cs</DependentUpon>
+    </Compile>
+    <Compile Include="偶数和值.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="偶数和值.Designer.cs">
+      <DependentUpon>偶数和值.cs</DependentUpon>
+    </Compile>
+    <Compile Include="奇数和值.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="奇数和值.Designer.cs">
+      <DependentUpon>奇数和值.cs</DependentUpon>
     </Compile>
     <Compile Include="四位和值.cs">
       <SubType>Form</SubType>
@@ -181,8 +211,23 @@
     <EmbeddedResource Include="后三和值.resx">
       <DependentUpon>后三和值.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="千个和值.resx">
+      <DependentUpon>千个和值.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="千十和值.resx">
+      <DependentUpon>千十和值.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="百个和值.resx">
+      <DependentUpon>百个和值.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="后二和值.resx">
       <DependentUpon>后二和值.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="偶数和值.resx">
+      <DependentUpon>偶数和值.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="奇数和值.resx">
+      <DependentUpon>奇数和值.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="四位和值.resx">
       <DependentUpon>四位和值.cs</DependentUpon>

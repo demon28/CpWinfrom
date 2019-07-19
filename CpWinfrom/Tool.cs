@@ -13,18 +13,18 @@ namespace CpWinfrom
         /// </summary>
         /// <param name="n"></param>
         /// <returns></returns>
-        public static bool IsOdd(int n)
+        public static bool IsOdd(int num)
         {
-            return Convert.ToBoolean(n % 2);
+            return num % 2 == 0;
         }
         /// <summary>
         /// 是否奇
         /// </summary>
         /// <param name="n"></param>
         /// <returns></returns>
-        public static bool NotOdd(int n)
+        public static bool NotOdd(int num)
         {
-            return !Convert.ToBoolean(n % 2);
+            return (num % 2) == 1;
         }
         /// <summary>
         /// 是否全是偶数
@@ -50,7 +50,7 @@ namespace CpWinfrom
         public static bool ChecNotkOdd(NumberModel lastnumber)
         {
 
-            if (!IsOdd(lastnumber.N1) && !IsOdd(lastnumber.N2) && !IsOdd(lastnumber.N3) && !IsOdd(lastnumber.N4))
+            if (NotOdd(lastnumber.N1) && NotOdd(lastnumber.N2) && NotOdd(lastnumber.N3) && NotOdd(lastnumber.N4))
             {
                 return true;
             }

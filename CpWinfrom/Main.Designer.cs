@@ -214,6 +214,21 @@
             this.tb_检索res = new System.Windows.Forms.TextBox();
             this.lb_cunzaidel = new System.Windows.Forms.Label();
             this.lb_cunzaires = new System.Windows.Forms.Label();
+            this.ck_奇数和值 = new System.Windows.Forms.CheckBox();
+            this.tb_奇数和值 = new System.Windows.Forms.TextBox();
+            this.button19 = new System.Windows.Forms.Button();
+            this.button20 = new System.Windows.Forms.Button();
+            this.tb_偶数和值 = new System.Windows.Forms.TextBox();
+            this.ck_偶数和值 = new System.Windows.Forms.CheckBox();
+            this.ck_千个和值 = new System.Windows.Forms.CheckBox();
+            this.button21 = new System.Windows.Forms.Button();
+            this.tb_千个和值 = new System.Windows.Forms.TextBox();
+            this.ck_百个和值 = new System.Windows.Forms.CheckBox();
+            this.button22 = new System.Windows.Forms.Button();
+            this.tb_百个和值 = new System.Windows.Forms.TextBox();
+            this.ck_千十和值 = new System.Windows.Forms.CheckBox();
+            this.button23 = new System.Windows.Forms.Button();
+            this.tb_千十和值 = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -492,9 +507,9 @@
             // 
             this.groupBox5.Controls.Add(this.ck_垃圾号);
             this.groupBox5.Controls.Add(this.tb_垃圾号);
-            this.groupBox5.Location = new System.Drawing.Point(34, 271);
+            this.groupBox5.Location = new System.Drawing.Point(34, 261);
             this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(418, 137);
+            this.groupBox5.Size = new System.Drawing.Size(418, 76);
             this.groupBox5.TabIndex = 18;
             this.groupBox5.TabStop = false;
             // 
@@ -505,9 +520,9 @@
             this.ck_垃圾号.CheckState = System.Windows.Forms.CheckState.Checked;
             this.ck_垃圾号.Location = new System.Drawing.Point(11, 0);
             this.ck_垃圾号.Name = "ck_垃圾号";
-            this.ck_垃圾号.Size = new System.Drawing.Size(168, 16);
+            this.ck_垃圾号.Size = new System.Drawing.Size(180, 16);
             this.ck_垃圾号.TabIndex = 6;
-            this.ck_垃圾号.Text = "垃圾号（逗号“，”分割）";
+            this.ck_垃圾号.Text = "垃圾号（逗号“空格”分割）";
             this.ck_垃圾号.UseVisualStyleBackColor = true;
             // 
             // tb_垃圾号
@@ -515,7 +530,7 @@
             this.tb_垃圾号.Location = new System.Drawing.Point(11, 21);
             this.tb_垃圾号.Multiline = true;
             this.tb_垃圾号.Name = "tb_垃圾号";
-            this.tb_垃圾号.Size = new System.Drawing.Size(389, 99);
+            this.tb_垃圾号.Size = new System.Drawing.Size(389, 45);
             this.tb_垃圾号.TabIndex = 12;
             // 
             // groupBox6
@@ -1488,6 +1503,21 @@
             // 
             // groupBox8
             // 
+            this.groupBox8.Controls.Add(this.ck_千十和值);
+            this.groupBox8.Controls.Add(this.button23);
+            this.groupBox8.Controls.Add(this.tb_千十和值);
+            this.groupBox8.Controls.Add(this.ck_百个和值);
+            this.groupBox8.Controls.Add(this.button22);
+            this.groupBox8.Controls.Add(this.tb_百个和值);
+            this.groupBox8.Controls.Add(this.ck_千个和值);
+            this.groupBox8.Controls.Add(this.button21);
+            this.groupBox8.Controls.Add(this.tb_千个和值);
+            this.groupBox8.Controls.Add(this.button20);
+            this.groupBox8.Controls.Add(this.tb_偶数和值);
+            this.groupBox8.Controls.Add(this.ck_偶数和值);
+            this.groupBox8.Controls.Add(this.button19);
+            this.groupBox8.Controls.Add(this.tb_奇数和值);
+            this.groupBox8.Controls.Add(this.ck_奇数和值);
             this.groupBox8.Controls.Add(this.ck_千十个和值);
             this.groupBox8.Controls.Add(this.ck_千百个和值);
             this.groupBox8.Controls.Add(this.button10);
@@ -1512,19 +1542,20 @@
             this.groupBox8.Controls.Add(this.tb_前三和值);
             this.groupBox8.Controls.Add(this.button12);
             this.groupBox8.Controls.Add(this.tb_四位和值);
-            this.groupBox8.Location = new System.Drawing.Point(34, 429);
+            this.groupBox8.Location = new System.Drawing.Point(34, 348);
             this.groupBox8.Name = "groupBox8";
-            this.groupBox8.Size = new System.Drawing.Size(349, 330);
+            this.groupBox8.Size = new System.Drawing.Size(349, 411);
             this.groupBox8.TabIndex = 25;
             this.groupBox8.TabStop = false;
             this.groupBox8.Text = "和值杀号";
+            this.groupBox8.Enter += new System.EventHandler(this.groupBox8_Enter);
             // 
             // ck_千十个和值
             // 
             this.ck_千十个和值.AutoSize = true;
             this.ck_千十个和值.Checked = true;
             this.ck_千十个和值.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.ck_千十个和值.Location = new System.Drawing.Point(11, 269);
+            this.ck_千十个和值.Location = new System.Drawing.Point(9, 374);
             this.ck_千十个和值.Name = "ck_千十个和值";
             this.ck_千十个和值.Size = new System.Drawing.Size(84, 16);
             this.ck_千十个和值.TabIndex = 84;
@@ -1536,7 +1567,7 @@
             this.ck_千百个和值.AutoSize = true;
             this.ck_千百个和值.Checked = true;
             this.ck_千百个和值.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.ck_千百个和值.Location = new System.Drawing.Point(11, 239);
+            this.ck_千百个和值.Location = new System.Drawing.Point(9, 349);
             this.ck_千百个和值.Name = "ck_千百个和值";
             this.ck_千百个和值.Size = new System.Drawing.Size(84, 16);
             this.ck_千百个和值.TabIndex = 83;
@@ -1545,7 +1576,7 @@
             // 
             // button10
             // 
-            this.button10.Location = new System.Drawing.Point(284, 263);
+            this.button10.Location = new System.Drawing.Point(282, 368);
             this.button10.Name = "button10";
             this.button10.Size = new System.Drawing.Size(48, 23);
             this.button10.TabIndex = 80;
@@ -1555,14 +1586,14 @@
             // 
             // tb_千十个和值
             // 
-            this.tb_千十个和值.Location = new System.Drawing.Point(103, 265);
+            this.tb_千十个和值.Location = new System.Drawing.Point(101, 370);
             this.tb_千十个和值.Name = "tb_千十个和值";
             this.tb_千十个和值.Size = new System.Drawing.Size(175, 21);
             this.tb_千十个和值.TabIndex = 79;
             // 
             // button11
             // 
-            this.button11.Location = new System.Drawing.Point(284, 233);
+            this.button11.Location = new System.Drawing.Point(282, 343);
             this.button11.Name = "button11";
             this.button11.Size = new System.Drawing.Size(48, 23);
             this.button11.TabIndex = 78;
@@ -1572,7 +1603,7 @@
             // 
             // tb_千百个和值
             // 
-            this.tb_千百个和值.Location = new System.Drawing.Point(103, 235);
+            this.tb_千百个和值.Location = new System.Drawing.Point(101, 345);
             this.tb_千百个和值.Name = "tb_千百个和值";
             this.tb_千百个和值.Size = new System.Drawing.Size(175, 21);
             this.tb_千百个和值.TabIndex = 77;
@@ -1582,7 +1613,7 @@
             this.ck_后二和值.AutoSize = true;
             this.ck_后二和值.Checked = true;
             this.ck_后二和值.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.ck_后二和值.Location = new System.Drawing.Point(11, 198);
+            this.ck_后二和值.Location = new System.Drawing.Point(9, 236);
             this.ck_后二和值.Name = "ck_后二和值";
             this.ck_后二和值.Size = new System.Drawing.Size(72, 16);
             this.ck_后二和值.TabIndex = 76;
@@ -1591,9 +1622,9 @@
             // 
             // button8
             // 
-            this.button8.Location = new System.Drawing.Point(227, 195);
+            this.button8.Location = new System.Drawing.Point(270, 231);
             this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(58, 23);
+            this.button8.Size = new System.Drawing.Size(48, 23);
             this.button8.TabIndex = 75;
             this.button8.Text = "选择";
             this.button8.UseVisualStyleBackColor = true;
@@ -1601,9 +1632,9 @@
             // 
             // tb_后二和值
             // 
-            this.tb_后二和值.Location = new System.Drawing.Point(89, 195);
+            this.tb_后二和值.Location = new System.Drawing.Point(87, 233);
             this.tb_后二和值.Name = "tb_后二和值";
-            this.tb_后二和值.Size = new System.Drawing.Size(132, 21);
+            this.tb_后二和值.Size = new System.Drawing.Size(175, 21);
             this.tb_后二和值.TabIndex = 74;
             // 
             // ck_中二和值
@@ -1611,7 +1642,7 @@
             this.ck_中二和值.AutoSize = true;
             this.ck_中二和值.Checked = true;
             this.ck_中二和值.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.ck_中二和值.Location = new System.Drawing.Point(11, 173);
+            this.ck_中二和值.Location = new System.Drawing.Point(9, 213);
             this.ck_中二和值.Name = "ck_中二和值";
             this.ck_中二和值.Size = new System.Drawing.Size(72, 16);
             this.ck_中二和值.TabIndex = 73;
@@ -1620,9 +1651,9 @@
             // 
             // button7
             // 
-            this.button7.Location = new System.Drawing.Point(227, 170);
+            this.button7.Location = new System.Drawing.Point(270, 208);
             this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(58, 23);
+            this.button7.Size = new System.Drawing.Size(48, 23);
             this.button7.TabIndex = 72;
             this.button7.Text = "选择";
             this.button7.UseVisualStyleBackColor = true;
@@ -1630,9 +1661,9 @@
             // 
             // tb_中二和值
             // 
-            this.tb_中二和值.Location = new System.Drawing.Point(89, 170);
+            this.tb_中二和值.Location = new System.Drawing.Point(87, 210);
             this.tb_中二和值.Name = "tb_中二和值";
-            this.tb_中二和值.Size = new System.Drawing.Size(132, 21);
+            this.tb_中二和值.Size = new System.Drawing.Size(175, 21);
             this.tb_中二和值.TabIndex = 71;
             // 
             // ck_前二和值
@@ -1640,7 +1671,7 @@
             this.ck_前二和值.AutoSize = true;
             this.ck_前二和值.Checked = true;
             this.ck_前二和值.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.ck_前二和值.Location = new System.Drawing.Point(11, 149);
+            this.ck_前二和值.Location = new System.Drawing.Point(9, 190);
             this.ck_前二和值.Name = "ck_前二和值";
             this.ck_前二和值.Size = new System.Drawing.Size(72, 16);
             this.ck_前二和值.TabIndex = 70;
@@ -1649,9 +1680,9 @@
             // 
             // button6
             // 
-            this.button6.Location = new System.Drawing.Point(227, 146);
+            this.button6.Location = new System.Drawing.Point(270, 185);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(58, 23);
+            this.button6.Size = new System.Drawing.Size(48, 23);
             this.button6.TabIndex = 69;
             this.button6.Text = "选择";
             this.button6.UseVisualStyleBackColor = true;
@@ -1659,9 +1690,9 @@
             // 
             // tb_前二和值
             // 
-            this.tb_前二和值.Location = new System.Drawing.Point(89, 146);
+            this.tb_前二和值.Location = new System.Drawing.Point(87, 187);
             this.tb_前二和值.Name = "tb_前二和值";
-            this.tb_前二和值.Size = new System.Drawing.Size(132, 21);
+            this.tb_前二和值.Size = new System.Drawing.Size(175, 21);
             this.tb_前二和值.TabIndex = 68;
             // 
             // ck_后三和值
@@ -1669,7 +1700,7 @@
             this.ck_后三和值.AutoSize = true;
             this.ck_后三和值.Checked = true;
             this.ck_后三和值.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.ck_后三和值.Location = new System.Drawing.Point(11, 106);
+            this.ck_后三和值.Location = new System.Drawing.Point(9, 151);
             this.ck_后三和值.Name = "ck_后三和值";
             this.ck_后三和值.Size = new System.Drawing.Size(72, 16);
             this.ck_后三和值.TabIndex = 67;
@@ -1681,7 +1712,7 @@
             this.ck_前三和值.AutoSize = true;
             this.ck_前三和值.Checked = true;
             this.ck_前三和值.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.ck_前三和值.Location = new System.Drawing.Point(11, 76);
+            this.ck_前三和值.Location = new System.Drawing.Point(9, 129);
             this.ck_前三和值.Name = "ck_前三和值";
             this.ck_前三和值.Size = new System.Drawing.Size(72, 16);
             this.ck_前三和值.TabIndex = 66;
@@ -1702,7 +1733,7 @@
             // 
             // button36
             // 
-            this.button36.Location = new System.Drawing.Point(270, 101);
+            this.button36.Location = new System.Drawing.Point(268, 146);
             this.button36.Name = "button36";
             this.button36.Size = new System.Drawing.Size(48, 23);
             this.button36.TabIndex = 36;
@@ -1712,14 +1743,14 @@
             // 
             // tb_后三和值
             // 
-            this.tb_后三和值.Location = new System.Drawing.Point(89, 103);
+            this.tb_后三和值.Location = new System.Drawing.Point(87, 148);
             this.tb_后三和值.Name = "tb_后三和值";
             this.tb_后三和值.Size = new System.Drawing.Size(175, 21);
             this.tb_后三和值.TabIndex = 33;
             // 
             // button33
             // 
-            this.button33.Location = new System.Drawing.Point(270, 70);
+            this.button33.Location = new System.Drawing.Point(268, 123);
             this.button33.Name = "button33";
             this.button33.Size = new System.Drawing.Size(48, 23);
             this.button33.TabIndex = 27;
@@ -1729,7 +1760,7 @@
             // 
             // tb_前三和值
             // 
-            this.tb_前三和值.Location = new System.Drawing.Point(89, 72);
+            this.tb_前三和值.Location = new System.Drawing.Point(87, 125);
             this.tb_前三和值.Name = "tb_前三和值";
             this.tb_前三和值.Size = new System.Drawing.Size(175, 21);
             this.tb_前三和值.TabIndex = 24;
@@ -1767,7 +1798,7 @@
             this.groupBox9.Controls.Add(this.label5);
             this.groupBox9.Controls.Add(this.ck_反向3连);
             this.groupBox9.Controls.Add(this.ck_反向2连);
-            this.groupBox9.Location = new System.Drawing.Point(483, 271);
+            this.groupBox9.Location = new System.Drawing.Point(483, 272);
             this.groupBox9.Name = "groupBox9";
             this.groupBox9.Size = new System.Drawing.Size(377, 137);
             this.groupBox9.TabIndex = 26;
@@ -2199,6 +2230,151 @@
             this.lb_cunzaires.Size = new System.Drawing.Size(0, 12);
             this.lb_cunzaires.TabIndex = 77;
             // 
+            // ck_奇数和值
+            // 
+            this.ck_奇数和值.AutoSize = true;
+            this.ck_奇数和值.Checked = true;
+            this.ck_奇数和值.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.ck_奇数和值.Location = new System.Drawing.Point(11, 71);
+            this.ck_奇数和值.Name = "ck_奇数和值";
+            this.ck_奇数和值.Size = new System.Drawing.Size(72, 16);
+            this.ck_奇数和值.TabIndex = 85;
+            this.ck_奇数和值.Text = "奇数和值";
+            this.ck_奇数和值.UseVisualStyleBackColor = true;
+            // 
+            // tb_奇数和值
+            // 
+            this.tb_奇数和值.Location = new System.Drawing.Point(89, 66);
+            this.tb_奇数和值.Name = "tb_奇数和值";
+            this.tb_奇数和值.Size = new System.Drawing.Size(173, 21);
+            this.tb_奇数和值.TabIndex = 86;
+            // 
+            // button19
+            // 
+            this.button19.Location = new System.Drawing.Point(268, 67);
+            this.button19.Name = "button19";
+            this.button19.Size = new System.Drawing.Size(48, 23);
+            this.button19.TabIndex = 87;
+            this.button19.Text = "选择";
+            this.button19.UseVisualStyleBackColor = true;
+            this.button19.Click += new System.EventHandler(this.button19_Click);
+            // 
+            // button20
+            // 
+            this.button20.Location = new System.Drawing.Point(268, 90);
+            this.button20.Name = "button20";
+            this.button20.Size = new System.Drawing.Size(48, 23);
+            this.button20.TabIndex = 90;
+            this.button20.Text = "选择";
+            this.button20.UseVisualStyleBackColor = true;
+            this.button20.Click += new System.EventHandler(this.button20_Click);
+            // 
+            // tb_偶数和值
+            // 
+            this.tb_偶数和值.Location = new System.Drawing.Point(89, 88);
+            this.tb_偶数和值.Name = "tb_偶数和值";
+            this.tb_偶数和值.Size = new System.Drawing.Size(173, 21);
+            this.tb_偶数和值.TabIndex = 89;
+            // 
+            // ck_偶数和值
+            // 
+            this.ck_偶数和值.AutoSize = true;
+            this.ck_偶数和值.Checked = true;
+            this.ck_偶数和值.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.ck_偶数和值.Location = new System.Drawing.Point(11, 93);
+            this.ck_偶数和值.Name = "ck_偶数和值";
+            this.ck_偶数和值.Size = new System.Drawing.Size(72, 16);
+            this.ck_偶数和值.TabIndex = 88;
+            this.ck_偶数和值.Text = "偶数和值";
+            this.ck_偶数和值.UseVisualStyleBackColor = true;
+            // 
+            // ck_千个和值
+            // 
+            this.ck_千个和值.AutoSize = true;
+            this.ck_千个和值.Checked = true;
+            this.ck_千个和值.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.ck_千个和值.Location = new System.Drawing.Point(9, 270);
+            this.ck_千个和值.Name = "ck_千个和值";
+            this.ck_千个和值.Size = new System.Drawing.Size(72, 16);
+            this.ck_千个和值.TabIndex = 93;
+            this.ck_千个和值.Text = "千个和值";
+            this.ck_千个和值.UseVisualStyleBackColor = true;
+            // 
+            // button21
+            // 
+            this.button21.Location = new System.Drawing.Point(270, 265);
+            this.button21.Name = "button21";
+            this.button21.Size = new System.Drawing.Size(48, 23);
+            this.button21.TabIndex = 92;
+            this.button21.Text = "选择";
+            this.button21.UseVisualStyleBackColor = true;
+            this.button21.Click += new System.EventHandler(this.button21_Click);
+            // 
+            // tb_千个和值
+            // 
+            this.tb_千个和值.Location = new System.Drawing.Point(87, 267);
+            this.tb_千个和值.Name = "tb_千个和值";
+            this.tb_千个和值.Size = new System.Drawing.Size(175, 21);
+            this.tb_千个和值.TabIndex = 91;
+            // 
+            // ck_百个和值
+            // 
+            this.ck_百个和值.AutoSize = true;
+            this.ck_百个和值.Checked = true;
+            this.ck_百个和值.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.ck_百个和值.Location = new System.Drawing.Point(9, 316);
+            this.ck_百个和值.Name = "ck_百个和值";
+            this.ck_百个和值.Size = new System.Drawing.Size(72, 16);
+            this.ck_百个和值.TabIndex = 96;
+            this.ck_百个和值.Text = "百个和值";
+            this.ck_百个和值.UseVisualStyleBackColor = true;
+            // 
+            // button22
+            // 
+            this.button22.Location = new System.Drawing.Point(270, 312);
+            this.button22.Name = "button22";
+            this.button22.Size = new System.Drawing.Size(48, 23);
+            this.button22.TabIndex = 95;
+            this.button22.Text = "选择";
+            this.button22.UseVisualStyleBackColor = true;
+            this.button22.Click += new System.EventHandler(this.button22_Click);
+            // 
+            // tb_百个和值
+            // 
+            this.tb_百个和值.Location = new System.Drawing.Point(87, 314);
+            this.tb_百个和值.Name = "tb_百个和值";
+            this.tb_百个和值.Size = new System.Drawing.Size(175, 21);
+            this.tb_百个和值.TabIndex = 94;
+            // 
+            // ck_千十和值
+            // 
+            this.ck_千十和值.AutoSize = true;
+            this.ck_千十和值.Checked = true;
+            this.ck_千十和值.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.ck_千十和值.Location = new System.Drawing.Point(9, 293);
+            this.ck_千十和值.Name = "ck_千十和值";
+            this.ck_千十和值.Size = new System.Drawing.Size(72, 16);
+            this.ck_千十和值.TabIndex = 99;
+            this.ck_千十和值.Text = "千十和值";
+            this.ck_千十和值.UseVisualStyleBackColor = true;
+            // 
+            // button23
+            // 
+            this.button23.Location = new System.Drawing.Point(270, 288);
+            this.button23.Name = "button23";
+            this.button23.Size = new System.Drawing.Size(48, 23);
+            this.button23.TabIndex = 98;
+            this.button23.Text = "选择";
+            this.button23.UseVisualStyleBackColor = true;
+            this.button23.Click += new System.EventHandler(this.button23_Click);
+            // 
+            // tb_千十和值
+            // 
+            this.tb_千十和值.Location = new System.Drawing.Point(87, 290);
+            this.tb_千十和值.Name = "tb_千十和值";
+            this.tb_千十和值.Size = new System.Drawing.Size(175, 21);
+            this.tb_千十和值.TabIndex = 97;
+            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -2460,5 +2636,20 @@
         private System.Windows.Forms.TextBox tb_检索res;
         private System.Windows.Forms.Label lb_cunzaidel;
         private System.Windows.Forms.Label lb_cunzaires;
+        private System.Windows.Forms.Button button20;
+        private System.Windows.Forms.TextBox tb_偶数和值;
+        private System.Windows.Forms.CheckBox ck_偶数和值;
+        private System.Windows.Forms.Button button19;
+        private System.Windows.Forms.TextBox tb_奇数和值;
+        private System.Windows.Forms.CheckBox ck_奇数和值;
+        private System.Windows.Forms.CheckBox ck_百个和值;
+        private System.Windows.Forms.Button button22;
+        private System.Windows.Forms.TextBox tb_百个和值;
+        private System.Windows.Forms.CheckBox ck_千个和值;
+        private System.Windows.Forms.Button button21;
+        private System.Windows.Forms.TextBox tb_千个和值;
+        private System.Windows.Forms.CheckBox ck_千十和值;
+        private System.Windows.Forms.Button button23;
+        private System.Windows.Forms.TextBox tb_千十和值;
     }
 }

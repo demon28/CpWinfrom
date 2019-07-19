@@ -388,6 +388,50 @@ namespace CpWinfrom
         {
             this.tb_结果.Text = string.Empty;
             this.tb_被杀号码.Text = string.Empty;
+            this.tb_点杀012.Text = string.Empty;
+            this.tb_点杀大小.Text = string.Empty;
+            this.tb_点杀奇偶.Text = string.Empty;
+            this.tb_点杀质合.Text = string.Empty;
+            this.tb_垃圾号.Text = string.Empty;
+
+            foreach (var item in groupBox8.Controls)
+            {
+                if (item is TextBox)
+                {
+                    TextBox tb = (TextBox)item;
+                    tb.Text = string.Empty;
+                }
+            }
+
+            foreach (var item in groupBox7.Controls)
+            {
+                if (item is CheckBox)
+                {
+                    CheckBox cb = (CheckBox)item;
+                    cb.Checked = false;
+                }
+
+            }
+            foreach (var item in groupBox9.Controls)
+            {
+                if (item is CheckBox)
+                {
+                    CheckBox cb = (CheckBox)item;
+                    cb.Checked = false;
+                }
+
+            }
+
+          
+            button9_Click(null, null);
+            button15_Click(null, null);
+            button29_Click(null,null);
+            button1_Click(null, null);
+            button2_Click(null, null);
+            button3_Click(null, null);
+           
+
+
         }
 
         private void btn_导出_Click(object sender, EventArgs e)
@@ -552,7 +596,6 @@ namespace CpWinfrom
 
             #endregion
 
-
             #region 点杀区域
 
 
@@ -716,9 +759,96 @@ namespace CpWinfrom
                 shadingwei.Enter(qian, bai, shi, ge, ref DelnumberModels);
             }
 
-         
+
 
             #endregion
+
+            #region 杀胆码 杀定位
+            if (ck_杀胆码.Checked)
+            {
+                List<int> danma = new List<int>();
+                foreach (var item in groupBox10.Controls)
+                {
+                    if (item is CheckBox)
+                    {
+                        CheckBox cb = (CheckBox)item;
+                        if (cb.Checked && cb.Name!= "ck_杀胆码")
+                        {
+                            danma.Add(int.Parse(cb.Text));
+                        }
+                    }
+
+                }
+                shadanma.Enter(danma, ref DelnumberModels);
+            }
+
+            if (ck_杀跨度.Checked)
+            {
+                List<int> kuada = new List<int>();
+                foreach (var item in groupBox11.Controls)
+                {
+                    if (item is CheckBox)
+                    {
+                        CheckBox cb = (CheckBox)item;
+                        if (cb.Checked && cb.Name != "ck_杀跨度")
+                        {
+                            kuada.Add(int.Parse(cb.Text));
+                        }
+                    }
+
+                }
+                shakuadu.Enter(kuada, ref DelnumberModels);
+            }
+
+            #endregion
+
+
+            #region 杀连号
+
+            if (ck_无序2连.Checked)
+            {
+                shalianhao.无序2连(this.ck_首尾相连.Checked, this.ck_09相连.Checked, ref DelnumberModels);
+            }
+            if (ck_无序3连.Checked)
+            {
+                shalianhao.无序3连(this.ck_首尾相连.Checked, this.ck_09相连.Checked, ref DelnumberModels);
+            }
+            if (ck_无序4连.Checked)
+            {
+                shalianhao.无序4连(this.ck_首尾相连.Checked, this.ck_09相连.Checked, ref DelnumberModels);
+            }
+
+
+
+            if (ck_正向2连.Checked)
+            {
+                shalianhao.正向2连(this.ck_首尾相连.Checked, this.ck_09相连.Checked, ref DelnumberModels);
+            }
+            if (ck_正向3连.Checked)
+            {
+                shalianhao.正向3连(this.ck_首尾相连.Checked, this.ck_09相连.Checked, ref DelnumberModels);
+            }
+            if (ck_正向4连.Checked)
+            {
+                shalianhao.正向4连(this.ck_首尾相连.Checked, this.ck_09相连.Checked, ref DelnumberModels);
+            }
+
+
+            if (ck_反向2连.Checked)
+            {
+                shalianhao.反向2连(this.ck_首尾相连.Checked, this.ck_09相连.Checked, ref DelnumberModels);
+            }
+            if (ck_反向3连.Checked)
+            {
+                shalianhao.反向3连(this.ck_首尾相连.Checked, this.ck_09相连.Checked, ref DelnumberModels);
+            }
+            if (ck_反向4连.Checked)
+            {
+                shalianhao.反向4连(this.ck_首尾相连.Checked, this.ck_09相连.Checked, ref DelnumberModels);
+            }
+
+            #endregion
+
         }
 
         private void button14_Click(object sender, EventArgs e)
@@ -761,6 +891,51 @@ namespace CpWinfrom
         private void ck_非兄弟号_CheckedChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            foreach (var item in groupBox11.Controls)
+            {
+                if (item is CheckBox)
+                {
+                    CheckBox cb = (CheckBox)item;
+                    if (cb.Checked && cb.Name != "ck_杀跨度")
+                    {
+                        cb.Checked = false;
+                    }
+                }
+
+            }
+        }
+
+        private void button15_Click(object sender, EventArgs e)
+        {
+            foreach (var item in groupBox10.Controls)
+            {
+                if (item is CheckBox)
+                {
+                    CheckBox cb = (CheckBox)item;
+                    if (cb.Checked && cb.Name != "ck_杀胆码")
+                    {
+                        cb.Checked = false;
+                    }
+                }
+
+            }
+        }
+
+        private void button17_Click(object sender, EventArgs e)
+        {
+            统计 f = new 统计();
+            f.Show();
+
+        }
+
+        private void button18_Click(object sender, EventArgs e)
+        {
+            Clipboard.SetDataObject(tb_结果.Text);
+            MessageBox.Show("复制成功！");
         }
     }
 }

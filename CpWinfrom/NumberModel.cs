@@ -24,6 +24,26 @@ namespace CpWinfrom
         {
             return  int.Parse( N1.ToString() + "" + N2.ToString() + "" + N3.ToString() + "" + N4.ToString());
         }
+        public int GetMax() {
+            List<int> list = new List<int>();
+            list.Add(N1);
+            list.Add(N2);
+            list.Add(N3);
+            list.Add(N4);
+
+            return list.Max();
+        }
+
+        public int GetMin()
+        {
+            List<int> list = new List<int>();
+            list.Add(N1);
+            list.Add(N2);
+            list.Add(N3);
+            list.Add(N4);
+
+            return list.Min();
+        }
 
         public static NumberModel ToParse(string val)
         {

@@ -64,7 +64,10 @@
     <Compile Include="Rule\Diansha.cs" />
     <Compile Include="Rule\hezhishahao.cs" />
     <Compile Include="Rule\lajihao.cs" />
+    <Compile Include="Rule\shadanma.cs" />
     <Compile Include="Rule\shadingwei.cs" />
+    <Compile Include="Rule\shakuadu.cs" />
+    <Compile Include="Rule\shalianhao.cs" />
     <Compile Include="Rule\Teshuhao.cs" />
     <Compile Include="Tool.cs" />
     <Compile Include="中二和值.cs">
@@ -139,6 +142,12 @@
     <Compile Include="点杀质合.Designer.cs">
       <DependentUpon>点杀质合.cs</DependentUpon>
     </Compile>
+    <Compile Include="统计.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="统计.Designer.cs">
+      <DependentUpon>统计.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -189,6 +198,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="点杀质合.resx">
       <DependentUpon>点杀质合.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="统计.resx">
+      <DependentUpon>统计.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

@@ -30,6 +30,10 @@ namespace CpWinfrom.Rule
 
             string rule = string.Empty;
 
+            if (danma.Count<=0)
+            {
+                return;
+            }
             foreach (var item in danma)
             {
                 rule = rule + item.ToString();

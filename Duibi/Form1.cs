@@ -24,7 +24,7 @@ namespace Duibi
             StringBuilder stringBuilder = new StringBuilder();
             foreach (var item in str)
             {
-                stringBuilder.AppendLine(item + ",");
+                stringBuilder.AppendLine(item + " ");
             }
 
             this.textBox2.Text = stringBuilder.ToString();

@@ -800,45 +800,7 @@ namespace CpWinfrom
 
             #endregion
 
-            #region 杀胆码 杀定位
-            if (ck_杀胆码.Checked)
-            {
-                List<int> danma = new List<int>();
-                foreach (var item in groupBox10.Controls)
-                {
-                    if (item is CheckBox)
-                    {
-                        CheckBox cb = (CheckBox)item;
-                        if (cb.Checked && cb.Name!= "ck_杀胆码")
-                        {
-                            danma.Add(int.Parse(cb.Text));
-                        }
-                    }
-
-                }
-                shadanma.Enter(danma, ref DelnumberModels);
-            }
-
-            if (ck_杀跨度.Checked)
-            {
-                List<int> kuada = new List<int>();
-                foreach (var item in groupBox11.Controls)
-                {
-                    if (item is CheckBox)
-                    {
-                        CheckBox cb = (CheckBox)item;
-                        if (cb.Checked && cb.Name != "ck_杀跨度")
-                        {
-                            kuada.Add(int.Parse(cb.Text));
-                        }
-                    }
-
-                }
-                shakuadu.Enter(kuada, ref DelnumberModels);
-            }
-
-            #endregion
-
+           
 
             #region 杀连号
 
@@ -885,6 +847,51 @@ namespace CpWinfrom
             }
 
             #endregion
+
+
+
+            #region 杀胆码 杀跨度  杀胆必须是最后一项
+
+            if (ck_杀跨度.Checked)
+            {
+                List<int> kuada = new List<int>();
+                foreach (var item in groupBox11.Controls)
+                {
+                    if (item is CheckBox)
+                    {
+                        CheckBox cb = (CheckBox)item;
+                        if (cb.Checked && cb.Name != "ck_杀跨度")
+                        {
+                            kuada.Add(int.Parse(cb.Text));
+                        }
+                    }
+
+                }
+                shakuadu.Enter(kuada, ref DelnumberModels);
+            }
+
+            if (ck_杀胆码.Checked)
+            {
+                List<int> danma = new List<int>();
+                foreach (var item in groupBox10.Controls)
+                {
+                    if (item is CheckBox)
+                    {
+                        CheckBox cb = (CheckBox)item;
+                        if (cb.Checked && cb.Name != "ck_杀胆码")
+                        {
+                            danma.Add(int.Parse(cb.Text));
+                        }
+                    }
+
+                }
+                shadanma.ShaWuYiMa(danma, ref DelnumberModels);
+            }
+
+        
+
+            #endregion
+            // 杀胆码必须是最后一项
 
         }
 
@@ -1147,6 +1154,12 @@ namespace CpWinfrom
 
                 f1.Close();
             }
+        }
+
+        private void button24_Click(object sender, EventArgs e)
+        {
+            比较 f = new 比较();
+            f.Show();
         }
     }
 }

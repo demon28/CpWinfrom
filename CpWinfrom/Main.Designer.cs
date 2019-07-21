@@ -230,6 +230,7 @@
             this.lb_cunzaidel = new System.Windows.Forms.Label();
             this.lb_cunzaires = new System.Windows.Forms.Label();
             this.button24 = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -254,7 +255,7 @@
             this.groupBox1.Controls.Add(this.btn_清空点杀大小);
             this.groupBox1.Controls.Add(this.btn_点杀大小);
             this.groupBox1.Font = new System.Drawing.Font("宋体", 10F);
-            this.groupBox1.Location = new System.Drawing.Point(40, 25);
+            this.groupBox1.Location = new System.Drawing.Point(39, 25);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(233, 117);
             this.groupBox1.TabIndex = 0;
@@ -275,11 +276,11 @@
             // tb_点杀大小
             // 
             this.tb_点杀大小.Font = new System.Drawing.Font("宋体", 10F);
-            this.tb_点杀大小.Location = new System.Drawing.Point(7, 30);
+            this.tb_点杀大小.Location = new System.Drawing.Point(7, 31);
             this.tb_点杀大小.Multiline = true;
             this.tb_点杀大小.Name = "tb_点杀大小";
             this.tb_点杀大小.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.tb_点杀大小.Size = new System.Drawing.Size(219, 71);
+            this.tb_点杀大小.Size = new System.Drawing.Size(219, 70);
             this.tb_点杀大小.TabIndex = 1;
             // 
             // btn_清空点杀大小
@@ -311,7 +312,7 @@
             this.groupBox2.Controls.Add(this.btn_清空点杀奇偶);
             this.groupBox2.Controls.Add(this.btn_点杀奇偶);
             this.groupBox2.Font = new System.Drawing.Font("宋体", 10F);
-            this.groupBox2.Location = new System.Drawing.Point(294, 25);
+            this.groupBox2.Location = new System.Drawing.Point(293, 25);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(233, 117);
             this.groupBox2.TabIndex = 3;
@@ -332,11 +333,11 @@
             // tb_点杀奇偶
             // 
             this.tb_点杀奇偶.Font = new System.Drawing.Font("宋体", 10F);
-            this.tb_点杀奇偶.Location = new System.Drawing.Point(7, 30);
+            this.tb_点杀奇偶.Location = new System.Drawing.Point(7, 31);
             this.tb_点杀奇偶.Multiline = true;
             this.tb_点杀奇偶.Name = "tb_点杀奇偶";
             this.tb_点杀奇偶.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.tb_点杀奇偶.Size = new System.Drawing.Size(219, 71);
+            this.tb_点杀奇偶.Size = new System.Drawing.Size(219, 70);
             this.tb_点杀奇偶.TabIndex = 1;
             // 
             // btn_清空点杀奇偶
@@ -368,7 +369,7 @@
             this.groupBox3.Controls.Add(this.btn_清空点杀012);
             this.groupBox3.Controls.Add(this.btn_点杀012);
             this.groupBox3.Font = new System.Drawing.Font("宋体", 10F);
-            this.groupBox3.Location = new System.Drawing.Point(294, 158);
+            this.groupBox3.Location = new System.Drawing.Point(293, 158);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(233, 117);
             this.groupBox3.TabIndex = 7;
@@ -389,11 +390,11 @@
             // tb_点杀012
             // 
             this.tb_点杀012.Font = new System.Drawing.Font("宋体", 10F);
-            this.tb_点杀012.Location = new System.Drawing.Point(7, 30);
+            this.tb_点杀012.Location = new System.Drawing.Point(7, 31);
             this.tb_点杀012.Multiline = true;
             this.tb_点杀012.Name = "tb_点杀012";
             this.tb_点杀012.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.tb_点杀012.Size = new System.Drawing.Size(219, 71);
+            this.tb_点杀012.Size = new System.Drawing.Size(219, 70);
             this.tb_点杀012.TabIndex = 1;
             // 
             // btn_清空点杀012
@@ -425,7 +426,7 @@
             this.groupBox4.Controls.Add(this.btn_点杀质合);
             this.groupBox4.Controls.Add(this.btn_点杀质数);
             this.groupBox4.Font = new System.Drawing.Font("宋体", 10F);
-            this.groupBox4.Location = new System.Drawing.Point(40, 158);
+            this.groupBox4.Location = new System.Drawing.Point(39, 158);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Size = new System.Drawing.Size(233, 117);
             this.groupBox4.TabIndex = 6;
@@ -446,11 +447,11 @@
             // tb_点杀质合
             // 
             this.tb_点杀质合.Font = new System.Drawing.Font("宋体", 10F);
-            this.tb_点杀质合.Location = new System.Drawing.Point(7, 30);
+            this.tb_点杀质合.Location = new System.Drawing.Point(7, 31);
             this.tb_点杀质合.Multiline = true;
             this.tb_点杀质合.Name = "tb_点杀质合";
             this.tb_点杀质合.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.tb_点杀质合.Size = new System.Drawing.Size(219, 71);
+            this.tb_点杀质合.Size = new System.Drawing.Size(219, 70);
             this.tb_点杀质合.TabIndex = 1;
             // 
             // btn_点杀质合
@@ -478,7 +479,7 @@
             // tb_结果
             // 
             this.tb_结果.Font = new System.Drawing.Font("微软雅黑", 10F);
-            this.tb_结果.Location = new System.Drawing.Point(1303, 83);
+            this.tb_结果.Location = new System.Drawing.Point(1302, 83);
             this.tb_结果.Multiline = true;
             this.tb_结果.Name = "tb_结果";
             this.tb_结果.ScrollBars = System.Windows.Forms.ScrollBars.Both;
@@ -489,7 +490,7 @@
             // 
             this.lb_结果数量.AutoSize = true;
             this.lb_结果数量.Font = new System.Drawing.Font("宋体", 10F);
-            this.lb_结果数量.Location = new System.Drawing.Point(1386, 17);
+            this.lb_结果数量.Location = new System.Drawing.Point(1385, 17);
             this.lb_结果数量.Name = "lb_结果数量";
             this.lb_结果数量.Size = new System.Drawing.Size(14, 14);
             this.lb_结果数量.TabIndex = 8;
@@ -498,7 +499,7 @@
             // btn_导出
             // 
             this.btn_导出.Font = new System.Drawing.Font("宋体", 10F);
-            this.btn_导出.Location = new System.Drawing.Point(1441, 737);
+            this.btn_导出.Location = new System.Drawing.Point(1440, 737);
             this.btn_导出.Name = "btn_导出";
             this.btn_导出.Size = new System.Drawing.Size(79, 30);
             this.btn_导出.TabIndex = 15;
@@ -510,7 +511,7 @@
             // 
             this.lb_被杀数量.AutoSize = true;
             this.lb_被杀数量.Font = new System.Drawing.Font("宋体", 10F);
-            this.lb_被杀数量.Location = new System.Drawing.Point(1133, 22);
+            this.lb_被杀数量.Location = new System.Drawing.Point(1132, 22);
             this.lb_被杀数量.Name = "lb_被杀数量";
             this.lb_被杀数量.Size = new System.Drawing.Size(14, 14);
             this.lb_被杀数量.TabIndex = 16;
@@ -519,7 +520,7 @@
             // btn_计算
             // 
             this.btn_计算.Font = new System.Drawing.Font("宋体", 10F);
-            this.btn_计算.Location = new System.Drawing.Point(1190, 737);
+            this.btn_计算.Location = new System.Drawing.Point(1189, 737);
             this.btn_计算.Name = "btn_计算";
             this.btn_计算.Size = new System.Drawing.Size(101, 30);
             this.btn_计算.TabIndex = 17;
@@ -532,7 +533,7 @@
             this.groupBox5.Controls.Add(this.ck_垃圾号);
             this.groupBox5.Controls.Add(this.tb_垃圾号);
             this.groupBox5.Font = new System.Drawing.Font("宋体", 10F);
-            this.groupBox5.Location = new System.Drawing.Point(40, 283);
+            this.groupBox5.Location = new System.Drawing.Point(39, 283);
             this.groupBox5.Name = "groupBox5";
             this.groupBox5.Size = new System.Drawing.Size(488, 82);
             this.groupBox5.TabIndex = 18;
@@ -569,7 +570,7 @@
             this.groupBox6.Controls.Add(this.panel_qian);
             this.groupBox6.Controls.Add(this.ck_杀定位);
             this.groupBox6.Font = new System.Drawing.Font("宋体", 10F);
-            this.groupBox6.Location = new System.Drawing.Point(465, 454);
+            this.groupBox6.Location = new System.Drawing.Point(464, 454);
             this.groupBox6.Name = "groupBox6";
             this.groupBox6.Size = new System.Drawing.Size(560, 180);
             this.groupBox6.TabIndex = 19;
@@ -1195,7 +1196,7 @@
             // button4
             // 
             this.button4.Font = new System.Drawing.Font("宋体", 10F);
-            this.button4.Location = new System.Drawing.Point(1319, 735);
+            this.button4.Location = new System.Drawing.Point(1318, 735);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(70, 30);
             this.button4.TabIndex = 20;
@@ -1226,9 +1227,9 @@
             this.groupBox7.Controls.Add(this.ck_ABCD);
             this.groupBox7.Controls.Add(this.button5);
             this.groupBox7.Font = new System.Drawing.Font("宋体", 10F);
-            this.groupBox7.Location = new System.Drawing.Point(563, 25);
+            this.groupBox7.Location = new System.Drawing.Point(562, 25);
             this.groupBox7.Name = "groupBox7";
-            this.groupBox7.Size = new System.Drawing.Size(440, 250);
+            this.groupBox7.Size = new System.Drawing.Size(440, 234);
             this.groupBox7.TabIndex = 21;
             this.groupBox7.TabStop = false;
             this.groupBox7.Text = "杀特殊条件";
@@ -1589,7 +1590,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("宋体", 10F);
-            this.label2.Location = new System.Drawing.Point(1303, 22);
+            this.label2.Location = new System.Drawing.Point(1302, 22);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(77, 14);
             this.label2.TabIndex = 22;
@@ -1598,7 +1599,7 @@
             // tb_被杀号码
             // 
             this.tb_被杀号码.Font = new System.Drawing.Font("微软雅黑", 10F);
-            this.tb_被杀号码.Location = new System.Drawing.Point(1052, 83);
+            this.tb_被杀号码.Location = new System.Drawing.Point(1051, 83);
             this.tb_被杀号码.Multiline = true;
             this.tb_被杀号码.Name = "tb_被杀号码";
             this.tb_被杀号码.ScrollBars = System.Windows.Forms.ScrollBars.Both;
@@ -1609,7 +1610,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("宋体", 10F);
-            this.label3.Location = new System.Drawing.Point(1050, 22);
+            this.label3.Location = new System.Drawing.Point(1049, 22);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(77, 14);
             this.label3.TabIndex = 24;
@@ -1657,7 +1658,7 @@
             this.groupBox8.Controls.Add(this.button12);
             this.groupBox8.Controls.Add(this.tb_四位和值);
             this.groupBox8.Font = new System.Drawing.Font("宋体", 10F);
-            this.groupBox8.Location = new System.Drawing.Point(40, 377);
+            this.groupBox8.Location = new System.Drawing.Point(39, 377);
             this.groupBox8.Name = "groupBox8";
             this.groupBox8.Size = new System.Drawing.Size(407, 445);
             this.groupBox8.TabIndex = 25;
@@ -1713,7 +1714,7 @@
             // button22
             // 
             this.button22.Font = new System.Drawing.Font("宋体", 10F);
-            this.button22.Location = new System.Drawing.Point(315, 389);
+            this.button22.Location = new System.Drawing.Point(315, 391);
             this.button22.Name = "button22";
             this.button22.Size = new System.Drawing.Size(56, 25);
             this.button22.TabIndex = 95;
@@ -1745,7 +1746,7 @@
             // button21
             // 
             this.button21.Font = new System.Drawing.Font("宋体", 10F);
-            this.button21.Location = new System.Drawing.Point(315, 338);
+            this.button21.Location = new System.Drawing.Point(315, 335);
             this.button21.Name = "button21";
             this.button21.Size = new System.Drawing.Size(56, 25);
             this.button21.TabIndex = 92;
@@ -1796,7 +1797,7 @@
             // button19
             // 
             this.button19.Font = new System.Drawing.Font("宋体", 10F);
-            this.button19.Location = new System.Drawing.Point(313, 72);
+            this.button19.Location = new System.Drawing.Point(313, 67);
             this.button19.Name = "button19";
             this.button19.Size = new System.Drawing.Size(56, 25);
             this.button19.TabIndex = 87;
@@ -1854,7 +1855,7 @@
             // button8
             // 
             this.button8.Font = new System.Drawing.Font("宋体", 10F);
-            this.button8.Location = new System.Drawing.Point(315, 297);
+            this.button8.Location = new System.Drawing.Point(315, 302);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(56, 25);
             this.button8.TabIndex = 75;
@@ -1878,7 +1879,7 @@
             // button10
             // 
             this.button10.Font = new System.Drawing.Font("宋体", 10F);
-            this.button10.Location = new System.Drawing.Point(329, 210);
+            this.button10.Location = new System.Drawing.Point(329, 213);
             this.button10.Name = "button10";
             this.button10.Size = new System.Drawing.Size(56, 25);
             this.button10.TabIndex = 80;
@@ -1937,7 +1938,7 @@
             // button11
             // 
             this.button11.Font = new System.Drawing.Font("宋体", 10F);
-            this.button11.Location = new System.Drawing.Point(329, 183);
+            this.button11.Location = new System.Drawing.Point(329, 185);
             this.button11.Name = "button11";
             this.button11.Size = new System.Drawing.Size(56, 25);
             this.button11.TabIndex = 78;
@@ -1961,7 +1962,7 @@
             // button6
             // 
             this.button6.Font = new System.Drawing.Font("宋体", 10F);
-            this.button6.Location = new System.Drawing.Point(315, 247);
+            this.button6.Location = new System.Drawing.Point(315, 243);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(56, 25);
             this.button6.TabIndex = 69;
@@ -2027,7 +2028,7 @@
             // button36
             // 
             this.button36.Font = new System.Drawing.Font("宋体", 10F);
-            this.button36.Location = new System.Drawing.Point(329, 158);
+            this.button36.Location = new System.Drawing.Point(329, 157);
             this.button36.Name = "button36";
             this.button36.Size = new System.Drawing.Size(56, 25);
             this.button36.TabIndex = 36;
@@ -2046,7 +2047,7 @@
             // button33
             // 
             this.button33.Font = new System.Drawing.Font("宋体", 10F);
-            this.button33.Location = new System.Drawing.Point(329, 131);
+            this.button33.Location = new System.Drawing.Point(329, 130);
             this.button33.Name = "button33";
             this.button33.Size = new System.Drawing.Size(56, 25);
             this.button33.TabIndex = 27;
@@ -2098,7 +2099,7 @@
             this.groupBox9.Controls.Add(this.ck_反向3连);
             this.groupBox9.Controls.Add(this.ck_反向2连);
             this.groupBox9.Font = new System.Drawing.Font("宋体", 10F);
-            this.groupBox9.Location = new System.Drawing.Point(563, 295);
+            this.groupBox9.Location = new System.Drawing.Point(562, 295);
             this.groupBox9.Name = "groupBox9";
             this.groupBox9.Size = new System.Drawing.Size(440, 148);
             this.groupBox9.TabIndex = 26;
@@ -2143,7 +2144,7 @@
             this.groupBox10.Controls.Add(this.ck_胆码1);
             this.groupBox10.Controls.Add(this.ck_胆码0);
             this.groupBox10.Font = new System.Drawing.Font("宋体", 10F);
-            this.groupBox10.Location = new System.Drawing.Point(465, 646);
+            this.groupBox10.Location = new System.Drawing.Point(464, 646);
             this.groupBox10.Name = "groupBox10";
             this.groupBox10.Size = new System.Drawing.Size(560, 73);
             this.groupBox10.TabIndex = 65;
@@ -2309,7 +2310,7 @@
             this.groupBox11.Controls.Add(this.ck_跨度1);
             this.groupBox11.Controls.Add(this.ck_跨度0);
             this.groupBox11.Font = new System.Drawing.Font("宋体", 10F);
-            this.groupBox11.Location = new System.Drawing.Point(465, 734);
+            this.groupBox11.Location = new System.Drawing.Point(464, 734);
             this.groupBox11.Name = "groupBox11";
             this.groupBox11.Size = new System.Drawing.Size(560, 73);
             this.groupBox11.TabIndex = 66;
@@ -2463,7 +2464,7 @@
             // button13
             // 
             this.button13.Font = new System.Drawing.Font("宋体", 10F);
-            this.button13.Location = new System.Drawing.Point(1052, 737);
+            this.button13.Location = new System.Drawing.Point(1051, 737);
             this.button13.Name = "button13";
             this.button13.Size = new System.Drawing.Size(93, 30);
             this.button13.TabIndex = 67;
@@ -2474,7 +2475,7 @@
             // button14
             // 
             this.button14.Font = new System.Drawing.Font("宋体", 10F);
-            this.button14.Location = new System.Drawing.Point(1190, 13);
+            this.button14.Location = new System.Drawing.Point(1189, 13);
             this.button14.Name = "button14";
             this.button14.Size = new System.Drawing.Size(70, 30);
             this.button14.TabIndex = 68;
@@ -2485,7 +2486,7 @@
             // button16
             // 
             this.button16.Font = new System.Drawing.Font("宋体", 10F);
-            this.button16.Location = new System.Drawing.Point(1441, 13);
+            this.button16.Location = new System.Drawing.Point(1440, 13);
             this.button16.Name = "button16";
             this.button16.Size = new System.Drawing.Size(70, 30);
             this.button16.TabIndex = 69;
@@ -2496,7 +2497,7 @@
             // button17
             // 
             this.button17.Font = new System.Drawing.Font("宋体", 10F);
-            this.button17.Location = new System.Drawing.Point(1319, 777);
+            this.button17.Location = new System.Drawing.Point(1318, 777);
             this.button17.Name = "button17";
             this.button17.Size = new System.Drawing.Size(70, 30);
             this.button17.TabIndex = 70;
@@ -2507,7 +2508,7 @@
             // button18
             // 
             this.button18.Font = new System.Drawing.Font("宋体", 10F);
-            this.button18.Location = new System.Drawing.Point(1440, 778);
+            this.button18.Location = new System.Drawing.Point(1439, 778);
             this.button18.Name = "button18";
             this.button18.Size = new System.Drawing.Size(80, 30);
             this.button18.TabIndex = 71;
@@ -2519,7 +2520,7 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("宋体", 10F);
-            this.label8.Location = new System.Drawing.Point(1050, 55);
+            this.label8.Location = new System.Drawing.Point(1049, 55);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(49, 14);
             this.label8.TabIndex = 72;
@@ -2529,7 +2530,7 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("宋体", 10F);
-            this.label9.Location = new System.Drawing.Point(1300, 54);
+            this.label9.Location = new System.Drawing.Point(1299, 54);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(49, 14);
             this.label9.TabIndex = 73;
@@ -2538,7 +2539,7 @@
             // tb_检索del
             // 
             this.tb_检索del.Font = new System.Drawing.Font("宋体", 10F);
-            this.tb_检索del.Location = new System.Drawing.Point(1093, 50);
+            this.tb_检索del.Location = new System.Drawing.Point(1092, 50);
             this.tb_检索del.Name = "tb_检索del";
             this.tb_检索del.Size = new System.Drawing.Size(128, 23);
             this.tb_检索del.TabIndex = 74;
@@ -2547,7 +2548,7 @@
             // tb_检索res
             // 
             this.tb_检索res.Font = new System.Drawing.Font("宋体", 10F);
-            this.tb_检索res.Location = new System.Drawing.Point(1345, 50);
+            this.tb_检索res.Location = new System.Drawing.Point(1344, 50);
             this.tb_检索res.Name = "tb_检索res";
             this.tb_检索res.Size = new System.Drawing.Size(116, 23);
             this.tb_检索res.TabIndex = 75;
@@ -2557,7 +2558,7 @@
             // 
             this.lb_cunzaidel.AutoSize = true;
             this.lb_cunzaidel.Font = new System.Drawing.Font("宋体", 10F);
-            this.lb_cunzaidel.Location = new System.Drawing.Point(1228, 55);
+            this.lb_cunzaidel.Location = new System.Drawing.Point(1227, 55);
             this.lb_cunzaidel.Name = "lb_cunzaidel";
             this.lb_cunzaidel.Size = new System.Drawing.Size(0, 14);
             this.lb_cunzaidel.TabIndex = 76;
@@ -2566,7 +2567,7 @@
             // 
             this.lb_cunzaires.AutoSize = true;
             this.lb_cunzaires.Font = new System.Drawing.Font("宋体", 10F);
-            this.lb_cunzaires.Location = new System.Drawing.Point(1480, 55);
+            this.lb_cunzaires.Location = new System.Drawing.Point(1479, 55);
             this.lb_cunzaires.Name = "lb_cunzaires";
             this.lb_cunzaires.Size = new System.Drawing.Size(0, 14);
             this.lb_cunzaires.TabIndex = 77;
@@ -2574,7 +2575,7 @@
             // button24
             // 
             this.button24.Font = new System.Drawing.Font("宋体", 10F);
-            this.button24.Location = new System.Drawing.Point(1190, 778);
+            this.button24.Location = new System.Drawing.Point(1189, 778);
             this.button24.Name = "button24";
             this.button24.Size = new System.Drawing.Size(101, 30);
             this.button24.TabIndex = 78;
@@ -2582,11 +2583,20 @@
             this.button24.UseVisualStyleBackColor = true;
             this.button24.Click += new System.EventHandler(this.button24_Click);
             // 
+            // panel1
+            // 
+            this.panel1.Location = new System.Drawing.Point(12, 11);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1518, 811);
+            this.panel1.TabIndex = 79;
+            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1535, 837);
+            this.AutoScroll = true;
+            this.AutoSize = true;
+            this.ClientSize = new System.Drawing.Size(1548, 846);
             this.Controls.Add(this.button24);
             this.Controls.Add(this.lb_cunzaires);
             this.Controls.Add(this.lb_cunzaidel);
@@ -2619,9 +2629,12 @@
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.groupBox9);
             this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("宋体", 10F);
             this.Name = "Main";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "四星杀号V1.0";
+            this.Load += new System.EventHandler(this.Main_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
@@ -2861,5 +2874,6 @@
         private System.Windows.Forms.Button button23;
         private System.Windows.Forms.TextBox tb_千十和值;
         private System.Windows.Forms.Button button24;
+        private System.Windows.Forms.Panel panel1;
     }
 }

@@ -148,20 +148,35 @@
             this.tb_被杀号码 = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.groupBox8 = new System.Windows.Forms.GroupBox();
+            this.ck_千十和值 = new System.Windows.Forms.CheckBox();
+            this.button23 = new System.Windows.Forms.Button();
+            this.tb_千十和值 = new System.Windows.Forms.TextBox();
+            this.ck_百个和值 = new System.Windows.Forms.CheckBox();
+            this.button22 = new System.Windows.Forms.Button();
+            this.tb_百个和值 = new System.Windows.Forms.TextBox();
+            this.ck_千个和值 = new System.Windows.Forms.CheckBox();
+            this.button21 = new System.Windows.Forms.Button();
+            this.tb_千个和值 = new System.Windows.Forms.TextBox();
+            this.button20 = new System.Windows.Forms.Button();
+            this.tb_偶数和值 = new System.Windows.Forms.TextBox();
+            this.ck_偶数和值 = new System.Windows.Forms.CheckBox();
+            this.button19 = new System.Windows.Forms.Button();
+            this.tb_奇数和值 = new System.Windows.Forms.TextBox();
+            this.ck_奇数和值 = new System.Windows.Forms.CheckBox();
             this.ck_千十个和值 = new System.Windows.Forms.CheckBox();
-            this.ck_千百个和值 = new System.Windows.Forms.CheckBox();
-            this.button10 = new System.Windows.Forms.Button();
-            this.tb_千十个和值 = new System.Windows.Forms.TextBox();
-            this.button11 = new System.Windows.Forms.Button();
-            this.tb_千百个和值 = new System.Windows.Forms.TextBox();
             this.ck_后二和值 = new System.Windows.Forms.CheckBox();
             this.button8 = new System.Windows.Forms.Button();
+            this.ck_千百个和值 = new System.Windows.Forms.CheckBox();
+            this.button10 = new System.Windows.Forms.Button();
             this.tb_后二和值 = new System.Windows.Forms.TextBox();
             this.ck_中二和值 = new System.Windows.Forms.CheckBox();
+            this.tb_千十个和值 = new System.Windows.Forms.TextBox();
             this.button7 = new System.Windows.Forms.Button();
             this.tb_中二和值 = new System.Windows.Forms.TextBox();
+            this.button11 = new System.Windows.Forms.Button();
             this.ck_前二和值 = new System.Windows.Forms.CheckBox();
             this.button6 = new System.Windows.Forms.Button();
+            this.tb_千百个和值 = new System.Windows.Forms.TextBox();
             this.tb_前二和值 = new System.Windows.Forms.TextBox();
             this.ck_后三和值 = new System.Windows.Forms.CheckBox();
             this.ck_前三和值 = new System.Windows.Forms.CheckBox();
@@ -214,21 +229,6 @@
             this.tb_检索res = new System.Windows.Forms.TextBox();
             this.lb_cunzaidel = new System.Windows.Forms.Label();
             this.lb_cunzaires = new System.Windows.Forms.Label();
-            this.ck_奇数和值 = new System.Windows.Forms.CheckBox();
-            this.tb_奇数和值 = new System.Windows.Forms.TextBox();
-            this.button19 = new System.Windows.Forms.Button();
-            this.button20 = new System.Windows.Forms.Button();
-            this.tb_偶数和值 = new System.Windows.Forms.TextBox();
-            this.ck_偶数和值 = new System.Windows.Forms.CheckBox();
-            this.ck_千个和值 = new System.Windows.Forms.CheckBox();
-            this.button21 = new System.Windows.Forms.Button();
-            this.tb_千个和值 = new System.Windows.Forms.TextBox();
-            this.ck_百个和值 = new System.Windows.Forms.CheckBox();
-            this.button22 = new System.Windows.Forms.Button();
-            this.tb_百个和值 = new System.Windows.Forms.TextBox();
-            this.ck_千十和值 = new System.Windows.Forms.CheckBox();
-            this.button23 = new System.Windows.Forms.Button();
-            this.tb_千十和值 = new System.Windows.Forms.TextBox();
             this.button24 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -1665,6 +1665,166 @@
             this.groupBox8.Text = "和值杀号";
             this.groupBox8.Enter += new System.EventHandler(this.groupBox8_Enter);
             // 
+            // ck_千十和值
+            // 
+            this.ck_千十和值.AutoSize = true;
+            this.ck_千十和值.Checked = true;
+            this.ck_千十和值.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.ck_千十和值.Font = new System.Drawing.Font("宋体", 10F);
+            this.ck_千十和值.Location = new System.Drawing.Point(10, 368);
+            this.ck_千十和值.Name = "ck_千十和值";
+            this.ck_千十和值.Size = new System.Drawing.Size(82, 18);
+            this.ck_千十和值.TabIndex = 99;
+            this.ck_千十和值.Text = "千十和值";
+            this.ck_千十和值.UseVisualStyleBackColor = true;
+            // 
+            // button23
+            // 
+            this.button23.Font = new System.Drawing.Font("宋体", 10F);
+            this.button23.Location = new System.Drawing.Point(315, 363);
+            this.button23.Name = "button23";
+            this.button23.Size = new System.Drawing.Size(56, 25);
+            this.button23.TabIndex = 98;
+            this.button23.Text = "选择";
+            this.button23.UseVisualStyleBackColor = true;
+            this.button23.Click += new System.EventHandler(this.button23_Click);
+            // 
+            // tb_千十和值
+            // 
+            this.tb_千十和值.Font = new System.Drawing.Font("宋体", 10F);
+            this.tb_千十和值.Location = new System.Drawing.Point(101, 365);
+            this.tb_千十和值.Name = "tb_千十和值";
+            this.tb_千十和值.Size = new System.Drawing.Size(203, 23);
+            this.tb_千十和值.TabIndex = 97;
+            // 
+            // ck_百个和值
+            // 
+            this.ck_百个和值.AutoSize = true;
+            this.ck_百个和值.Checked = true;
+            this.ck_百个和值.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.ck_百个和值.Font = new System.Drawing.Font("宋体", 10F);
+            this.ck_百个和值.Location = new System.Drawing.Point(10, 393);
+            this.ck_百个和值.Name = "ck_百个和值";
+            this.ck_百个和值.Size = new System.Drawing.Size(82, 18);
+            this.ck_百个和值.TabIndex = 96;
+            this.ck_百个和值.Text = "百个和值";
+            this.ck_百个和值.UseVisualStyleBackColor = true;
+            // 
+            // button22
+            // 
+            this.button22.Font = new System.Drawing.Font("宋体", 10F);
+            this.button22.Location = new System.Drawing.Point(315, 389);
+            this.button22.Name = "button22";
+            this.button22.Size = new System.Drawing.Size(56, 25);
+            this.button22.TabIndex = 95;
+            this.button22.Text = "选择";
+            this.button22.UseVisualStyleBackColor = true;
+            this.button22.Click += new System.EventHandler(this.button22_Click);
+            // 
+            // tb_百个和值
+            // 
+            this.tb_百个和值.Font = new System.Drawing.Font("宋体", 10F);
+            this.tb_百个和值.Location = new System.Drawing.Point(101, 391);
+            this.tb_百个和值.Name = "tb_百个和值";
+            this.tb_百个和值.Size = new System.Drawing.Size(203, 23);
+            this.tb_百个和值.TabIndex = 94;
+            // 
+            // ck_千个和值
+            // 
+            this.ck_千个和值.AutoSize = true;
+            this.ck_千个和值.Checked = true;
+            this.ck_千个和值.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.ck_千个和值.Font = new System.Drawing.Font("宋体", 10F);
+            this.ck_千个和值.Location = new System.Drawing.Point(10, 343);
+            this.ck_千个和值.Name = "ck_千个和值";
+            this.ck_千个和值.Size = new System.Drawing.Size(82, 18);
+            this.ck_千个和值.TabIndex = 93;
+            this.ck_千个和值.Text = "千个和值";
+            this.ck_千个和值.UseVisualStyleBackColor = true;
+            // 
+            // button21
+            // 
+            this.button21.Font = new System.Drawing.Font("宋体", 10F);
+            this.button21.Location = new System.Drawing.Point(315, 338);
+            this.button21.Name = "button21";
+            this.button21.Size = new System.Drawing.Size(56, 25);
+            this.button21.TabIndex = 92;
+            this.button21.Text = "选择";
+            this.button21.UseVisualStyleBackColor = true;
+            this.button21.Click += new System.EventHandler(this.button21_Click);
+            // 
+            // tb_千个和值
+            // 
+            this.tb_千个和值.Font = new System.Drawing.Font("宋体", 10F);
+            this.tb_千个和值.Location = new System.Drawing.Point(101, 340);
+            this.tb_千个和值.Name = "tb_千个和值";
+            this.tb_千个和值.Size = new System.Drawing.Size(203, 23);
+            this.tb_千个和值.TabIndex = 91;
+            // 
+            // button20
+            // 
+            this.button20.Font = new System.Drawing.Font("宋体", 10F);
+            this.button20.Location = new System.Drawing.Point(313, 98);
+            this.button20.Name = "button20";
+            this.button20.Size = new System.Drawing.Size(56, 25);
+            this.button20.TabIndex = 90;
+            this.button20.Text = "选择";
+            this.button20.UseVisualStyleBackColor = true;
+            this.button20.Click += new System.EventHandler(this.button20_Click);
+            // 
+            // tb_偶数和值
+            // 
+            this.tb_偶数和值.Font = new System.Drawing.Font("宋体", 10F);
+            this.tb_偶数和值.Location = new System.Drawing.Point(104, 96);
+            this.tb_偶数和值.Name = "tb_偶数和值";
+            this.tb_偶数和值.Size = new System.Drawing.Size(201, 23);
+            this.tb_偶数和值.TabIndex = 89;
+            // 
+            // ck_偶数和值
+            // 
+            this.ck_偶数和值.AutoSize = true;
+            this.ck_偶数和值.Checked = true;
+            this.ck_偶数和值.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.ck_偶数和值.Font = new System.Drawing.Font("宋体", 10F);
+            this.ck_偶数和值.Location = new System.Drawing.Point(13, 101);
+            this.ck_偶数和值.Name = "ck_偶数和值";
+            this.ck_偶数和值.Size = new System.Drawing.Size(82, 18);
+            this.ck_偶数和值.TabIndex = 88;
+            this.ck_偶数和值.Text = "偶数和值";
+            this.ck_偶数和值.UseVisualStyleBackColor = true;
+            // 
+            // button19
+            // 
+            this.button19.Font = new System.Drawing.Font("宋体", 10F);
+            this.button19.Location = new System.Drawing.Point(313, 72);
+            this.button19.Name = "button19";
+            this.button19.Size = new System.Drawing.Size(56, 25);
+            this.button19.TabIndex = 87;
+            this.button19.Text = "选择";
+            this.button19.UseVisualStyleBackColor = true;
+            this.button19.Click += new System.EventHandler(this.button19_Click);
+            // 
+            // tb_奇数和值
+            // 
+            this.tb_奇数和值.Font = new System.Drawing.Font("宋体", 10F);
+            this.tb_奇数和值.Location = new System.Drawing.Point(104, 72);
+            this.tb_奇数和值.Name = "tb_奇数和值";
+            this.tb_奇数和值.Size = new System.Drawing.Size(201, 23);
+            this.tb_奇数和值.TabIndex = 86;
+            // 
+            // ck_奇数和值
+            // 
+            this.ck_奇数和值.AutoSize = true;
+            this.ck_奇数和值.Checked = true;
+            this.ck_奇数和值.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.ck_奇数和值.Font = new System.Drawing.Font("宋体", 10F);
+            this.ck_奇数和值.Location = new System.Drawing.Point(13, 77);
+            this.ck_奇数和值.Name = "ck_奇数和值";
+            this.ck_奇数和值.Size = new System.Drawing.Size(82, 18);
+            this.ck_奇数和值.TabIndex = 85;
+            this.ck_奇数和值.Text = "奇数和值";
+            this.ck_奇数和值.UseVisualStyleBackColor = true;
+            // 
             // ck_千十个和值
             // 
             this.ck_千十个和值.AutoSize = true;
@@ -1677,57 +1837,6 @@
             this.ck_千十个和值.TabIndex = 84;
             this.ck_千十个和值.Text = "千十个和值";
             this.ck_千十个和值.UseVisualStyleBackColor = true;
-            // 
-            // ck_千百个和值
-            // 
-            this.ck_千百个和值.AutoSize = true;
-            this.ck_千百个和值.Checked = true;
-            this.ck_千百个和值.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.ck_千百个和值.Font = new System.Drawing.Font("宋体", 10F);
-            this.ck_千百个和值.Location = new System.Drawing.Point(10, 190);
-            this.ck_千百个和值.Name = "ck_千百个和值";
-            this.ck_千百个和值.Size = new System.Drawing.Size(96, 18);
-            this.ck_千百个和值.TabIndex = 83;
-            this.ck_千百个和值.Text = "千百个和值";
-            this.ck_千百个和值.UseVisualStyleBackColor = true;
-            // 
-            // button10
-            // 
-            this.button10.Font = new System.Drawing.Font("宋体", 10F);
-            this.button10.Location = new System.Drawing.Point(329, 210);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(56, 25);
-            this.button10.TabIndex = 80;
-            this.button10.Text = "选择";
-            this.button10.UseVisualStyleBackColor = true;
-            this.button10.Click += new System.EventHandler(this.button10_Click);
-            // 
-            // tb_千十个和值
-            // 
-            this.tb_千十个和值.Font = new System.Drawing.Font("宋体", 10F);
-            this.tb_千十个和值.Location = new System.Drawing.Point(118, 212);
-            this.tb_千十个和值.Name = "tb_千十个和值";
-            this.tb_千十个和值.Size = new System.Drawing.Size(203, 23);
-            this.tb_千十个和值.TabIndex = 79;
-            // 
-            // button11
-            // 
-            this.button11.Font = new System.Drawing.Font("宋体", 10F);
-            this.button11.Location = new System.Drawing.Point(329, 183);
-            this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(56, 25);
-            this.button11.TabIndex = 78;
-            this.button11.Text = "选择";
-            this.button11.UseVisualStyleBackColor = true;
-            this.button11.Click += new System.EventHandler(this.button11_Click);
-            // 
-            // tb_千百个和值
-            // 
-            this.tb_千百个和值.Font = new System.Drawing.Font("宋体", 10F);
-            this.tb_千百个和值.Location = new System.Drawing.Point(118, 185);
-            this.tb_千百个和值.Name = "tb_千百个和值";
-            this.tb_千百个和值.Size = new System.Drawing.Size(203, 23);
-            this.tb_千百个和值.TabIndex = 77;
             // 
             // ck_后二和值
             // 
@@ -1753,6 +1862,30 @@
             this.button8.UseVisualStyleBackColor = true;
             this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
+            // ck_千百个和值
+            // 
+            this.ck_千百个和值.AutoSize = true;
+            this.ck_千百个和值.Checked = true;
+            this.ck_千百个和值.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.ck_千百个和值.Font = new System.Drawing.Font("宋体", 10F);
+            this.ck_千百个和值.Location = new System.Drawing.Point(10, 190);
+            this.ck_千百个和值.Name = "ck_千百个和值";
+            this.ck_千百个和值.Size = new System.Drawing.Size(96, 18);
+            this.ck_千百个和值.TabIndex = 83;
+            this.ck_千百个和值.Text = "千百个和值";
+            this.ck_千百个和值.UseVisualStyleBackColor = true;
+            // 
+            // button10
+            // 
+            this.button10.Font = new System.Drawing.Font("宋体", 10F);
+            this.button10.Location = new System.Drawing.Point(329, 210);
+            this.button10.Name = "button10";
+            this.button10.Size = new System.Drawing.Size(56, 25);
+            this.button10.TabIndex = 80;
+            this.button10.Text = "选择";
+            this.button10.UseVisualStyleBackColor = true;
+            this.button10.Click += new System.EventHandler(this.button10_Click);
+            // 
             // tb_后二和值
             // 
             this.tb_后二和值.Font = new System.Drawing.Font("宋体", 10F);
@@ -1774,6 +1907,14 @@
             this.ck_中二和值.Text = "百十和值";
             this.ck_中二和值.UseVisualStyleBackColor = true;
             // 
+            // tb_千十个和值
+            // 
+            this.tb_千十个和值.Font = new System.Drawing.Font("宋体", 10F);
+            this.tb_千十个和值.Location = new System.Drawing.Point(118, 212);
+            this.tb_千十个和值.Name = "tb_千十个和值";
+            this.tb_千十个和值.Size = new System.Drawing.Size(203, 23);
+            this.tb_千十个和值.TabIndex = 79;
+            // 
             // button7
             // 
             this.button7.Font = new System.Drawing.Font("宋体", 10F);
@@ -1792,6 +1933,17 @@
             this.tb_中二和值.Name = "tb_中二和值";
             this.tb_中二和值.Size = new System.Drawing.Size(203, 23);
             this.tb_中二和值.TabIndex = 71;
+            // 
+            // button11
+            // 
+            this.button11.Font = new System.Drawing.Font("宋体", 10F);
+            this.button11.Location = new System.Drawing.Point(329, 183);
+            this.button11.Name = "button11";
+            this.button11.Size = new System.Drawing.Size(56, 25);
+            this.button11.TabIndex = 78;
+            this.button11.Text = "选择";
+            this.button11.UseVisualStyleBackColor = true;
+            this.button11.Click += new System.EventHandler(this.button11_Click);
             // 
             // ck_前二和值
             // 
@@ -1816,6 +1968,14 @@
             this.button6.Text = "选择";
             this.button6.UseVisualStyleBackColor = true;
             this.button6.Click += new System.EventHandler(this.button6_Click);
+            // 
+            // tb_千百个和值
+            // 
+            this.tb_千百个和值.Font = new System.Drawing.Font("宋体", 10F);
+            this.tb_千百个和值.Location = new System.Drawing.Point(118, 185);
+            this.tb_千百个和值.Name = "tb_千百个和值";
+            this.tb_千百个和值.Size = new System.Drawing.Size(203, 23);
+            this.tb_千百个和值.TabIndex = 77;
             // 
             // tb_前二和值
             // 
@@ -1997,9 +2157,9 @@
             this.ck_杀胆码.Font = new System.Drawing.Font("宋体", 10F);
             this.ck_杀胆码.Location = new System.Drawing.Point(13, 0);
             this.ck_杀胆码.Name = "ck_杀胆码";
-            this.ck_杀胆码.Size = new System.Drawing.Size(131, 18);
+            this.ck_杀胆码.Size = new System.Drawing.Size(117, 18);
             this.ck_杀胆码.TabIndex = 13;
-            this.ck_杀胆码.Text = "杀胆码 （一胆）";
+            this.ck_杀胆码.Text = "胆码 （一胆）";
             this.ck_杀胆码.UseVisualStyleBackColor = true;
             // 
             // button15
@@ -2410,166 +2570,6 @@
             this.lb_cunzaires.Name = "lb_cunzaires";
             this.lb_cunzaires.Size = new System.Drawing.Size(0, 14);
             this.lb_cunzaires.TabIndex = 77;
-            // 
-            // ck_奇数和值
-            // 
-            this.ck_奇数和值.AutoSize = true;
-            this.ck_奇数和值.Checked = true;
-            this.ck_奇数和值.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.ck_奇数和值.Font = new System.Drawing.Font("宋体", 10F);
-            this.ck_奇数和值.Location = new System.Drawing.Point(13, 77);
-            this.ck_奇数和值.Name = "ck_奇数和值";
-            this.ck_奇数和值.Size = new System.Drawing.Size(82, 18);
-            this.ck_奇数和值.TabIndex = 85;
-            this.ck_奇数和值.Text = "奇数和值";
-            this.ck_奇数和值.UseVisualStyleBackColor = true;
-            // 
-            // tb_奇数和值
-            // 
-            this.tb_奇数和值.Font = new System.Drawing.Font("宋体", 10F);
-            this.tb_奇数和值.Location = new System.Drawing.Point(104, 72);
-            this.tb_奇数和值.Name = "tb_奇数和值";
-            this.tb_奇数和值.Size = new System.Drawing.Size(201, 23);
-            this.tb_奇数和值.TabIndex = 86;
-            // 
-            // button19
-            // 
-            this.button19.Font = new System.Drawing.Font("宋体", 10F);
-            this.button19.Location = new System.Drawing.Point(313, 72);
-            this.button19.Name = "button19";
-            this.button19.Size = new System.Drawing.Size(56, 25);
-            this.button19.TabIndex = 87;
-            this.button19.Text = "选择";
-            this.button19.UseVisualStyleBackColor = true;
-            this.button19.Click += new System.EventHandler(this.button19_Click);
-            // 
-            // button20
-            // 
-            this.button20.Font = new System.Drawing.Font("宋体", 10F);
-            this.button20.Location = new System.Drawing.Point(313, 98);
-            this.button20.Name = "button20";
-            this.button20.Size = new System.Drawing.Size(56, 25);
-            this.button20.TabIndex = 90;
-            this.button20.Text = "选择";
-            this.button20.UseVisualStyleBackColor = true;
-            this.button20.Click += new System.EventHandler(this.button20_Click);
-            // 
-            // tb_偶数和值
-            // 
-            this.tb_偶数和值.Font = new System.Drawing.Font("宋体", 10F);
-            this.tb_偶数和值.Location = new System.Drawing.Point(104, 96);
-            this.tb_偶数和值.Name = "tb_偶数和值";
-            this.tb_偶数和值.Size = new System.Drawing.Size(201, 23);
-            this.tb_偶数和值.TabIndex = 89;
-            // 
-            // ck_偶数和值
-            // 
-            this.ck_偶数和值.AutoSize = true;
-            this.ck_偶数和值.Checked = true;
-            this.ck_偶数和值.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.ck_偶数和值.Font = new System.Drawing.Font("宋体", 10F);
-            this.ck_偶数和值.Location = new System.Drawing.Point(13, 101);
-            this.ck_偶数和值.Name = "ck_偶数和值";
-            this.ck_偶数和值.Size = new System.Drawing.Size(82, 18);
-            this.ck_偶数和值.TabIndex = 88;
-            this.ck_偶数和值.Text = "偶数和值";
-            this.ck_偶数和值.UseVisualStyleBackColor = true;
-            // 
-            // ck_千个和值
-            // 
-            this.ck_千个和值.AutoSize = true;
-            this.ck_千个和值.Checked = true;
-            this.ck_千个和值.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.ck_千个和值.Font = new System.Drawing.Font("宋体", 10F);
-            this.ck_千个和值.Location = new System.Drawing.Point(10, 343);
-            this.ck_千个和值.Name = "ck_千个和值";
-            this.ck_千个和值.Size = new System.Drawing.Size(82, 18);
-            this.ck_千个和值.TabIndex = 93;
-            this.ck_千个和值.Text = "千个和值";
-            this.ck_千个和值.UseVisualStyleBackColor = true;
-            // 
-            // button21
-            // 
-            this.button21.Font = new System.Drawing.Font("宋体", 10F);
-            this.button21.Location = new System.Drawing.Point(315, 338);
-            this.button21.Name = "button21";
-            this.button21.Size = new System.Drawing.Size(56, 25);
-            this.button21.TabIndex = 92;
-            this.button21.Text = "选择";
-            this.button21.UseVisualStyleBackColor = true;
-            this.button21.Click += new System.EventHandler(this.button21_Click);
-            // 
-            // tb_千个和值
-            // 
-            this.tb_千个和值.Font = new System.Drawing.Font("宋体", 10F);
-            this.tb_千个和值.Location = new System.Drawing.Point(101, 340);
-            this.tb_千个和值.Name = "tb_千个和值";
-            this.tb_千个和值.Size = new System.Drawing.Size(203, 23);
-            this.tb_千个和值.TabIndex = 91;
-            // 
-            // ck_百个和值
-            // 
-            this.ck_百个和值.AutoSize = true;
-            this.ck_百个和值.Checked = true;
-            this.ck_百个和值.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.ck_百个和值.Font = new System.Drawing.Font("宋体", 10F);
-            this.ck_百个和值.Location = new System.Drawing.Point(10, 393);
-            this.ck_百个和值.Name = "ck_百个和值";
-            this.ck_百个和值.Size = new System.Drawing.Size(82, 18);
-            this.ck_百个和值.TabIndex = 96;
-            this.ck_百个和值.Text = "百个和值";
-            this.ck_百个和值.UseVisualStyleBackColor = true;
-            // 
-            // button22
-            // 
-            this.button22.Font = new System.Drawing.Font("宋体", 10F);
-            this.button22.Location = new System.Drawing.Point(315, 389);
-            this.button22.Name = "button22";
-            this.button22.Size = new System.Drawing.Size(56, 25);
-            this.button22.TabIndex = 95;
-            this.button22.Text = "选择";
-            this.button22.UseVisualStyleBackColor = true;
-            this.button22.Click += new System.EventHandler(this.button22_Click);
-            // 
-            // tb_百个和值
-            // 
-            this.tb_百个和值.Font = new System.Drawing.Font("宋体", 10F);
-            this.tb_百个和值.Location = new System.Drawing.Point(101, 391);
-            this.tb_百个和值.Name = "tb_百个和值";
-            this.tb_百个和值.Size = new System.Drawing.Size(203, 23);
-            this.tb_百个和值.TabIndex = 94;
-            // 
-            // ck_千十和值
-            // 
-            this.ck_千十和值.AutoSize = true;
-            this.ck_千十和值.Checked = true;
-            this.ck_千十和值.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.ck_千十和值.Font = new System.Drawing.Font("宋体", 10F);
-            this.ck_千十和值.Location = new System.Drawing.Point(10, 368);
-            this.ck_千十和值.Name = "ck_千十和值";
-            this.ck_千十和值.Size = new System.Drawing.Size(82, 18);
-            this.ck_千十和值.TabIndex = 99;
-            this.ck_千十和值.Text = "千十和值";
-            this.ck_千十和值.UseVisualStyleBackColor = true;
-            // 
-            // button23
-            // 
-            this.button23.Font = new System.Drawing.Font("宋体", 10F);
-            this.button23.Location = new System.Drawing.Point(315, 363);
-            this.button23.Name = "button23";
-            this.button23.Size = new System.Drawing.Size(56, 25);
-            this.button23.TabIndex = 98;
-            this.button23.Text = "选择";
-            this.button23.UseVisualStyleBackColor = true;
-            this.button23.Click += new System.EventHandler(this.button23_Click);
-            // 
-            // tb_千十和值
-            // 
-            this.tb_千十和值.Font = new System.Drawing.Font("宋体", 10F);
-            this.tb_千十和值.Location = new System.Drawing.Point(101, 365);
-            this.tb_千十和值.Name = "tb_千十和值";
-            this.tb_千十和值.Size = new System.Drawing.Size(203, 23);
-            this.tb_千十和值.TabIndex = 97;
             // 
             // button24
             // 

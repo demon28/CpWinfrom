@@ -47,6 +47,8 @@ namespace CpWinfrom
 
         public static NumberModel ToParse(string val)
         {
+
+            val = val.Trim(' ').Trim('\r').Trim('\n');
             char[] chart = val.ToCharArray();
 
 

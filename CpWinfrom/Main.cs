@@ -628,7 +628,20 @@ namespace CpWinfrom
             if (ck_垃圾号.Checked && !string.IsNullOrEmpty(this.tb_垃圾号.Text))
             {
                 string[] array = this.tb_垃圾号.Text.Split(' ');
-                lajihao.Enter(array, ref DelnumberModels);
+
+                List<NumberModel> list = new List<NumberModel>();
+
+                foreach (var n in array)
+                {
+                    if (!string.IsNullOrEmpty(n.Trim(' ').Trim('\r').Trim('\n')))
+                    {
+                        NumberModel number = NumberModel.ToParse(n);
+                        list.Add(number);
+                    }
+                    
+
+                }
+                lajihao.Enter(list, ref DelnumberModels);
 
             }
 

@@ -63,6 +63,7 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Rule\Diansha.cs" />
+    <Compile Include="Rule\dingliangshuhezhi.cs" />
     <Compile Include="Rule\hezhishahao.cs" />
     <Compile Include="Rule\lajihao.cs" />
     <Compile Include="Rule\shadanma.cs" />
@@ -71,6 +72,12 @@
     <Compile Include="Rule\shalianhao.cs" />
     <Compile Include="Rule\Teshuhao.cs" />
     <Compile Include="Tool.cs" />
+    <Compile Include="两数和值.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="两数和值.Designer.cs">
+      <DependentUpon>两数和值.cs</DependentUpon>
+    </Compile>
     <Compile Include="中二和值.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -200,6 +207,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="两数和值.resx">
+      <DependentUpon>两数和值.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="中二和值.resx">
       <DependentUpon>中二和值.cs</DependentUpon>
     </EmbeddedResource>

@@ -863,6 +863,18 @@ namespace CpWinfrom
             #endregion
 
 
+            #region 两数和值
+
+            if (ck_两数和值.Checked && !string.IsNullOrEmpty(tb_两数和值.Text))
+            {
+                string[] array = this.tb_两数和值.Text.Split(',');
+                int[] iNums = Array.ConvertAll(array, int.Parse);
+                List<int> list = iNums.ToList();
+                dingliangshuhezhi.两数和值(list, ref DelnumberModels);
+            }
+
+            #endregion
+
 
             #region 杀胆码 杀跨度  杀胆必须是最后一项
 
@@ -1245,7 +1257,6 @@ namespace CpWinfrom
 
         }
 
-
         private void Main_Load(object sender, EventArgs e)
         {
 
@@ -1257,10 +1268,28 @@ namespace CpWinfrom
             setTag(this);
             Main_Resize(new object(), new EventArgs());//x,y可在实例化时赋值,最后这句是新加的，在MDI时有用
         }
+     
 
-        private void button25_Click(object sender, EventArgs e)
+        private void button25_Click_1(object sender, EventArgs e)
         {
-          
+            两数和值 f1 = new 两数和值();
+
+
+            if (f1.ShowDialog() == DialogResult.OK)
+            {
+                List<CheckBox> checkBoxes = f1.cks;
+
+                this.tb_两数和值.Text = string.Empty;
+                foreach (var item in checkBoxes)
+                {
+                    this.tb_两数和值.Text += item.Text + ",";
+                }
+                this.tb_两数和值.Text = this.tb_两数和值.Text.TrimEnd(',');
+
+
+
+                f1.Close();
+            }
         }
     }
 }

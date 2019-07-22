@@ -2684,7 +2684,7 @@
             this.Font = new System.Drawing.Font("宋体", 10F);
             this.Name = "Main";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "四星杀号V1.1";
+            this.Text = "四星杀号V1.2";
             this.Load += new System.EventHandler(this.Main_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

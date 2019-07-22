@@ -109,15 +109,14 @@ namespace CpWinfrom.Rule
 
             foreach (var item in AllNumer.GetAllNumer())
             {
-                if (Tool.CheckOdd(item))
+                if (Math.Abs(item.N1 - item.N2) != 1 && Math.Abs(item.N1 - item.N3) != 1 && Math.Abs(item.N1 - item.N4) != 1 && Math.Abs(item.N2 - item.N3) != 1 && Math.Abs(item.N2 - item.N4) != 1 && Math.Abs(item.N3 - item.N4) != 1 && Math.Abs(item.N4 - item.N1) != 1 )
                 {
-                    numberModels.Add(item);
+                    if (numberModels.Count(S => S.N1 == item.N1 && S.N2 == item.N2 && S.N3 == item.N3 && S.N4 == item.N4) == 0)
+                    {
+                        numberModels.Add(item);
+                    }
                 }
 
-                if (Tool.ChecNotkOdd(item))
-                {
-                    numberModels.Add(item);
-                }
 
             }
 

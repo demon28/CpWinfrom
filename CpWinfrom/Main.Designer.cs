@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Main));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.ck_点杀大小 = new System.Windows.Forms.CheckBox();
             this.tb_点杀大小 = new System.Windows.Forms.TextBox();
@@ -2682,6 +2683,7 @@
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("宋体", 10F);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Main";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "四星杀号V1.2";

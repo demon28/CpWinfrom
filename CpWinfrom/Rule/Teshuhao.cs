@@ -438,5 +438,45 @@ namespace CpWinfrom.Rule
         }
 
 
+
+        public static void 杀两位固定数(ref List<NumberModel> numberModels, int L1,int L2)
+        {
+
+            foreach (var item in AllNumer.GetAllNumer())
+            {
+
+                if (item.GetString().IndexOf(L1.ToString())>=0 && item.GetString().IndexOf(L2.ToString()) >= 0)
+                {
+
+                    if (numberModels.Count(S => S.N1 == item.N1 && S.N2 == item.N2 && S.N3 == item.N3 && S.N4 == item.N4) == 0)
+                    {
+                        numberModels.Add(item);
+                    }
+
+                }
+            }
+
+        }
+
+        public static void 杀三位固定数(ref List<NumberModel> numberModels, int L1, int L2,int L3)
+        {
+
+            foreach (var item in AllNumer.GetAllNumer())
+            {
+
+                if (item.GetString().IndexOf(L1.ToString()) >= 0 && item.GetString().IndexOf(L2.ToString()) >= 0 && item.GetString().IndexOf(L3.ToString()) >= 0)
+                {
+
+                    if (numberModels.Count(S => S.N1 == item.N1 && S.N2 == item.N2 && S.N3 == item.N3 && S.N4 == item.N4) == 0)
+                    {
+                        numberModels.Add(item);
+                    }
+
+                }
+            }
+
+        }
+
+
     }
 }

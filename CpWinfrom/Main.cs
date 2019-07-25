@@ -445,7 +445,7 @@ namespace CpWinfrom
                 string foldPath = dialog.SelectedPath;
 
                 string value = this.tb_结果.Text;
-                string filename = "四星杀号-" + DateTime.Now.ToString("yyyyMMdd") + ".txt";
+                string filename = "排列四-" + DateTime.Now.ToString("yyyyMMddHHmmss") + ".txt";
                 string path = foldPath + "\\" + filename;
 
 
@@ -594,6 +594,97 @@ namespace CpWinfrom
             {
                 Teshuhao.M49对数(ref DelnumberModels);
             }
+
+            #region 杀指定连号
+
+            if (ck_杀01.Checked)
+            {
+                Teshuhao.杀两位固定数(ref DelnumberModels, 0, 1);
+            }
+            if (ck_杀12.Checked)
+            {
+                Teshuhao.杀两位固定数(ref DelnumberModels, 1, 2);
+            }
+            if (ck_杀23.Checked)
+            {
+                Teshuhao.杀两位固定数(ref DelnumberModels, 2, 3);
+            }
+            if (ck_杀34.Checked)
+            {
+                Teshuhao.杀两位固定数(ref DelnumberModels, 3, 4);
+            }
+            if (ck_杀45.Checked)
+            {
+                Teshuhao.杀两位固定数(ref DelnumberModels, 4, 5);
+            }
+            if (ck_杀56.Checked)
+            {
+                Teshuhao.杀两位固定数(ref DelnumberModels, 5, 6);
+            }
+            if (ck_杀67.Checked)
+            {
+                Teshuhao.杀两位固定数(ref DelnumberModels, 6, 7);
+            }
+         
+            if (ck_杀78.Checked)
+            {
+                Teshuhao.杀两位固定数(ref DelnumberModels, 7, 8);
+            }
+            if (ck_杀89.Checked)
+            {
+                Teshuhao.杀两位固定数(ref DelnumberModels, 8,9);
+            }
+            if (ck_杀90.Checked)
+            {
+                Teshuhao.杀两位固定数(ref DelnumberModels, 9,0);
+            }
+
+
+
+            if (ck_杀012.Checked)
+            {
+                Teshuhao.杀三位固定数(ref DelnumberModels, 0,1,2);
+            }
+            if (ck_杀123.Checked)
+            {
+                Teshuhao.杀三位固定数(ref DelnumberModels, 1,2,3);
+            }
+            if (ck_杀234.Checked)
+            {
+                Teshuhao.杀三位固定数(ref DelnumberModels, 2,3,4);
+            }
+
+            if (ck_杀345.Checked)
+            {
+                Teshuhao.杀三位固定数(ref DelnumberModels, 3, 4, 5);
+            }
+            if (ck_杀456.Checked)
+            {
+                Teshuhao.杀三位固定数(ref DelnumberModels, 4,5,6);
+            }
+            if (ck_杀567.Checked)
+            {
+                Teshuhao.杀三位固定数(ref DelnumberModels, 5,6,7);
+            }
+
+            if (ck_杀678.Checked)
+            {
+                Teshuhao.杀三位固定数(ref DelnumberModels, 6,7,8);
+            }
+            if (ck_杀789.Checked)
+            {
+                Teshuhao.杀三位固定数(ref DelnumberModels, 7,8,9);
+            }
+            if (ck_杀890.Checked)
+            {
+                Teshuhao.杀三位固定数(ref DelnumberModels, 8,9,0);
+            }
+            if (ck_杀901.Checked)
+            {
+                Teshuhao.杀三位固定数(ref DelnumberModels, 9,0,1);
+            }
+
+            #endregion
 
             #endregion
 

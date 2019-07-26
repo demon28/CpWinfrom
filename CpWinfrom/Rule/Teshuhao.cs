@@ -438,6 +438,31 @@ namespace CpWinfrom.Rule
         }
 
 
+        public static void 杀两重号(ref List<NumberModel> numberModels, int L1) {
+
+            foreach (var item in AllNumer.GetAllNumer())
+            {
+                List<int> list = new List<int>();
+                list.Add(item.N1);
+                list.Add(item.N2);
+                list.Add(item.N3);
+                list.Add(item.N4);
+
+
+                List<int> array = list.FindAll(delegate (int u) { return u == L1; });
+
+                if (array.Count>=2)
+                {
+
+                    if (numberModels.Count(S => S.N1 == item.N1 && S.N2 == item.N2 && S.N3 == item.N3 && S.N4 == item.N4) == 0)
+                    {
+                        numberModels.Add(item);
+                    }
+
+                }
+            }
+        }
+
 
         public static void 杀两位固定数(ref List<NumberModel> numberModels, int L1,int L2)
         {

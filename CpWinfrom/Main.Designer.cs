@@ -113,6 +113,16 @@
             this.ck_杀定位 = new System.Windows.Forms.CheckBox();
             this.button4 = new System.Windows.Forms.Button();
             this.groupBox7 = new System.Windows.Forms.GroupBox();
+            this.ck_杀90 = new System.Windows.Forms.CheckBox();
+            this.ck_杀89 = new System.Windows.Forms.CheckBox();
+            this.ck_杀78 = new System.Windows.Forms.CheckBox();
+            this.ck_杀67 = new System.Windows.Forms.CheckBox();
+            this.ck_杀56 = new System.Windows.Forms.CheckBox();
+            this.ck_杀45 = new System.Windows.Forms.CheckBox();
+            this.ck_杀34 = new System.Windows.Forms.CheckBox();
+            this.ck_杀23 = new System.Windows.Forms.CheckBox();
+            this.ck_杀12 = new System.Windows.Forms.CheckBox();
+            this.ck_杀01 = new System.Windows.Forms.CheckBox();
             this.ck_杀49 = new System.Windows.Forms.CheckBox();
             this.ck_杀38 = new System.Windows.Forms.CheckBox();
             this.ck_杀27 = new System.Windows.Forms.CheckBox();
@@ -232,31 +242,31 @@
             this.lb_cunzaires = new System.Windows.Forms.Label();
             this.button24 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.groupbox_杀指定连号 = new System.Windows.Forms.GroupBox();
+            this.ck_杀901 = new System.Windows.Forms.CheckBox();
+            this.ck_杀890 = new System.Windows.Forms.CheckBox();
+            this.ck_杀789 = new System.Windows.Forms.CheckBox();
+            this.ck_杀678 = new System.Windows.Forms.CheckBox();
+            this.ck_杀567 = new System.Windows.Forms.CheckBox();
+            this.ck_杀456 = new System.Windows.Forms.CheckBox();
+            this.ck_杀345 = new System.Windows.Forms.CheckBox();
+            this.ck_杀234 = new System.Windows.Forms.CheckBox();
+            this.ck_杀123 = new System.Windows.Forms.CheckBox();
+            this.ck_杀012 = new System.Windows.Forms.CheckBox();
             this.groupBox12 = new System.Windows.Forms.GroupBox();
             this.button25 = new System.Windows.Forms.Button();
             this.tb_两数和值 = new System.Windows.Forms.TextBox();
             this.ck_两数和值 = new System.Windows.Forms.CheckBox();
-            this.ck_杀01 = new System.Windows.Forms.CheckBox();
-            this.ck_杀12 = new System.Windows.Forms.CheckBox();
-            this.ck_杀23 = new System.Windows.Forms.CheckBox();
-            this.ck_杀34 = new System.Windows.Forms.CheckBox();
-            this.ck_杀45 = new System.Windows.Forms.CheckBox();
-            this.ck_杀56 = new System.Windows.Forms.CheckBox();
-            this.ck_杀67 = new System.Windows.Forms.CheckBox();
-            this.ck_杀78 = new System.Windows.Forms.CheckBox();
-            this.ck_杀89 = new System.Windows.Forms.CheckBox();
-            this.ck_杀90 = new System.Windows.Forms.CheckBox();
-            this.groupbox_杀指定连号 = new System.Windows.Forms.GroupBox();
-            this.ck_杀012 = new System.Windows.Forms.CheckBox();
-            this.ck_杀123 = new System.Windows.Forms.CheckBox();
-            this.ck_杀234 = new System.Windows.Forms.CheckBox();
-            this.ck_杀345 = new System.Windows.Forms.CheckBox();
-            this.ck_杀456 = new System.Windows.Forms.CheckBox();
-            this.ck_杀567 = new System.Windows.Forms.CheckBox();
-            this.ck_杀678 = new System.Windows.Forms.CheckBox();
-            this.ck_杀789 = new System.Windows.Forms.CheckBox();
-            this.ck_杀890 = new System.Windows.Forms.CheckBox();
-            this.ck_杀901 = new System.Windows.Forms.CheckBox();
+            this.ck_杀00 = new System.Windows.Forms.CheckBox();
+            this.ck_杀11 = new System.Windows.Forms.CheckBox();
+            this.ck_杀22 = new System.Windows.Forms.CheckBox();
+            this.ck_杀33 = new System.Windows.Forms.CheckBox();
+            this.ck_杀44 = new System.Windows.Forms.CheckBox();
+            this.ck_杀55 = new System.Windows.Forms.CheckBox();
+            this.ck_杀66 = new System.Windows.Forms.CheckBox();
+            this.ck_杀77 = new System.Windows.Forms.CheckBox();
+            this.ck_杀88 = new System.Windows.Forms.CheckBox();
+            this.ck_杀99 = new System.Windows.Forms.CheckBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -273,8 +283,8 @@
             this.groupBox10.SuspendLayout();
             this.groupBox11.SuspendLayout();
             this.panel1.SuspendLayout();
-            this.groupBox12.SuspendLayout();
             this.groupbox_杀指定连号.SuspendLayout();
+            this.groupBox12.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -508,18 +518,18 @@
             // tb_结果
             // 
             this.tb_结果.Font = new System.Drawing.Font("微软雅黑", 10F);
-            this.tb_结果.Location = new System.Drawing.Point(1302, 226);
+            this.tb_结果.Location = new System.Drawing.Point(1302, 277);
             this.tb_结果.Multiline = true;
             this.tb_结果.Name = "tb_结果";
             this.tb_结果.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.tb_结果.Size = new System.Drawing.Size(217, 484);
+            this.tb_结果.Size = new System.Drawing.Size(217, 433);
             this.tb_结果.TabIndex = 5;
             // 
             // lb_结果数量
             // 
             this.lb_结果数量.AutoSize = true;
             this.lb_结果数量.Font = new System.Drawing.Font("宋体", 10F);
-            this.lb_结果数量.Location = new System.Drawing.Point(1373, 149);
+            this.lb_结果数量.Location = new System.Drawing.Point(1373, 210);
             this.lb_结果数量.Name = "lb_结果数量";
             this.lb_结果数量.Size = new System.Drawing.Size(14, 14);
             this.lb_结果数量.TabIndex = 8;
@@ -540,7 +550,7 @@
             // 
             this.lb_被杀数量.AutoSize = true;
             this.lb_被杀数量.Font = new System.Drawing.Font("宋体", 10F);
-            this.lb_被杀数量.Location = new System.Drawing.Point(1120, 154);
+            this.lb_被杀数量.Location = new System.Drawing.Point(1120, 207);
             this.lb_被杀数量.Name = "lb_被杀数量";
             this.lb_被杀数量.Size = new System.Drawing.Size(14, 14);
             this.lb_被杀数量.TabIndex = 16;
@@ -1274,6 +1284,116 @@
             this.groupBox7.Text = "杀特殊条件";
             this.groupBox7.Enter += new System.EventHandler(this.groupBox7_Enter);
             // 
+            // ck_杀90
+            // 
+            this.ck_杀90.AutoSize = true;
+            this.ck_杀90.Font = new System.Drawing.Font("宋体", 10F);
+            this.ck_杀90.Location = new System.Drawing.Point(342, 164);
+            this.ck_杀90.Name = "ck_杀90";
+            this.ck_杀90.Size = new System.Drawing.Size(54, 18);
+            this.ck_杀90.TabIndex = 87;
+            this.ck_杀90.Text = "杀90";
+            this.ck_杀90.UseVisualStyleBackColor = true;
+            // 
+            // ck_杀89
+            // 
+            this.ck_杀89.AutoSize = true;
+            this.ck_杀89.Font = new System.Drawing.Font("宋体", 10F);
+            this.ck_杀89.Location = new System.Drawing.Point(269, 164);
+            this.ck_杀89.Name = "ck_杀89";
+            this.ck_杀89.Size = new System.Drawing.Size(54, 18);
+            this.ck_杀89.TabIndex = 86;
+            this.ck_杀89.Text = "杀89";
+            this.ck_杀89.UseVisualStyleBackColor = true;
+            // 
+            // ck_杀78
+            // 
+            this.ck_杀78.AutoSize = true;
+            this.ck_杀78.Font = new System.Drawing.Font("宋体", 10F);
+            this.ck_杀78.Location = new System.Drawing.Point(184, 164);
+            this.ck_杀78.Name = "ck_杀78";
+            this.ck_杀78.Size = new System.Drawing.Size(54, 18);
+            this.ck_杀78.TabIndex = 85;
+            this.ck_杀78.Text = "杀78";
+            this.ck_杀78.UseVisualStyleBackColor = true;
+            // 
+            // ck_杀67
+            // 
+            this.ck_杀67.AutoSize = true;
+            this.ck_杀67.Font = new System.Drawing.Font("宋体", 10F);
+            this.ck_杀67.Location = new System.Drawing.Point(103, 164);
+            this.ck_杀67.Name = "ck_杀67";
+            this.ck_杀67.Size = new System.Drawing.Size(54, 18);
+            this.ck_杀67.TabIndex = 84;
+            this.ck_杀67.Text = "杀67";
+            this.ck_杀67.UseVisualStyleBackColor = true;
+            // 
+            // ck_杀56
+            // 
+            this.ck_杀56.AutoSize = true;
+            this.ck_杀56.Font = new System.Drawing.Font("宋体", 10F);
+            this.ck_杀56.Location = new System.Drawing.Point(24, 164);
+            this.ck_杀56.Name = "ck_杀56";
+            this.ck_杀56.Size = new System.Drawing.Size(54, 18);
+            this.ck_杀56.TabIndex = 83;
+            this.ck_杀56.Text = "杀56";
+            this.ck_杀56.UseVisualStyleBackColor = true;
+            // 
+            // ck_杀45
+            // 
+            this.ck_杀45.AutoSize = true;
+            this.ck_杀45.Font = new System.Drawing.Font("宋体", 10F);
+            this.ck_杀45.Location = new System.Drawing.Point(342, 139);
+            this.ck_杀45.Name = "ck_杀45";
+            this.ck_杀45.Size = new System.Drawing.Size(54, 18);
+            this.ck_杀45.TabIndex = 82;
+            this.ck_杀45.Text = "杀45";
+            this.ck_杀45.UseVisualStyleBackColor = true;
+            // 
+            // ck_杀34
+            // 
+            this.ck_杀34.AutoSize = true;
+            this.ck_杀34.Font = new System.Drawing.Font("宋体", 10F);
+            this.ck_杀34.Location = new System.Drawing.Point(268, 139);
+            this.ck_杀34.Name = "ck_杀34";
+            this.ck_杀34.Size = new System.Drawing.Size(54, 18);
+            this.ck_杀34.TabIndex = 81;
+            this.ck_杀34.Text = "杀34";
+            this.ck_杀34.UseVisualStyleBackColor = true;
+            // 
+            // ck_杀23
+            // 
+            this.ck_杀23.AutoSize = true;
+            this.ck_杀23.Font = new System.Drawing.Font("宋体", 10F);
+            this.ck_杀23.Location = new System.Drawing.Point(184, 139);
+            this.ck_杀23.Name = "ck_杀23";
+            this.ck_杀23.Size = new System.Drawing.Size(54, 18);
+            this.ck_杀23.TabIndex = 80;
+            this.ck_杀23.Text = "杀23";
+            this.ck_杀23.UseVisualStyleBackColor = true;
+            // 
+            // ck_杀12
+            // 
+            this.ck_杀12.AutoSize = true;
+            this.ck_杀12.Font = new System.Drawing.Font("宋体", 10F);
+            this.ck_杀12.Location = new System.Drawing.Point(103, 139);
+            this.ck_杀12.Name = "ck_杀12";
+            this.ck_杀12.Size = new System.Drawing.Size(54, 18);
+            this.ck_杀12.TabIndex = 79;
+            this.ck_杀12.Text = "杀12";
+            this.ck_杀12.UseVisualStyleBackColor = true;
+            // 
+            // ck_杀01
+            // 
+            this.ck_杀01.AutoSize = true;
+            this.ck_杀01.Font = new System.Drawing.Font("宋体", 10F);
+            this.ck_杀01.Location = new System.Drawing.Point(24, 139);
+            this.ck_杀01.Name = "ck_杀01";
+            this.ck_杀01.Size = new System.Drawing.Size(54, 18);
+            this.ck_杀01.TabIndex = 78;
+            this.ck_杀01.Text = "杀01";
+            this.ck_杀01.UseVisualStyleBackColor = true;
+            // 
             // ck_杀49
             // 
             this.ck_杀49.AutoSize = true;
@@ -1629,7 +1749,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("宋体", 10F);
-            this.label2.Location = new System.Drawing.Point(1290, 154);
+            this.label2.Location = new System.Drawing.Point(1290, 207);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(77, 14);
             this.label2.TabIndex = 22;
@@ -1638,18 +1758,19 @@
             // tb_被杀号码
             // 
             this.tb_被杀号码.Font = new System.Drawing.Font("微软雅黑", 10F);
-            this.tb_被杀号码.Location = new System.Drawing.Point(1051, 226);
+            this.tb_被杀号码.Location = new System.Drawing.Point(1051, 277);
             this.tb_被杀号码.Multiline = true;
             this.tb_被杀号码.Name = "tb_被杀号码";
             this.tb_被杀号码.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.tb_被杀号码.Size = new System.Drawing.Size(217, 484);
+            this.tb_被杀号码.Size = new System.Drawing.Size(217, 433);
             this.tb_被杀号码.TabIndex = 23;
+            this.tb_被杀号码.TextChanged += new System.EventHandler(this.tb_被杀号码_TextChanged);
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("宋体", 10F);
-            this.label3.Location = new System.Drawing.Point(1037, 154);
+            this.label3.Location = new System.Drawing.Point(1037, 207);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(77, 14);
             this.label3.TabIndex = 24;
@@ -2514,9 +2635,9 @@
             // button14
             // 
             this.button14.Font = new System.Drawing.Font("宋体", 10F);
-            this.button14.Location = new System.Drawing.Point(1177, 145);
+            this.button14.Location = new System.Drawing.Point(1177, 202);
             this.button14.Name = "button14";
-            this.button14.Size = new System.Drawing.Size(70, 30);
+            this.button14.Size = new System.Drawing.Size(70, 26);
             this.button14.TabIndex = 68;
             this.button14.Text = "排序";
             this.button14.UseVisualStyleBackColor = true;
@@ -2525,9 +2646,9 @@
             // button16
             // 
             this.button16.Font = new System.Drawing.Font("宋体", 10F);
-            this.button16.Location = new System.Drawing.Point(1428, 145);
+            this.button16.Location = new System.Drawing.Point(1428, 207);
             this.button16.Name = "button16";
-            this.button16.Size = new System.Drawing.Size(70, 30);
+            this.button16.Size = new System.Drawing.Size(70, 21);
             this.button16.TabIndex = 69;
             this.button16.Text = "排序";
             this.button16.UseVisualStyleBackColor = true;
@@ -2559,7 +2680,7 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("宋体", 10F);
-            this.label8.Location = new System.Drawing.Point(1037, 187);
+            this.label8.Location = new System.Drawing.Point(1037, 240);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(49, 14);
             this.label8.TabIndex = 72;
@@ -2569,7 +2690,7 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("宋体", 10F);
-            this.label9.Location = new System.Drawing.Point(1287, 186);
+            this.label9.Location = new System.Drawing.Point(1287, 239);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(49, 14);
             this.label9.TabIndex = 73;
@@ -2578,7 +2699,7 @@
             // tb_检索del
             // 
             this.tb_检索del.Font = new System.Drawing.Font("宋体", 10F);
-            this.tb_检索del.Location = new System.Drawing.Point(1080, 182);
+            this.tb_检索del.Location = new System.Drawing.Point(1080, 235);
             this.tb_检索del.Name = "tb_检索del";
             this.tb_检索del.Size = new System.Drawing.Size(128, 23);
             this.tb_检索del.TabIndex = 74;
@@ -2587,7 +2708,7 @@
             // tb_检索res
             // 
             this.tb_检索res.Font = new System.Drawing.Font("宋体", 10F);
-            this.tb_检索res.Location = new System.Drawing.Point(1332, 182);
+            this.tb_检索res.Location = new System.Drawing.Point(1332, 235);
             this.tb_检索res.Name = "tb_检索res";
             this.tb_检索res.Size = new System.Drawing.Size(116, 23);
             this.tb_检索res.TabIndex = 75;
@@ -2642,6 +2763,145 @@
             this.panel1.Size = new System.Drawing.Size(1518, 820);
             this.panel1.TabIndex = 79;
             // 
+            // groupbox_杀指定连号
+            // 
+            this.groupbox_杀指定连号.Controls.Add(this.ck_杀99);
+            this.groupbox_杀指定连号.Controls.Add(this.ck_杀88);
+            this.groupbox_杀指定连号.Controls.Add(this.ck_杀77);
+            this.groupbox_杀指定连号.Controls.Add(this.ck_杀66);
+            this.groupbox_杀指定连号.Controls.Add(this.ck_杀55);
+            this.groupbox_杀指定连号.Controls.Add(this.ck_杀44);
+            this.groupbox_杀指定连号.Controls.Add(this.ck_杀33);
+            this.groupbox_杀指定连号.Controls.Add(this.ck_杀22);
+            this.groupbox_杀指定连号.Controls.Add(this.ck_杀11);
+            this.groupbox_杀指定连号.Controls.Add(this.ck_杀00);
+            this.groupbox_杀指定连号.Controls.Add(this.ck_杀901);
+            this.groupbox_杀指定连号.Controls.Add(this.ck_杀890);
+            this.groupbox_杀指定连号.Controls.Add(this.ck_杀789);
+            this.groupbox_杀指定连号.Controls.Add(this.ck_杀678);
+            this.groupbox_杀指定连号.Controls.Add(this.ck_杀567);
+            this.groupbox_杀指定连号.Controls.Add(this.ck_杀456);
+            this.groupbox_杀指定连号.Controls.Add(this.ck_杀345);
+            this.groupbox_杀指定连号.Controls.Add(this.ck_杀234);
+            this.groupbox_杀指定连号.Controls.Add(this.ck_杀123);
+            this.groupbox_杀指定连号.Controls.Add(this.ck_杀012);
+            this.groupbox_杀指定连号.Location = new System.Drawing.Point(1031, 19);
+            this.groupbox_杀指定连号.Name = "groupbox_杀指定连号";
+            this.groupbox_杀指定连号.Size = new System.Drawing.Size(467, 155);
+            this.groupbox_杀指定连号.TabIndex = 76;
+            this.groupbox_杀指定连号.TabStop = false;
+            this.groupbox_杀指定连号.Text = "杀指定连号";
+            // 
+            // ck_杀901
+            // 
+            this.ck_杀901.AutoSize = true;
+            this.ck_杀901.Font = new System.Drawing.Font("宋体", 10F);
+            this.ck_杀901.Location = new System.Drawing.Point(237, 55);
+            this.ck_杀901.Name = "ck_杀901";
+            this.ck_杀901.Size = new System.Drawing.Size(61, 18);
+            this.ck_杀901.TabIndex = 88;
+            this.ck_杀901.Text = "杀901";
+            this.ck_杀901.UseVisualStyleBackColor = true;
+            // 
+            // ck_杀890
+            // 
+            this.ck_杀890.AutoSize = true;
+            this.ck_杀890.Font = new System.Drawing.Font("宋体", 10F);
+            this.ck_杀890.Location = new System.Drawing.Point(157, 55);
+            this.ck_杀890.Name = "ck_杀890";
+            this.ck_杀890.Size = new System.Drawing.Size(61, 18);
+            this.ck_杀890.TabIndex = 87;
+            this.ck_杀890.Text = "杀890";
+            this.ck_杀890.UseVisualStyleBackColor = true;
+            // 
+            // ck_杀789
+            // 
+            this.ck_杀789.AutoSize = true;
+            this.ck_杀789.Font = new System.Drawing.Font("宋体", 10F);
+            this.ck_杀789.Location = new System.Drawing.Point(79, 55);
+            this.ck_杀789.Name = "ck_杀789";
+            this.ck_杀789.Size = new System.Drawing.Size(61, 18);
+            this.ck_杀789.TabIndex = 86;
+            this.ck_杀789.Text = "杀789";
+            this.ck_杀789.UseVisualStyleBackColor = true;
+            // 
+            // ck_杀678
+            // 
+            this.ck_杀678.AutoSize = true;
+            this.ck_杀678.Font = new System.Drawing.Font("宋体", 10F);
+            this.ck_杀678.Location = new System.Drawing.Point(11, 55);
+            this.ck_杀678.Name = "ck_杀678";
+            this.ck_杀678.Size = new System.Drawing.Size(61, 18);
+            this.ck_杀678.TabIndex = 85;
+            this.ck_杀678.Text = "杀678";
+            this.ck_杀678.UseVisualStyleBackColor = true;
+            // 
+            // ck_杀567
+            // 
+            this.ck_杀567.AutoSize = true;
+            this.ck_杀567.Font = new System.Drawing.Font("宋体", 10F);
+            this.ck_杀567.Location = new System.Drawing.Point(398, 21);
+            this.ck_杀567.Name = "ck_杀567";
+            this.ck_杀567.Size = new System.Drawing.Size(61, 18);
+            this.ck_杀567.TabIndex = 84;
+            this.ck_杀567.Text = "杀567";
+            this.ck_杀567.UseVisualStyleBackColor = true;
+            // 
+            // ck_杀456
+            // 
+            this.ck_杀456.AutoSize = true;
+            this.ck_杀456.Font = new System.Drawing.Font("宋体", 10F);
+            this.ck_杀456.Location = new System.Drawing.Point(317, 21);
+            this.ck_杀456.Name = "ck_杀456";
+            this.ck_杀456.Size = new System.Drawing.Size(61, 18);
+            this.ck_杀456.TabIndex = 83;
+            this.ck_杀456.Text = "杀456";
+            this.ck_杀456.UseVisualStyleBackColor = true;
+            // 
+            // ck_杀345
+            // 
+            this.ck_杀345.AutoSize = true;
+            this.ck_杀345.Font = new System.Drawing.Font("宋体", 10F);
+            this.ck_杀345.Location = new System.Drawing.Point(237, 21);
+            this.ck_杀345.Name = "ck_杀345";
+            this.ck_杀345.Size = new System.Drawing.Size(61, 18);
+            this.ck_杀345.TabIndex = 82;
+            this.ck_杀345.Text = "杀345";
+            this.ck_杀345.UseVisualStyleBackColor = true;
+            // 
+            // ck_杀234
+            // 
+            this.ck_杀234.AutoSize = true;
+            this.ck_杀234.Font = new System.Drawing.Font("宋体", 10F);
+            this.ck_杀234.Location = new System.Drawing.Point(157, 21);
+            this.ck_杀234.Name = "ck_杀234";
+            this.ck_杀234.Size = new System.Drawing.Size(61, 18);
+            this.ck_杀234.TabIndex = 81;
+            this.ck_杀234.Text = "杀234";
+            this.ck_杀234.UseVisualStyleBackColor = true;
+            // 
+            // ck_杀123
+            // 
+            this.ck_杀123.AutoSize = true;
+            this.ck_杀123.Font = new System.Drawing.Font("宋体", 10F);
+            this.ck_杀123.Location = new System.Drawing.Point(79, 21);
+            this.ck_杀123.Name = "ck_杀123";
+            this.ck_杀123.Size = new System.Drawing.Size(61, 18);
+            this.ck_杀123.TabIndex = 80;
+            this.ck_杀123.Text = "杀123";
+            this.ck_杀123.UseVisualStyleBackColor = true;
+            // 
+            // ck_杀012
+            // 
+            this.ck_杀012.AutoSize = true;
+            this.ck_杀012.Font = new System.Drawing.Font("宋体", 10F);
+            this.ck_杀012.Location = new System.Drawing.Point(11, 21);
+            this.ck_杀012.Name = "ck_杀012";
+            this.ck_杀012.Size = new System.Drawing.Size(61, 18);
+            this.ck_杀012.TabIndex = 79;
+            this.ck_杀012.Text = "杀012";
+            this.ck_杀012.UseVisualStyleBackColor = true;
+            // 
             // groupBox12
             // 
             this.groupBox12.Controls.Add(this.button25);
@@ -2686,244 +2946,115 @@
             this.ck_两数和值.Text = "两数和值";
             this.ck_两数和值.UseVisualStyleBackColor = true;
             // 
-            // ck_杀01
+            // ck_杀00
             // 
-            this.ck_杀01.AutoSize = true;
-            this.ck_杀01.Font = new System.Drawing.Font("宋体", 10F);
-            this.ck_杀01.Location = new System.Drawing.Point(24, 139);
-            this.ck_杀01.Name = "ck_杀01";
-            this.ck_杀01.Size = new System.Drawing.Size(54, 18);
-            this.ck_杀01.TabIndex = 78;
-            this.ck_杀01.Text = "杀01";
-            this.ck_杀01.UseVisualStyleBackColor = true;
+            this.ck_杀00.AutoSize = true;
+            this.ck_杀00.Font = new System.Drawing.Font("宋体", 10F);
+            this.ck_杀00.Location = new System.Drawing.Point(11, 89);
+            this.ck_杀00.Name = "ck_杀00";
+            this.ck_杀00.Size = new System.Drawing.Size(54, 18);
+            this.ck_杀00.TabIndex = 89;
+            this.ck_杀00.Text = "杀00";
+            this.ck_杀00.UseVisualStyleBackColor = true;
             // 
-            // ck_杀12
+            // ck_杀11
             // 
-            this.ck_杀12.AutoSize = true;
-            this.ck_杀12.Font = new System.Drawing.Font("宋体", 10F);
-            this.ck_杀12.Location = new System.Drawing.Point(103, 139);
-            this.ck_杀12.Name = "ck_杀12";
-            this.ck_杀12.Size = new System.Drawing.Size(54, 18);
-            this.ck_杀12.TabIndex = 79;
-            this.ck_杀12.Text = "杀12";
-            this.ck_杀12.UseVisualStyleBackColor = true;
+            this.ck_杀11.AutoSize = true;
+            this.ck_杀11.Font = new System.Drawing.Font("宋体", 10F);
+            this.ck_杀11.Location = new System.Drawing.Point(79, 89);
+            this.ck_杀11.Name = "ck_杀11";
+            this.ck_杀11.Size = new System.Drawing.Size(54, 18);
+            this.ck_杀11.TabIndex = 90;
+            this.ck_杀11.Text = "杀11";
+            this.ck_杀11.UseVisualStyleBackColor = true;
             // 
-            // ck_杀23
+            // ck_杀22
             // 
-            this.ck_杀23.AutoSize = true;
-            this.ck_杀23.Font = new System.Drawing.Font("宋体", 10F);
-            this.ck_杀23.Location = new System.Drawing.Point(184, 139);
-            this.ck_杀23.Name = "ck_杀23";
-            this.ck_杀23.Size = new System.Drawing.Size(54, 18);
-            this.ck_杀23.TabIndex = 80;
-            this.ck_杀23.Text = "杀23";
-            this.ck_杀23.UseVisualStyleBackColor = true;
+            this.ck_杀22.AutoSize = true;
+            this.ck_杀22.Font = new System.Drawing.Font("宋体", 10F);
+            this.ck_杀22.Location = new System.Drawing.Point(157, 89);
+            this.ck_杀22.Name = "ck_杀22";
+            this.ck_杀22.Size = new System.Drawing.Size(54, 18);
+            this.ck_杀22.TabIndex = 91;
+            this.ck_杀22.Text = "杀22";
+            this.ck_杀22.UseVisualStyleBackColor = true;
             // 
-            // ck_杀34
+            // ck_杀33
             // 
-            this.ck_杀34.AutoSize = true;
-            this.ck_杀34.Font = new System.Drawing.Font("宋体", 10F);
-            this.ck_杀34.Location = new System.Drawing.Point(268, 139);
-            this.ck_杀34.Name = "ck_杀34";
-            this.ck_杀34.Size = new System.Drawing.Size(54, 18);
-            this.ck_杀34.TabIndex = 81;
-            this.ck_杀34.Text = "杀34";
-            this.ck_杀34.UseVisualStyleBackColor = true;
+            this.ck_杀33.AutoSize = true;
+            this.ck_杀33.Font = new System.Drawing.Font("宋体", 10F);
+            this.ck_杀33.Location = new System.Drawing.Point(237, 89);
+            this.ck_杀33.Name = "ck_杀33";
+            this.ck_杀33.Size = new System.Drawing.Size(54, 18);
+            this.ck_杀33.TabIndex = 92;
+            this.ck_杀33.Text = "杀33";
+            this.ck_杀33.UseVisualStyleBackColor = true;
             // 
-            // ck_杀45
+            // ck_杀44
             // 
-            this.ck_杀45.AutoSize = true;
-            this.ck_杀45.Font = new System.Drawing.Font("宋体", 10F);
-            this.ck_杀45.Location = new System.Drawing.Point(342, 139);
-            this.ck_杀45.Name = "ck_杀45";
-            this.ck_杀45.Size = new System.Drawing.Size(54, 18);
-            this.ck_杀45.TabIndex = 82;
-            this.ck_杀45.Text = "杀45";
-            this.ck_杀45.UseVisualStyleBackColor = true;
+            this.ck_杀44.AutoSize = true;
+            this.ck_杀44.Font = new System.Drawing.Font("宋体", 10F);
+            this.ck_杀44.Location = new System.Drawing.Point(317, 89);
+            this.ck_杀44.Name = "ck_杀44";
+            this.ck_杀44.Size = new System.Drawing.Size(54, 18);
+            this.ck_杀44.TabIndex = 93;
+            this.ck_杀44.Text = "杀44";
+            this.ck_杀44.UseVisualStyleBackColor = true;
             // 
-            // ck_杀56
+            // ck_杀55
             // 
-            this.ck_杀56.AutoSize = true;
-            this.ck_杀56.Font = new System.Drawing.Font("宋体", 10F);
-            this.ck_杀56.Location = new System.Drawing.Point(24, 164);
-            this.ck_杀56.Name = "ck_杀56";
-            this.ck_杀56.Size = new System.Drawing.Size(54, 18);
-            this.ck_杀56.TabIndex = 83;
-            this.ck_杀56.Text = "杀56";
-            this.ck_杀56.UseVisualStyleBackColor = true;
+            this.ck_杀55.AutoSize = true;
+            this.ck_杀55.Font = new System.Drawing.Font("宋体", 10F);
+            this.ck_杀55.Location = new System.Drawing.Point(396, 89);
+            this.ck_杀55.Name = "ck_杀55";
+            this.ck_杀55.Size = new System.Drawing.Size(54, 18);
+            this.ck_杀55.TabIndex = 94;
+            this.ck_杀55.Text = "杀55";
+            this.ck_杀55.UseVisualStyleBackColor = true;
             // 
-            // ck_杀67
+            // ck_杀66
             // 
-            this.ck_杀67.AutoSize = true;
-            this.ck_杀67.Font = new System.Drawing.Font("宋体", 10F);
-            this.ck_杀67.Location = new System.Drawing.Point(103, 164);
-            this.ck_杀67.Name = "ck_杀67";
-            this.ck_杀67.Size = new System.Drawing.Size(54, 18);
-            this.ck_杀67.TabIndex = 84;
-            this.ck_杀67.Text = "杀67";
-            this.ck_杀67.UseVisualStyleBackColor = true;
+            this.ck_杀66.AutoSize = true;
+            this.ck_杀66.Font = new System.Drawing.Font("宋体", 10F);
+            this.ck_杀66.Location = new System.Drawing.Point(11, 119);
+            this.ck_杀66.Name = "ck_杀66";
+            this.ck_杀66.Size = new System.Drawing.Size(54, 18);
+            this.ck_杀66.TabIndex = 95;
+            this.ck_杀66.Text = "杀66";
+            this.ck_杀66.UseVisualStyleBackColor = true;
             // 
-            // ck_杀78
+            // ck_杀77
             // 
-            this.ck_杀78.AutoSize = true;
-            this.ck_杀78.Font = new System.Drawing.Font("宋体", 10F);
-            this.ck_杀78.Location = new System.Drawing.Point(184, 164);
-            this.ck_杀78.Name = "ck_杀78";
-            this.ck_杀78.Size = new System.Drawing.Size(54, 18);
-            this.ck_杀78.TabIndex = 85;
-            this.ck_杀78.Text = "杀78";
-            this.ck_杀78.UseVisualStyleBackColor = true;
+            this.ck_杀77.AutoSize = true;
+            this.ck_杀77.Font = new System.Drawing.Font("宋体", 10F);
+            this.ck_杀77.Location = new System.Drawing.Point(79, 119);
+            this.ck_杀77.Name = "ck_杀77";
+            this.ck_杀77.Size = new System.Drawing.Size(54, 18);
+            this.ck_杀77.TabIndex = 96;
+            this.ck_杀77.Text = "杀77";
+            this.ck_杀77.UseVisualStyleBackColor = true;
             // 
-            // ck_杀89
+            // ck_杀88
             // 
-            this.ck_杀89.AutoSize = true;
-            this.ck_杀89.Font = new System.Drawing.Font("宋体", 10F);
-            this.ck_杀89.Location = new System.Drawing.Point(269, 164);
-            this.ck_杀89.Name = "ck_杀89";
-            this.ck_杀89.Size = new System.Drawing.Size(54, 18);
-            this.ck_杀89.TabIndex = 86;
-            this.ck_杀89.Text = "杀89";
-            this.ck_杀89.UseVisualStyleBackColor = true;
+            this.ck_杀88.AutoSize = true;
+            this.ck_杀88.Font = new System.Drawing.Font("宋体", 10F);
+            this.ck_杀88.Location = new System.Drawing.Point(157, 119);
+            this.ck_杀88.Name = "ck_杀88";
+            this.ck_杀88.Size = new System.Drawing.Size(54, 18);
+            this.ck_杀88.TabIndex = 97;
+            this.ck_杀88.Text = "杀88";
+            this.ck_杀88.UseVisualStyleBackColor = true;
             // 
-            // ck_杀90
+            // ck_杀99
             // 
-            this.ck_杀90.AutoSize = true;
-            this.ck_杀90.Font = new System.Drawing.Font("宋体", 10F);
-            this.ck_杀90.Location = new System.Drawing.Point(342, 164);
-            this.ck_杀90.Name = "ck_杀90";
-            this.ck_杀90.Size = new System.Drawing.Size(54, 18);
-            this.ck_杀90.TabIndex = 87;
-            this.ck_杀90.Text = "杀90";
-            this.ck_杀90.UseVisualStyleBackColor = true;
-            // 
-            // groupbox_杀指定连号
-            // 
-            this.groupbox_杀指定连号.Controls.Add(this.ck_杀901);
-            this.groupbox_杀指定连号.Controls.Add(this.ck_杀890);
-            this.groupbox_杀指定连号.Controls.Add(this.ck_杀789);
-            this.groupbox_杀指定连号.Controls.Add(this.ck_杀678);
-            this.groupbox_杀指定连号.Controls.Add(this.ck_杀567);
-            this.groupbox_杀指定连号.Controls.Add(this.ck_杀456);
-            this.groupbox_杀指定连号.Controls.Add(this.ck_杀345);
-            this.groupbox_杀指定连号.Controls.Add(this.ck_杀234);
-            this.groupbox_杀指定连号.Controls.Add(this.ck_杀123);
-            this.groupbox_杀指定连号.Controls.Add(this.ck_杀012);
-            this.groupbox_杀指定连号.Location = new System.Drawing.Point(1031, 19);
-            this.groupbox_杀指定连号.Name = "groupbox_杀指定连号";
-            this.groupbox_杀指定连号.Size = new System.Drawing.Size(467, 100);
-            this.groupbox_杀指定连号.TabIndex = 76;
-            this.groupbox_杀指定连号.TabStop = false;
-            this.groupbox_杀指定连号.Text = "杀指定连号";
-            // 
-            // ck_杀012
-            // 
-            this.ck_杀012.AutoSize = true;
-            this.ck_杀012.Font = new System.Drawing.Font("宋体", 10F);
-            this.ck_杀012.Location = new System.Drawing.Point(11, 30);
-            this.ck_杀012.Name = "ck_杀012";
-            this.ck_杀012.Size = new System.Drawing.Size(61, 18);
-            this.ck_杀012.TabIndex = 79;
-            this.ck_杀012.Text = "杀012";
-            this.ck_杀012.UseVisualStyleBackColor = true;
-            // 
-            // ck_杀123
-            // 
-            this.ck_杀123.AutoSize = true;
-            this.ck_杀123.Font = new System.Drawing.Font("宋体", 10F);
-            this.ck_杀123.Location = new System.Drawing.Point(79, 30);
-            this.ck_杀123.Name = "ck_杀123";
-            this.ck_杀123.Size = new System.Drawing.Size(61, 18);
-            this.ck_杀123.TabIndex = 80;
-            this.ck_杀123.Text = "杀123";
-            this.ck_杀123.UseVisualStyleBackColor = true;
-            // 
-            // ck_杀234
-            // 
-            this.ck_杀234.AutoSize = true;
-            this.ck_杀234.Font = new System.Drawing.Font("宋体", 10F);
-            this.ck_杀234.Location = new System.Drawing.Point(157, 30);
-            this.ck_杀234.Name = "ck_杀234";
-            this.ck_杀234.Size = new System.Drawing.Size(61, 18);
-            this.ck_杀234.TabIndex = 81;
-            this.ck_杀234.Text = "杀234";
-            this.ck_杀234.UseVisualStyleBackColor = true;
-            // 
-            // ck_杀345
-            // 
-            this.ck_杀345.AutoSize = true;
-            this.ck_杀345.Font = new System.Drawing.Font("宋体", 10F);
-            this.ck_杀345.Location = new System.Drawing.Point(237, 30);
-            this.ck_杀345.Name = "ck_杀345";
-            this.ck_杀345.Size = new System.Drawing.Size(61, 18);
-            this.ck_杀345.TabIndex = 82;
-            this.ck_杀345.Text = "杀345";
-            this.ck_杀345.UseVisualStyleBackColor = true;
-            // 
-            // ck_杀456
-            // 
-            this.ck_杀456.AutoSize = true;
-            this.ck_杀456.Font = new System.Drawing.Font("宋体", 10F);
-            this.ck_杀456.Location = new System.Drawing.Point(317, 30);
-            this.ck_杀456.Name = "ck_杀456";
-            this.ck_杀456.Size = new System.Drawing.Size(61, 18);
-            this.ck_杀456.TabIndex = 83;
-            this.ck_杀456.Text = "杀456";
-            this.ck_杀456.UseVisualStyleBackColor = true;
-            // 
-            // ck_杀567
-            // 
-            this.ck_杀567.AutoSize = true;
-            this.ck_杀567.Font = new System.Drawing.Font("宋体", 10F);
-            this.ck_杀567.Location = new System.Drawing.Point(398, 30);
-            this.ck_杀567.Name = "ck_杀567";
-            this.ck_杀567.Size = new System.Drawing.Size(61, 18);
-            this.ck_杀567.TabIndex = 84;
-            this.ck_杀567.Text = "杀567";
-            this.ck_杀567.UseVisualStyleBackColor = true;
-            // 
-            // ck_杀678
-            // 
-            this.ck_杀678.AutoSize = true;
-            this.ck_杀678.Font = new System.Drawing.Font("宋体", 10F);
-            this.ck_杀678.Location = new System.Drawing.Point(11, 59);
-            this.ck_杀678.Name = "ck_杀678";
-            this.ck_杀678.Size = new System.Drawing.Size(61, 18);
-            this.ck_杀678.TabIndex = 85;
-            this.ck_杀678.Text = "杀678";
-            this.ck_杀678.UseVisualStyleBackColor = true;
-            // 
-            // ck_杀789
-            // 
-            this.ck_杀789.AutoSize = true;
-            this.ck_杀789.Font = new System.Drawing.Font("宋体", 10F);
-            this.ck_杀789.Location = new System.Drawing.Point(79, 59);
-            this.ck_杀789.Name = "ck_杀789";
-            this.ck_杀789.Size = new System.Drawing.Size(61, 18);
-            this.ck_杀789.TabIndex = 86;
-            this.ck_杀789.Text = "杀789";
-            this.ck_杀789.UseVisualStyleBackColor = true;
-            // 
-            // ck_杀890
-            // 
-            this.ck_杀890.AutoSize = true;
-            this.ck_杀890.Font = new System.Drawing.Font("宋体", 10F);
-            this.ck_杀890.Location = new System.Drawing.Point(157, 59);
-            this.ck_杀890.Name = "ck_杀890";
-            this.ck_杀890.Size = new System.Drawing.Size(61, 18);
-            this.ck_杀890.TabIndex = 87;
-            this.ck_杀890.Text = "杀890";
-            this.ck_杀890.UseVisualStyleBackColor = true;
-            // 
-            // ck_杀901
-            // 
-            this.ck_杀901.AutoSize = true;
-            this.ck_杀901.Font = new System.Drawing.Font("宋体", 10F);
-            this.ck_杀901.Location = new System.Drawing.Point(237, 59);
-            this.ck_杀901.Name = "ck_杀901";
-            this.ck_杀901.Size = new System.Drawing.Size(61, 18);
-            this.ck_杀901.TabIndex = 88;
-            this.ck_杀901.Text = "杀901";
-            this.ck_杀901.UseVisualStyleBackColor = true;
+            this.ck_杀99.AutoSize = true;
+            this.ck_杀99.Font = new System.Drawing.Font("宋体", 10F);
+            this.ck_杀99.Location = new System.Drawing.Point(237, 119);
+            this.ck_杀99.Name = "ck_杀99";
+            this.ck_杀99.Size = new System.Drawing.Size(54, 18);
+            this.ck_杀99.TabIndex = 98;
+            this.ck_杀99.Text = "杀99";
+            this.ck_杀99.UseVisualStyleBackColor = true;
             // 
             // Main
             // 
@@ -2958,7 +3089,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Main";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "四星杀号V1.3";
+            this.Text = "四星杀号V1.4";
             this.Load += new System.EventHandler(this.Main_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
@@ -2992,10 +3123,10 @@
             this.groupBox11.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            this.groupBox12.ResumeLayout(false);
-            this.groupBox12.PerformLayout();
             this.groupbox_杀指定连号.ResumeLayout(false);
             this.groupbox_杀指定连号.PerformLayout();
+            this.groupBox12.ResumeLayout(false);
+            this.groupBox12.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -3231,5 +3362,15 @@
         private System.Windows.Forms.CheckBox ck_杀234;
         private System.Windows.Forms.CheckBox ck_杀123;
         private System.Windows.Forms.CheckBox ck_杀012;
+        private System.Windows.Forms.CheckBox ck_杀99;
+        private System.Windows.Forms.CheckBox ck_杀88;
+        private System.Windows.Forms.CheckBox ck_杀77;
+        private System.Windows.Forms.CheckBox ck_杀66;
+        private System.Windows.Forms.CheckBox ck_杀55;
+        private System.Windows.Forms.CheckBox ck_杀44;
+        private System.Windows.Forms.CheckBox ck_杀33;
+        private System.Windows.Forms.CheckBox ck_杀22;
+        private System.Windows.Forms.CheckBox ck_杀11;
+        private System.Windows.Forms.CheckBox ck_杀00;
     }
 }

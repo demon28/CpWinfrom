@@ -686,6 +686,50 @@ namespace CpWinfrom
 
             #endregion
 
+            if (ck_杀00.Checked)
+            {
+                Teshuhao.杀两重号(ref DelnumberModels, 0);
+            }
+            if (ck_杀11.Checked)
+            {
+                Teshuhao.杀两重号(ref DelnumberModels, 1);
+            }
+            if (ck_杀22.Checked)
+            {
+                Teshuhao.杀两重号(ref DelnumberModels, 2);
+            }
+            if (ck_杀33.Checked)
+            {
+                Teshuhao.杀两重号(ref DelnumberModels, 3);
+            }
+            if (ck_杀44.Checked)
+            {
+                Teshuhao.杀两重号(ref DelnumberModels, 4);
+            }
+            if (ck_杀55.Checked)
+            {
+                Teshuhao.杀两重号(ref DelnumberModels, 5);
+            }
+            if (ck_杀66.Checked)
+            {
+                Teshuhao.杀两重号(ref DelnumberModels, 6);
+            }
+            if (ck_杀77.Checked)
+            {
+                Teshuhao.杀两重号(ref DelnumberModels, 7);
+            }
+            if (ck_杀88.Checked)
+            {
+                Teshuhao.杀两重号(ref DelnumberModels, 8);
+            }
+            if (ck_杀99.Checked)
+            {
+                Teshuhao.杀两重号(ref DelnumberModels, 9);
+            }
+
+            #region 杀指定双重号
+            #endregion
+
             #endregion
 
             #region 点杀区域
@@ -1381,6 +1425,11 @@ namespace CpWinfrom
 
                 f1.Close();
             }
+        }
+
+        private void tb_被杀号码_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

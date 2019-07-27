@@ -422,8 +422,16 @@ namespace CpWinfrom
                 }
 
             }
+            foreach (var item in groupbox15.Controls)
+            {
+                if (item is CheckBox)
+                {
+                    CheckBox cb = (CheckBox)item;
+                    cb.Checked = false;
+                }
 
-          
+            }
+
             button9_Click(null, null);
             button15_Click(null, null);
             button29_Click(null,null);

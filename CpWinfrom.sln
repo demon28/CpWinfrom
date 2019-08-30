@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CpWinfrom", "CpWinfrom\CpWi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Duibi", "Duibi\Duibi.csproj", "{780134D7-48FA-46FC-842D-E75164A19908}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TEST", "TEST\TEST.csproj", "{9ED5FFE7-5539-4174-9BCF-104DA9A638ED}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{780134D7-48FA-46FC-842D-E75164A19908}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{780134D7-48FA-46FC-842D-E75164A19908}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{780134D7-48FA-46FC-842D-E75164A19908}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9ED5FFE7-5539-4174-9BCF-104DA9A638ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9ED5FFE7-5539-4174-9BCF-104DA9A638ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9ED5FFE7-5539-4174-9BCF-104DA9A638ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9ED5FFE7-5539-4174-9BCF-104DA9A638ED}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -16,12 +16,12 @@ namespace CpWinfrom
     {
         public Main()
         {
-        InitializeComponent();
+            InitializeComponent();
 
-           
+
         }
-     
-      
+
+
         private void btn_点杀大小_Click(object sender, EventArgs e)
         {
             点杀大小 f1 = new 点杀大小();
@@ -379,7 +379,7 @@ namespace CpWinfrom
             {
                 var whereRemove = ResnumberModels.FirstOrDefault(S => S.N1 == item.N1 && S.N2 == item.N2 && S.N3 == item.N3 && S.N4 == item.N4);
                 ResnumberModels.Remove(whereRemove);
-            
+
             }
             PrintDel();
             PrintRes();
@@ -434,11 +434,11 @@ namespace CpWinfrom
 
             button9_Click(null, null);
             button15_Click(null, null);
-            button29_Click(null,null);
+            button29_Click(null, null);
             button1_Click(null, null);
             button2_Click(null, null);
             button3_Click(null, null);
-           
+
 
 
         }
@@ -478,7 +478,7 @@ namespace CpWinfrom
         private void button13_Click(object sender, EventArgs e)
         {
 
-         
+
 
             CheckDelNumer();
 
@@ -552,7 +552,7 @@ namespace CpWinfrom
             {
                 Teshuhao.两个顺子(ref DelnumberModels);
             }
-            
+
             if (ck_兄弟号.Checked)
             {
                 Teshuhao.兄弟号(ref DelnumberModels);
@@ -580,7 +580,7 @@ namespace CpWinfrom
             }
             if (ck_对数.Checked)
             {
-                Teshuhao.对数(ref DelnumberModels); 
+                Teshuhao.对数(ref DelnumberModels);
             }
             if (ck_杀05.Checked)
             {
@@ -633,33 +633,33 @@ namespace CpWinfrom
             {
                 Teshuhao.杀两位固定数(ref DelnumberModels, 6, 7);
             }
-         
+
             if (ck_杀78.Checked)
             {
                 Teshuhao.杀两位固定数(ref DelnumberModels, 7, 8);
             }
             if (ck_杀89.Checked)
             {
-                Teshuhao.杀两位固定数(ref DelnumberModels, 8,9);
+                Teshuhao.杀两位固定数(ref DelnumberModels, 8, 9);
             }
             if (ck_杀90.Checked)
             {
-                Teshuhao.杀两位固定数(ref DelnumberModels, 9,0);
+                Teshuhao.杀两位固定数(ref DelnumberModels, 9, 0);
             }
 
 
 
             if (ck_杀012.Checked)
             {
-                Teshuhao.杀三位固定数(ref DelnumberModels, 0,1,2);
+                Teshuhao.杀三位固定数(ref DelnumberModels, 0, 1, 2);
             }
             if (ck_杀123.Checked)
             {
-                Teshuhao.杀三位固定数(ref DelnumberModels, 1,2,3);
+                Teshuhao.杀三位固定数(ref DelnumberModels, 1, 2, 3);
             }
             if (ck_杀234.Checked)
             {
-                Teshuhao.杀三位固定数(ref DelnumberModels, 2,3,4);
+                Teshuhao.杀三位固定数(ref DelnumberModels, 2, 3, 4);
             }
 
             if (ck_杀345.Checked)
@@ -668,28 +668,28 @@ namespace CpWinfrom
             }
             if (ck_杀456.Checked)
             {
-                Teshuhao.杀三位固定数(ref DelnumberModels, 4,5,6);
+                Teshuhao.杀三位固定数(ref DelnumberModels, 4, 5, 6);
             }
             if (ck_杀567.Checked)
             {
-                Teshuhao.杀三位固定数(ref DelnumberModels, 5,6,7);
+                Teshuhao.杀三位固定数(ref DelnumberModels, 5, 6, 7);
             }
 
             if (ck_杀678.Checked)
             {
-                Teshuhao.杀三位固定数(ref DelnumberModels, 6,7,8);
+                Teshuhao.杀三位固定数(ref DelnumberModels, 6, 7, 8);
             }
             if (ck_杀789.Checked)
             {
-                Teshuhao.杀三位固定数(ref DelnumberModels, 7,8,9);
+                Teshuhao.杀三位固定数(ref DelnumberModels, 7, 8, 9);
             }
             if (ck_杀890.Checked)
             {
-                Teshuhao.杀三位固定数(ref DelnumberModels, 8,9,0);
+                Teshuhao.杀三位固定数(ref DelnumberModels, 8, 9, 0);
             }
             if (ck_杀901.Checked)
             {
-                Teshuhao.杀三位固定数(ref DelnumberModels, 9,0,1);
+                Teshuhao.杀三位固定数(ref DelnumberModels, 9, 0, 1);
             }
 
             #endregion
@@ -745,12 +745,12 @@ namespace CpWinfrom
 
             if (ck_点杀大小.Checked && !string.IsNullOrEmpty(this.tb_点杀大小.Text))
             {
-              
+
                 string[] array = this.tb_点杀大小.Text.Split(',');
                 Diansha.大小enter(array, ref DelnumberModels);
             }
 
-            if (ck_点杀奇偶.Checked &&  !string.IsNullOrEmpty(this.tb_点杀奇偶.Text))
+            if (ck_点杀奇偶.Checked && !string.IsNullOrEmpty(this.tb_点杀奇偶.Text))
             {
                 string[] array = this.tb_点杀奇偶.Text.Split(',');
                 Diansha.奇偶enter(array, ref DelnumberModels);
@@ -781,7 +781,7 @@ namespace CpWinfrom
                         NumberModel number = NumberModel.ToParse(n);
                         list.Add(number);
                     }
-                    
+
 
                 }
                 lajihao.Enter(list, ref DelnumberModels);
@@ -796,9 +796,9 @@ namespace CpWinfrom
             if (ck_四位和值.Checked && !string.IsNullOrEmpty(tb_四位和值.Text))
             {
                 string[] array = this.tb_四位和值.Text.Split(',');
-                int []  iNums = Array.ConvertAll(array, int.Parse);
+                int[] iNums = Array.ConvertAll(array, int.Parse);
 
-                hezhishahao.四位和值(iNums,ref DelnumberModels);
+                hezhishahao.四位和值(iNums, ref DelnumberModels);
             }
 
 
@@ -957,7 +957,7 @@ namespace CpWinfrom
 
             #endregion
 
-           
+
 
             #region 杀连号
 
@@ -1016,6 +1016,14 @@ namespace CpWinfrom
                 dingliangshuhezhi.两数和值(list, ref DelnumberModels);
             }
 
+            if (ck_三数和值.Checked && !string.IsNullOrEmpty(tb_三数和值.Text))
+            {
+                string[] array = this.tb_三数和值.Text.Split(',');
+                int[] iNums = Array.ConvertAll(array, int.Parse);
+                List<int> list = iNums.ToList();
+                dingliangshuhezhi.三数和值(list, ref DelnumberModels);
+            }
+
             #endregion
 
 
@@ -1057,7 +1065,7 @@ namespace CpWinfrom
                 shadanma.ShaWuYiMa(danma, ref DelnumberModels);
             }
 
-        
+
 
             #endregion
             // 杀胆码必须是最后一项
@@ -1156,14 +1164,14 @@ namespace CpWinfrom
             string del = this.tb_被杀号码.Text;
             string val = this.tb_检索del.Text.Trim();
 
-            if (val.Length!=4)
+            if (val.Length != 4)
             {
                 this.lb_cunzaidel.Text = "";
                 return;
-                
+
             }
 
-            
+
             if (del.IndexOf(val) >= 0)
             {
                 tb_被杀号码.Focus();
@@ -1173,7 +1181,7 @@ namespace CpWinfrom
                 tb_被杀号码.SelectionLength = 4;  //设置长度
 
                 tb_被杀号码.ScrollToCaret();
-               
+
                 this.lb_cunzaidel.Text = "存在";
                 return;
             }
@@ -1199,7 +1207,7 @@ namespace CpWinfrom
 
                 tb_结果.SelectionStart = del.IndexOf(val);  //设置起始位置 
 
-                tb_结果.SelectionLength =4;  //设置长度
+                tb_结果.SelectionLength = 4;  //设置长度
 
                 tb_结果.ScrollToCaret();
 
@@ -1331,7 +1339,7 @@ namespace CpWinfrom
             f.Show();
         }
 
-      
+
         private float X;
 
         private float Y;
@@ -1360,7 +1368,7 @@ namespace CpWinfrom
                 a = Convert.ToSingle(mytag[3]) * newy;
                 con.Top = (int)(a);
                 Single currentSize = Convert.ToSingle(mytag[4]) * Math.Min(newx, newy);
-                if (Screen.PrimaryScreen.Bounds.Width<1400)
+                if (Screen.PrimaryScreen.Bounds.Width < 1400)
                 {
                     con.Font = new Font(con.Font.Name, 9, con.Font.Style, con.Font.Unit);
                 }
@@ -1372,7 +1380,7 @@ namespace CpWinfrom
                 {
                     con.Height = con.Height + 3;
                 }
-            
+
                 if (con.Controls.Count > 0)
                 {
                     setControls(newx, newy, con);
@@ -1383,8 +1391,8 @@ namespace CpWinfrom
 
         private void Main_Resize(object sender, EventArgs e)
         {
-            int SX = Screen.PrimaryScreen.Bounds.Width-200;
-            int SY = Screen.PrimaryScreen.Bounds.Height-200;
+            int SX = Screen.PrimaryScreen.Bounds.Width - 200;
+            int SY = Screen.PrimaryScreen.Bounds.Height - 200;
 
 
 
@@ -1394,9 +1402,9 @@ namespace CpWinfrom
 
             setControls(newx, newy, this);
 
-          
 
-          
+
+
 
         }
 
@@ -1411,7 +1419,7 @@ namespace CpWinfrom
             setTag(this);
             Main_Resize(new object(), new EventArgs());//x,y可在实例化时赋值,最后这句是新加的，在MDI时有用
         }
-     
+
 
         private void button25_Click_1(object sender, EventArgs e)
         {
@@ -1438,6 +1446,40 @@ namespace CpWinfrom
         private void tb_被杀号码_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void button26_Click(object sender, EventArgs e)
+        {
+            三数和值 f1 = new 三数和值();
+
+
+            if (f1.ShowDialog() == DialogResult.OK)
+            {
+                List<CheckBox> checkBoxes = f1.cks;
+
+                this.tb_三数和值.Text = string.Empty;
+                foreach (var item in checkBoxes)
+                {
+                    this.tb_三数和值.Text += item.Text + ",";
+                }
+                this.tb_三数和值.Text = this.tb_三数和值.Text.TrimEnd(',');
+
+
+
+                f1.Close();
+            }
+        }
+
+        private void button27_Click(object sender, EventArgs e)
+        {
+            格式化成一行 s = new 格式化成一行();
+            s.Show();
+        }
+
+        private void button28_Click(object sender, EventArgs e)
+        {
+            开奖记录 s = new 开奖记录();
+            s.Show();
         }
     }
 }

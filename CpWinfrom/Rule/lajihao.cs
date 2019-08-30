@@ -19,6 +19,10 @@ namespace CpWinfrom.Rule
                 {
                     numberModels.Add(item);
                 }
+                else
+                {
+
+                }
 
             }
 

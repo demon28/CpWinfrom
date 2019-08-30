@@ -28,7 +28,7 @@
     <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
+    <PlatformTarget>x86</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -50,6 +50,9 @@
     <ApplicationIcon>money_64px_1204554_easyicon.net.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.9.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -65,6 +68,7 @@
   <ItemGroup>
     <Compile Include="AllNumer.cs" />
     <Compile Include="AutoSizeFormClass.cs" />
+    <Compile Include="History\OpenCode.cs" />
     <Compile Include="Main.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -90,6 +94,13 @@
     <Compile Include="Rule\shalianhao.cs" />
     <Compile Include="Rule\Teshuhao.cs" />
     <Compile Include="Tool.cs" />
+    <Compile Include="JsonTool\JsonHelper.cs" />
+    <Compile Include="三数和值.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="三数和值.Designer.cs">
+      <DependentUpon>三数和值.cs</DependentUpon>
+    </Compile>
     <Compile Include="两数和值.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -143,6 +154,24 @@
     </Compile>
     <Compile Include="千十和值.Designer.cs">
       <DependentUpon>千十和值.cs</DependentUpon>
+    </Compile>
+    <Compile Include="回测.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="回测.Designer.cs">
+      <DependentUpon>回测.cs</DependentUpon>
+    </Compile>
+    <Compile Include="开奖记录.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="开奖记录.Designer.cs">
+      <DependentUpon>开奖记录.cs</DependentUpon>
+    </Compile>
+    <Compile Include="格式化成一行.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="格式化成一行.Designer.cs">
+      <DependentUpon>格式化成一行.cs</DependentUpon>
     </Compile>
     <Compile Include="比较.cs">
       <SubType>Form</SubType>
@@ -225,6 +254,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="三数和值.resx">
+      <DependentUpon>三数和值.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="两数和值.resx">
       <DependentUpon>两数和值.cs</DependentUpon>
     </EmbeddedResource>
@@ -251,6 +283,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="千十和值.resx">
       <DependentUpon>千十和值.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="回测.resx">
+      <DependentUpon>回测.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="开奖记录.resx">
+      <DependentUpon>开奖记录.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="格式化成一行.resx">
+      <DependentUpon>格式化成一行.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="比较.resx">
       <DependentUpon>比较.cs</DependentUpon>
@@ -285,6 +326,8 @@
     <EmbeddedResource Include="统计.resx">
       <DependentUpon>统计.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="OpenCode.json" />
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -314,6 +357,9 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="huice\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

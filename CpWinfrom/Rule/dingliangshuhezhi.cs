@@ -29,6 +29,30 @@ namespace CpWinfrom.Rule
 
         }
 
+
+        public static void 三数和值(List<int> hezhi, ref List<NumberModel> numberModels)
+        {
+
+            if (hezhi.Count <= 0)
+            {
+                return;
+            }
+
+
+            foreach (var item in AllNumer.GetAllNumer())
+            {
+
+                if (!hezhi.Contains(item.N1 + item.N2+item.N3) && !hezhi.Contains(item.N1 + item.N2+item.N4) && !hezhi.Contains(item.N1 + item.N3 + item.N4) && !hezhi.Contains(item.N2 + item.N3 + item.N4))
+                {
+                    Add(item, ref numberModels);
+                }
+
+            }
+
+        }
+
+
+
         private static void Add(NumberModel item, ref List<NumberModel> numberModels) {
 
             if (numberModels.Count(S => S.N1 == item.N1 && S.N2 == item.N2 && S.N3 == item.N3 && S.N4 == item.N4) == 0)

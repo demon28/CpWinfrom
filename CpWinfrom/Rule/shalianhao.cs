@@ -289,7 +289,7 @@ namespace CpWinfrom.Rule
             foreach (var item in AllNumer.GetAllNumer())
             {
                 string ruleN = "0123456789";
-                string ruleS = "0123456789012";
+                string ruleS = "012345678909012";
 
                 string san12 = item.N1.ToString() + item.N2.ToString();
                 string san23= item.N2.ToString() + item.N3.ToString();
@@ -336,7 +336,7 @@ namespace CpWinfrom.Rule
             foreach (var item in AllNumer.GetAllNumer())
             {
                 string ruleN = "9876543210";
-                string ruleS = "9876543210987";
+                string ruleS = "987654321090987";
 
                 string san12 = item.N1.ToString() + item.N2.ToString();
                 string san23 = item.N2.ToString() + item.N3.ToString();
@@ -382,9 +382,15 @@ namespace CpWinfrom.Rule
         {
             foreach (var item in AllNumer.GetAllNumer())
             {
+                if (item.N1 == 0 && item.N2 == 0 && item.N3 == 9)
+                {
+
+
+                }
+
                 NumberModel number = Sort(item);
                 string ruleN = "0123456789";
-                string ruleS = "0123456789012";
+                string ruleS = "012345678909012";
 
                 string san12 = number.N1.ToString() + number.N2.ToString();
                 string san23 = number.N2.ToString() + number.N3.ToString();

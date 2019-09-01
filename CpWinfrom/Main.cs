@@ -1481,5 +1481,15 @@ namespace CpWinfrom
             开奖记录 s = new 开奖记录();
             s.Show();
         }
+
+        private void groupbox15_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lb_cunzaidel_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

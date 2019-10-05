@@ -68,6 +68,7 @@
   <ItemGroup>
     <Compile Include="AllNumer.cs" />
     <Compile Include="AutoSizeFormClass.cs" />
+    <Compile Include="History\HisModel.cs" />
     <Compile Include="History\OpenCode.cs" />
     <Compile Include="Main.cs">
       <SubType>Form</SubType>
@@ -342,8 +343,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="money_48px_1227677_easyicon.net.ico" />
-    <Content Include="money_64px_1202778_easyicon.net.ico" />
     <Content Include="money_64px_1204554_easyicon.net.ico" />
   </ItemGroup>
   <ItemGroup>

@@ -11,6 +11,7 @@ namespace CpWinfrom.JsonTool
 {
    public static class JsonHelper
     {
+      public static  string path = AppDomain.CurrentDomain.BaseDirectory + "\\OpenCode.json";
         /// <summary>
         /// 读取JSON文件
         /// </summary>
@@ -18,7 +19,7 @@ namespace CpWinfrom.JsonTool
         /// <returns>JSON文件中的value值</returns>
         public static string Readjson()
         {
-            string path = AppDomain.CurrentDomain.BaseDirectory + "\\OpenCode.json";
+          
 
             if (!File.Exists(path))
             {
@@ -27,12 +28,7 @@ namespace CpWinfrom.JsonTool
 
             using (System.IO.StreamReader file = System.IO.File.OpenText(path))
             {
-                using (JsonTextReader reader = new JsonTextReader(file))
-                {
-                    JObject o = (JObject)JToken.ReadFrom(reader);
-                   
-                    return o.ToString();
-                }
+               return file.ReadToEnd();
             }
         }
 
@@ -47,25 +43,75 @@ namespace CpWinfrom.JsonTool
 
         public static bool Insert(List<OpenCode> list) {
 
+
+            try
+            {
+
+          
             string jsonText = Readjson();
 
 
             StringWriter sw = new StringWriter();
             JsonWriter writer = new JsonTextWriter(sw);
+            writer.WriteStartArray();//   [ 
+
             foreach (var item in list)
             {
                 writer.WriteStartObject();
 
+
+                writer.WritePropertyName("issueNo");
+                writer.WriteValue(item.issueNo);
                 writer.WritePropertyName("Date");
                 writer.WriteValue(item.Date);
                 writer.WritePropertyName("Code");
                 writer.WriteValue(item.Code);
-
                 writer.WriteEndObject();
                 writer.Flush();
             }
+            writer.WriteEndArray();//    ]   
             string Text = sw.GetStringBuilder().ToString();
 
+            StreamWriter wtyeu = new StreamWriter(path);
+            wtyeu.Write(sw);
+            wtyeu.Flush();
+            wtyeu.Close();
+            return true;
+            }
+            catch (Exception)
+            {
+                return true;
+            }
+        }
+
+        public static bool Insert(OpenCode item)
+        {
+
+            string jsonText = Readjson();
+
+
+            StringWriter sw = new StringWriter();
+            JsonWriter writer = new JsonTextWriter(sw);
+            writer.WriteStartArray();//   [ 
+            writer.WriteStartObject();
+                writer.WritePropertyName("issueNo");
+                writer.WriteValue(item.issueNo);
+                writer.WritePropertyName("Date");
+                writer.WriteValue(item.Date);
+                writer.WritePropertyName("Code");
+                writer.WriteValue(item.Code);
+                writer.WriteEndObject();
+            writer.WriteEndArray();//    ]   
+
+
+            writer.Flush();
+          
+            string Text = sw.GetStringBuilder().ToString();
+
+            StreamWriter wtyeu = new StreamWriter(path);
+            wtyeu.Write(sw);
+            wtyeu.Flush();
+            wtyeu.Close();
             return true;
         }
 

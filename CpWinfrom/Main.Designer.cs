@@ -242,7 +242,6 @@
             this.lb_cunzaires = new System.Windows.Forms.Label();
             this.button24 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.button31 = new System.Windows.Forms.Button();
             this.button28 = new System.Windows.Forms.Button();
             this.button27 = new System.Windows.Forms.Button();
             this.groupBox12 = new System.Windows.Forms.GroupBox();
@@ -2755,7 +2754,6 @@
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.button31);
             this.panel1.Controls.Add(this.lb_cunzaidel);
             this.panel1.Controls.Add(this.lb_cunzaires);
             this.panel1.Controls.Add(this.button28);
@@ -2777,16 +2775,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1524, 831);
             this.panel1.TabIndex = 79;
-            // 
-            // button31
-            // 
-            this.button31.Font = new System.Drawing.Font("宋体", 10F);
-            this.button31.Location = new System.Drawing.Point(1177, 789);
-            this.button31.Name = "button31";
-            this.button31.Size = new System.Drawing.Size(93, 30);
-            this.button31.TabIndex = 80;
-            this.button31.Text = "回测";
-            this.button31.UseVisualStyleBackColor = true;
             // 
             // button28
             // 
@@ -3458,6 +3446,5 @@
         private System.Windows.Forms.CheckBox ck_三数和值;
         private System.Windows.Forms.Button button27;
         private System.Windows.Forms.Button button28;
-        private System.Windows.Forms.Button button31;
     }
 }

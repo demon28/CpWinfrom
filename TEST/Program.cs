@@ -38,6 +38,8 @@ namespace TEST
             Console.Write("1:采集");
             Console.Write("2:回测");
             Console.Write("3:规则");
+            Console.WriteLine("");
+            Console.WriteLine("请选择：");
             string i= Console.ReadLine();
 
             if (i == "1")
@@ -48,7 +50,7 @@ namespace TEST
             {
                 huice();
             }else {
-                Rule();
+                GudingRule();
             }
             string si = Console.ReadLine();
         }
@@ -57,8 +59,22 @@ namespace TEST
         static List<NumberModel> delNumber = new List<NumberModel>();
 
 
+        public static List<NumberModel> DongtaiRule(List<NumberModel> duding, NumberModel last ) {
 
-        public static List<NumberModel> Rule() {
+            List<NumberModel> numberModels = new List<NumberModel>();
+            numberModels = duding;
+
+
+
+
+
+
+
+
+            return numberModels;
+
+        }
+        public static List<NumberModel> GudingRule() {
 
             resNumber = AllNumer.GetAllNumer();
 
@@ -76,23 +92,27 @@ namespace TEST
 
             shalianhao.无序4连(true, true, ref delNumber);
             Console.WriteLine("无序4连，累计：" + delNumber.Count + " 个");
-
-
-            shalianhao.无序3连(true, true, ref delNumber);
-            Console.WriteLine("无序3连，累计：" + delNumber.Count + " 个");
-
             shalianhao.正向4连(true, true, ref delNumber);
-            Console.WriteLine("正向3连，累计：" + delNumber.Count + " 个");
-
-            shalianhao.正向3连(true, true, ref delNumber);
-            Console.WriteLine("正向3连，累计：" + delNumber.Count + " 个");
-
-
+            Console.WriteLine("正向4连，累计：" + delNumber.Count + " 个");
             shalianhao.反向4连(true, true, ref delNumber);
-            Console.WriteLine("反向3连，累计：" + delNumber.Count + " 个");
+            Console.WriteLine("反向4连，累计：" + delNumber.Count + " 个");
 
-            shalianhao.反向3连(true, true, ref delNumber);
-            Console.WriteLine("反向3连，累计：" + delNumber.Count + " 个");
+
+            //shalianhao.无序3连(true, true, ref delNumber);
+            //Console.WriteLine("无序3连，累计：" + delNumber.Count + " 个");
+
+            //shalianhao.正向4连(true, true, ref delNumber);
+            //Console.WriteLine("正向3连，累计：" + delNumber.Count + " 个");
+
+            //shalianhao.正向3连(true, true, ref delNumber);
+            //Console.WriteLine("正向3连，累计：" + delNumber.Count + " 个");
+
+
+            //shalianhao.反向4连(true, true, ref delNumber);
+            //Console.WriteLine("反向3连，累计：" + delNumber.Count + " 个");
+
+            //shalianhao.反向3连(true, true, ref delNumber);
+            //Console.WriteLine("反向3连，累计：" + delNumber.Count + " 个");
 
 
             int j= resNumber.Count - delNumber.Count;
@@ -187,7 +207,7 @@ namespace TEST
         public static void huice() {
 
             Console.WriteLine("是否开始回测：");
-            List<NumberModel> r = Rule();
+            List<NumberModel> r = GudingRule(); 
 
             decimal chengben = r.Count;
             decimal  leijiamount = 0;  //盈利
@@ -240,7 +260,7 @@ namespace TEST
                     leijiamount = leijiamount + yingli;
                     zhongjian次数 = zhongjian次数 + 1;
                     Console.ForegroundColor = ConsoleColor.Green;
-                    Console.WriteLine(dr["issno"] + " 期：中奖了！,成本："+chengben+"元，奖金："+sing+ " 元， 盈利："+yingli +" 元，累计盈利："+ leijiamount );
+                    Console.WriteLine(dr["issno"] + " 期【"+dr["code"]+"】：中奖了！,成本："+chengben+"元，奖金："+sing+ " 元， 盈利："+yingli +" 元，累计盈利："+ leijiamount );
               
                 }
                 else {
@@ -248,7 +268,7 @@ namespace TEST
                     buzhong次数 = buzhong次数 + 1 ;
                     leijiamount = leijiamount - chengben;
                     Console.ForegroundColor = ConsoleColor.Red;
-                    Console.WriteLine(dr["issno"] + "期：没中奖！, 成本：" + chengben+"元，奖金：0 元， 亏损："+ chengben + " 元，累计盈利："+ leijiamount);
+                    Console.WriteLine(dr["issno"] + "期【" + dr["code"] + "】：没中奖！, 成本：" + chengben+"元，奖金：0 元， 亏损："+ chengben + " 元，累计盈利："+ leijiamount);
                 }
                
 

@@ -35,9 +35,9 @@ namespace TEST
 
 
 
-            Console.WriteLine("1:采集");
-            Console.WriteLine("2:回测");
-            Console.WriteLine("3:规则");
+            Console.Write("1:采集");
+            Console.Write("2:回测");
+            Console.Write("3:规则");
             string i= Console.ReadLine();
 
             if (i == "1")
@@ -46,7 +46,7 @@ namespace TEST
             }
             else if (i=="2")
             {
-
+                huice();
             }else {
                 Rule();
             }
@@ -186,35 +186,75 @@ namespace TEST
 
         public static void huice() {
 
+            Console.WriteLine("是否开始回测：");
             List<NumberModel> r = Rule();
-            Console.WriteLine("剩余："+r.Count+"   是否输出结果：y/n");
-             string s=Console.ReadLine();
-            if (s=="y")
-            {
-                foreach (var item in r)
-                {
-                    Console.WriteLine(item.GetString());
-                }
-            }
-            Console.WriteLine("是否开始回测：y/n");
 
-            string u = Console.ReadLine();
-            if (u != "y")
-            {
-                return;
-            }
+            decimal chengben = r.Count;
+            decimal  leijiamount = 0;  //盈利
+            decimal kuisun = 0; //亏损
+            decimal cost = 0;   //花费
+            decimal sing = 10000;
+
+            int zhongjian次数 = 0;
+            int buzhong次数 = 0;
+
 
             string sql = "select * from tb_hiscode";
 
             DataTable dt  =SQLiteHelper.ExecuteDataset(sql).Tables[0];
 
-
-            foreach (var item in r)
+            foreach (DataRow dr in dt.Rows)
             {
+                bool flag = false; //是否中奖
+
+                foreach (var item in r)
+                {
+
+
+                    NumberModel numberModel = new NumberModel();
+
+                    numberModel.N1 =Convert.ToInt32( dr["n1"]);
+                    numberModel.N2 = Convert.ToInt32(dr["n2"]);
+                    numberModel.N3 = Convert.ToInt32(dr["n3"]);
+                    numberModel.N4 = Convert.ToInt32(dr["n4"]);
+
+                    if (NumberModel.Same(item, numberModel))
+                    {
+                     
+                        flag = true;
+                        break;
+                    }
+                    else {
+                     
+
+                        continue;
+                    }
+
+
+                    //统计中奖次数
+                }
+
+                if (flag)
+                {
+                    decimal yingli = sing - chengben;
+                    leijiamount = leijiamount + yingli;
+                    zhongjian次数 = zhongjian次数 + 1;
+                    Console.ForegroundColor = ConsoleColor.Green;
+                    Console.WriteLine(dr["issno"] + " 期：中奖了！,成本："+chengben+"元，奖金："+sing+ " 元， 盈利："+yingli +" 元，累计盈利："+ leijiamount );
               
+                }
+                else {
+
+                    buzhong次数 = buzhong次数 + 1 ;
+                    leijiamount = leijiamount - chengben;
+                    Console.ForegroundColor = ConsoleColor.Red;
+                    Console.WriteLine(dr["issno"] + "期：没中奖！, 成本：" + chengben+"元，奖金：0 元， 亏损："+ chengben + " 元，累计盈利："+ leijiamount);
+                }
+               
+
             }
 
-
+            Console.WriteLine("累计中奖次数："+ zhongjian次数+"次，累计不中次数："+buzhong次数+" 次，剩余金额:"+leijiamount);
 
 
             Main(null);

@@ -48,7 +48,7 @@ namespace TEST
             }
             else if (i=="2")
             {
-                huice();
+                huice2();
             }else {
                 GudingRule();
             }
@@ -59,21 +59,117 @@ namespace TEST
         static List<NumberModel> delNumber = new List<NumberModel>();
 
 
-        public static List<NumberModel> DongtaiRule(List<NumberModel> duding, NumberModel last ) {
+        public static void huice2() {
 
-            List<NumberModel> numberModels = new List<NumberModel>();
-            numberModels = duding;
+            Console.WriteLine("开始回测：");
+
+       
+            decimal leijiamount = 0;  //盈利
+            decimal kuisun = 0; //亏损
+            decimal cost = 0;   //花费
+            decimal sing = 95000; //奖金
+
+            int zhongjian次数 = 0;
+            int buzhong次数 = 0;
+
+
+            string sql = "select * from tb_hiscode";
+            DataTable dt = SQLiteHelper.ExecuteDataset(sql).Tables[0];
+
+            
+
+
+            foreach (DataRow dr in dt.Rows)
+            {
+                int nextno = int.Parse(dr["issno"].ToString()) + 1;
+
+                if (nextno==19338)
+                {
+                    break;
+                }
+                string sql2 = "select * from tb_hiscode where issno=" + nextno;
+                DataRow row = SQLiteHelper.ExecuteDataRow(sql2);
+
+                //本期开奖号码
+                NumberModel5 benqimodel5= new NumberModel5() { N1 = Convert.ToInt32(dr["N1"]), N2 = Convert.ToInt32(dr["N2"]), N3 = Convert.ToInt32(dr["N3"]), N4 = Convert.ToInt32(dr["N4"]), N5 = Convert.ToInt32(dr["N5"]) };
+                //根据本期号码推测出来的下棋号码
+                List<NumberModel5> yucemodel5list = DongtaiRule(benqimodel5);
+                //开奖结果
+                NumberModel5 kaijiangmodel5 = new NumberModel5() { N1=Convert.ToInt32( row["N1"]), N2 = Convert.ToInt32(row["N2"]), N3 = Convert.ToInt32(row["N3"]), N4 = Convert.ToInt32(row["N4"]), N5= Convert.ToInt32(row["N5"])};
+
+                bool flag = false;
+                foreach (var item in yucemodel5list)
+                {
+
+                    if (NumberModel5.Same(item, kaijiangmodel5))
+                    {
+                        flag = true;
+                        break;
+                    }
+                    else {
+                        continue;
+                    }
+
+
+                }
+                if (flag)
+                {
+                    decimal yingli = sing - yucemodel5list.Count;
+                    leijiamount = leijiamount + yingli;
+                    zhongjian次数 = zhongjian次数 + 1;
+                    Console.ForegroundColor = ConsoleColor.Green;
+                    Console.WriteLine(row["issno"] + " 期【" + dr["code"] + "】：中奖了！,成本：" + yucemodel5list.Count + "元，奖金：" + sing + " 元， 盈利：" + yingli + " 元，累计盈利：" + leijiamount);
+
+                }
+                else
+                {
+
+                    buzhong次数 = buzhong次数 + 1;
+                    leijiamount = leijiamount - yucemodel5list.Count;
+                    Console.ForegroundColor = ConsoleColor.Red;
+                    Console.WriteLine(row["issno"] + "期【" + dr["code"] + "】：没中奖！, 成本：" + yucemodel5list.Count + "元，奖金：0 元， 亏损：" + yucemodel5list.Count + " 元，累计盈利：" + leijiamount);
+                }
 
 
 
+            }
+
+           
 
 
+      
 
+         
 
-
-            return numberModels;
 
         }
+
+        public static List<NumberModel5> DongtaiRule(NumberModel5 last ) {
+
+            List<NumberModel5> allnumber = NumberModel5.GetAllNumer();
+            List<NumberModel5> resnumber = new List<NumberModel5>();
+
+            List<int> list = new List<int>();
+            list.Add(last.N1);
+            list.Add(last.N2);
+            list.Add(last.N3);
+            list.Add(last.N4);
+            list.Add(last.N5);
+
+            foreach (var item in allnumber)
+            {
+                if (list.Contains(item.N1)|| list.Contains(item.N2) || list.Contains(item.N3) || list.Contains(item.N4) || list.Contains(item.N5))
+                {
+                    resnumber.Add(item);
+                }
+
+            }
+         
+
+            return resnumber;
+        }
+
+
         public static List<NumberModel> GudingRule() {
 
             resNumber = AllNumer.GetAllNumer();
@@ -213,7 +309,7 @@ namespace TEST
             decimal  leijiamount = 0;  //盈利
             decimal kuisun = 0; //亏损
             decimal cost = 0;   //花费
-            decimal sing = 10000;
+            decimal sing = 9500; //奖金
 
             int zhongjian次数 = 0;
             int buzhong次数 = 0;
@@ -281,6 +377,7 @@ namespace TEST
         }
 
 
+ 
 
 
         #region 发送post请求
@@ -313,5 +410,13 @@ namespace TEST
         }
         #endregion
 
+    }
+
+
+
+    public class Stock {
+
+        string isno { get; set; }
+        List<NumberModel5> models;
     }
 }

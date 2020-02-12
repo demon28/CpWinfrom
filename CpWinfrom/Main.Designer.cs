@@ -272,6 +272,9 @@
             this.ck_杀234 = new System.Windows.Forms.CheckBox();
             this.ck_杀123 = new System.Windows.Forms.CheckBox();
             this.ck_杀012 = new System.Windows.Forms.CheckBox();
+            this.groupBox13 = new System.Windows.Forms.GroupBox();
+            this.tb_sanzixian = new System.Windows.Forms.TextBox();
+            this.ck_sanzixian = new System.Windows.Forms.CheckBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -290,6 +293,7 @@
             this.panel1.SuspendLayout();
             this.groupBox12.SuspendLayout();
             this.groupbox15.SuspendLayout();
+            this.groupBox13.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -523,19 +527,19 @@
             // tb_结果
             // 
             this.tb_结果.Font = new System.Drawing.Font("微软雅黑", 10F);
-            this.tb_结果.Location = new System.Drawing.Point(1302, 277);
+            this.tb_结果.Location = new System.Drawing.Point(1302, 325);
             this.tb_结果.MaxLength = 327670;
             this.tb_结果.Multiline = true;
             this.tb_结果.Name = "tb_结果";
             this.tb_结果.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.tb_结果.Size = new System.Drawing.Size(217, 415);
+            this.tb_结果.Size = new System.Drawing.Size(217, 367);
             this.tb_结果.TabIndex = 5;
             // 
             // lb_结果数量
             // 
             this.lb_结果数量.AutoSize = true;
             this.lb_结果数量.Font = new System.Drawing.Font("宋体", 10F);
-            this.lb_结果数量.Location = new System.Drawing.Point(1373, 210);
+            this.lb_结果数量.Location = new System.Drawing.Point(1373, 266);
             this.lb_结果数量.Name = "lb_结果数量";
             this.lb_结果数量.Size = new System.Drawing.Size(14, 14);
             this.lb_结果数量.TabIndex = 8;
@@ -556,7 +560,7 @@
             // 
             this.lb_被杀数量.AutoSize = true;
             this.lb_被杀数量.Font = new System.Drawing.Font("宋体", 10F);
-            this.lb_被杀数量.Location = new System.Drawing.Point(1120, 207);
+            this.lb_被杀数量.Location = new System.Drawing.Point(1120, 263);
             this.lb_被杀数量.Name = "lb_被杀数量";
             this.lb_被杀数量.Size = new System.Drawing.Size(14, 14);
             this.lb_被杀数量.TabIndex = 16;
@@ -1756,7 +1760,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("宋体", 10F);
-            this.label2.Location = new System.Drawing.Point(1290, 207);
+            this.label2.Location = new System.Drawing.Point(1290, 263);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(77, 14);
             this.label2.TabIndex = 22;
@@ -1765,12 +1769,12 @@
             // tb_被杀号码
             // 
             this.tb_被杀号码.Font = new System.Drawing.Font("微软雅黑", 10F);
-            this.tb_被杀号码.Location = new System.Drawing.Point(1051, 277);
+            this.tb_被杀号码.Location = new System.Drawing.Point(1051, 325);
             this.tb_被杀号码.MaxLength = 327670;
             this.tb_被杀号码.Multiline = true;
             this.tb_被杀号码.Name = "tb_被杀号码";
             this.tb_被杀号码.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.tb_被杀号码.Size = new System.Drawing.Size(217, 415);
+            this.tb_被杀号码.Size = new System.Drawing.Size(217, 367);
             this.tb_被杀号码.TabIndex = 23;
             this.tb_被杀号码.TextChanged += new System.EventHandler(this.tb_被杀号码_TextChanged);
             // 
@@ -1778,7 +1782,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("宋体", 10F);
-            this.label3.Location = new System.Drawing.Point(1037, 207);
+            this.label3.Location = new System.Drawing.Point(1037, 263);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(77, 14);
             this.label3.TabIndex = 24;
@@ -2643,7 +2647,7 @@
             // button14
             // 
             this.button14.Font = new System.Drawing.Font("宋体", 10F);
-            this.button14.Location = new System.Drawing.Point(1177, 202);
+            this.button14.Location = new System.Drawing.Point(1177, 258);
             this.button14.Name = "button14";
             this.button14.Size = new System.Drawing.Size(70, 26);
             this.button14.TabIndex = 68;
@@ -2654,7 +2658,7 @@
             // button16
             // 
             this.button16.Font = new System.Drawing.Font("宋体", 10F);
-            this.button16.Location = new System.Drawing.Point(1428, 207);
+            this.button16.Location = new System.Drawing.Point(1428, 263);
             this.button16.Name = "button16";
             this.button16.Size = new System.Drawing.Size(70, 21);
             this.button16.TabIndex = 69;
@@ -2688,7 +2692,7 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("宋体", 10F);
-            this.label8.Location = new System.Drawing.Point(1037, 240);
+            this.label8.Location = new System.Drawing.Point(1037, 296);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(49, 14);
             this.label8.TabIndex = 72;
@@ -2698,7 +2702,7 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("宋体", 10F);
-            this.label9.Location = new System.Drawing.Point(1287, 239);
+            this.label9.Location = new System.Drawing.Point(1287, 295);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(49, 14);
             this.label9.TabIndex = 73;
@@ -2707,7 +2711,7 @@
             // tb_检索del
             // 
             this.tb_检索del.Font = new System.Drawing.Font("宋体", 10F);
-            this.tb_检索del.Location = new System.Drawing.Point(1080, 235);
+            this.tb_检索del.Location = new System.Drawing.Point(1080, 291);
             this.tb_检索del.Name = "tb_检索del";
             this.tb_检索del.Size = new System.Drawing.Size(128, 23);
             this.tb_检索del.TabIndex = 74;
@@ -2716,7 +2720,7 @@
             // tb_检索res
             // 
             this.tb_检索res.Font = new System.Drawing.Font("宋体", 10F);
-            this.tb_检索res.Location = new System.Drawing.Point(1332, 235);
+            this.tb_检索res.Location = new System.Drawing.Point(1332, 291);
             this.tb_检索res.Name = "tb_检索res";
             this.tb_检索res.Size = new System.Drawing.Size(116, 23);
             this.tb_检索res.TabIndex = 75;
@@ -2726,7 +2730,7 @@
             // 
             this.lb_cunzaidel.AutoSize = true;
             this.lb_cunzaidel.Font = new System.Drawing.Font("宋体", 10F);
-            this.lb_cunzaidel.Location = new System.Drawing.Point(1214, 239);
+            this.lb_cunzaidel.Location = new System.Drawing.Point(1214, 295);
             this.lb_cunzaidel.Name = "lb_cunzaidel";
             this.lb_cunzaidel.Size = new System.Drawing.Size(0, 14);
             this.lb_cunzaidel.TabIndex = 76;
@@ -2736,7 +2740,7 @@
             // 
             this.lb_cunzaires.AutoSize = true;
             this.lb_cunzaires.Font = new System.Drawing.Font("宋体", 10F);
-            this.lb_cunzaires.Location = new System.Drawing.Point(1454, 240);
+            this.lb_cunzaires.Location = new System.Drawing.Point(1454, 296);
             this.lb_cunzaires.Name = "lb_cunzaires";
             this.lb_cunzaires.Size = new System.Drawing.Size(0, 14);
             this.lb_cunzaires.TabIndex = 77;
@@ -2754,6 +2758,7 @@
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.groupBox13);
             this.panel1.Controls.Add(this.lb_cunzaidel);
             this.panel1.Controls.Add(this.lb_cunzaires);
             this.panel1.Controls.Add(this.button28);
@@ -3127,6 +3132,34 @@
             this.ck_杀012.Text = "杀012";
             this.ck_杀012.UseVisualStyleBackColor = true;
             // 
+            // groupBox13
+            // 
+            this.groupBox13.Controls.Add(this.ck_sanzixian);
+            this.groupBox13.Controls.Add(this.tb_sanzixian);
+            this.groupBox13.Location = new System.Drawing.Point(1031, 189);
+            this.groupBox13.Name = "groupBox13";
+            this.groupBox13.Size = new System.Drawing.Size(467, 63);
+            this.groupBox13.TabIndex = 79;
+            this.groupBox13.TabStop = false;
+            this.groupBox13.Text = "三字现";
+            // 
+            // tb_sanzixian
+            // 
+            this.tb_sanzixian.Location = new System.Drawing.Point(93, 22);
+            this.tb_sanzixian.Name = "tb_sanzixian";
+            this.tb_sanzixian.Size = new System.Drawing.Size(212, 23);
+            this.tb_sanzixian.TabIndex = 0;
+            // 
+            // ck_sanzixian
+            // 
+            this.ck_sanzixian.AutoSize = true;
+            this.ck_sanzixian.Location = new System.Drawing.Point(11, 25);
+            this.ck_sanzixian.Name = "ck_sanzixian";
+            this.ck_sanzixian.Size = new System.Drawing.Size(82, 18);
+            this.ck_sanzixian.TabIndex = 2;
+            this.ck_sanzixian.Text = "上期号码";
+            this.ck_sanzixian.UseVisualStyleBackColor = true;
+            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 13F);
@@ -3196,6 +3229,8 @@
             this.groupBox12.PerformLayout();
             this.groupbox15.ResumeLayout(false);
             this.groupbox15.PerformLayout();
+            this.groupBox13.ResumeLayout(false);
+            this.groupBox13.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -3446,5 +3481,8 @@
         private System.Windows.Forms.CheckBox ck_三数和值;
         private System.Windows.Forms.Button button27;
         private System.Windows.Forms.Button button28;
+        private System.Windows.Forms.GroupBox groupBox13;
+        private System.Windows.Forms.CheckBox ck_sanzixian;
+        private System.Windows.Forms.TextBox tb_sanzixian;
     }
 }

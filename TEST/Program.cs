@@ -76,41 +76,52 @@ namespace TEST
             string sql = "select * from tb_hiscode";
             DataTable dt = SQLiteHelper.ExecuteDataset(sql).Tables[0];
 
-            
 
-
+            //上一期
+            NumberModel5 first = null;
+            //下一期
+            NumberModel5 next = null;
+            //循环游标
+            int index = 0;
             foreach (DataRow dr in dt.Rows)
             {
+                if (index == 0)
+                {
+                    index = 1;
+                    first = new NumberModel5() { N1 = Convert.ToInt32(dr["N1"]), N2 = Convert.ToInt32(dr["N2"]), N3 = Convert.ToInt32(dr["N3"]), N4 = Convert.ToInt32(dr["N4"]), N5 = Convert.ToInt32(dr["N5"]) };
+                    continue;
+                }
+                next = new NumberModel5() { N1 = Convert.ToInt32(dr["N1"]), N2 = Convert.ToInt32(dr["N2"]), N3 = Convert.ToInt32(dr["N3"]), N4 = Convert.ToInt32(dr["N4"]), N5 = Convert.ToInt32(dr["N5"]) };
+
                 int nextno = int.Parse(dr["issno"].ToString()) + 1;
 
-                if (nextno==19338)
-                {
-                    break;
-                }
-                string sql2 = "select * from tb_hiscode where issno=" + nextno;
-                DataRow row = SQLiteHelper.ExecuteDataRow(sql2);
+                //if (nextno==19338)
+                //{
+                //    break;
+                //}
+                //if (nextno==19005)
+                //{
+                //    Console.WriteLine("19005");
+                //}
+                //string sql2 = "select * from tb_hiscode where issno=" + nextno;
+                //DataRow row = SQLiteHelper.ExecuteDataRow(sql2);
 
                 //本期开奖号码
-                NumberModel5 benqimodel5= new NumberModel5() { N1 = Convert.ToInt32(dr["N1"]), N2 = Convert.ToInt32(dr["N2"]), N3 = Convert.ToInt32(dr["N3"]), N4 = Convert.ToInt32(dr["N4"]), N5 = Convert.ToInt32(dr["N5"]) };
+                //NumberModel5 benqimodel5= new NumberModel5() { N1 = Convert.ToInt32(dr["N1"]), N2 = Convert.ToInt32(dr["N2"]), N3 = Convert.ToInt32(dr["N3"]), N4 = Convert.ToInt32(dr["N4"]), N5 = Convert.ToInt32(dr["N5"]) };
                 //根据本期号码推测出来的下棋号码
-                List<NumberModel5> yucemodel5list = DongtaiRule(benqimodel5);
+                List<NumberModel5> yucemodel5list = DongtaiRule(first);
                 //开奖结果
-                NumberModel5 kaijiangmodel5 = new NumberModel5() { N1=Convert.ToInt32( row["N1"]), N2 = Convert.ToInt32(row["N2"]), N3 = Convert.ToInt32(row["N3"]), N4 = Convert.ToInt32(row["N4"]), N5= Convert.ToInt32(row["N5"])};
+                //NumberModel5 kaijiangmodel5 = new NumberModel5() { N1=Convert.ToInt32( row["N1"]), N2 = Convert.ToInt32(row["N2"]), N3 = Convert.ToInt32(row["N3"]), N4 = Convert.ToInt32(row["N4"]), N5= Convert.ToInt32(row["N5"])};
+                
 
                 bool flag = false;
                 foreach (var item in yucemodel5list)
                 {
-
-                    if (NumberModel5.Same(item, kaijiangmodel5))
+                    if (NumberModel5.Same(item, next))
                     {
                         flag = true;
                         break;
                     }
-                    else {
-                        continue;
-                    }
-
-
                 }
                 if (flag)
                 {
@@ -118,7 +129,7 @@ namespace TEST
                     leijiamount = leijiamount + yingli;
                     zhongjian次数 = zhongjian次数 + 1;
                     Console.ForegroundColor = ConsoleColor.Green;
-                    Console.WriteLine(row["issno"] + " 期【" + dr["code"] + "】：中奖了！,成本：" + yucemodel5list.Count + "元，奖金：" + sing + " 元， 盈利：" + yingli + " 元，累计盈利：" + leijiamount);
+                    Console.WriteLine(dr["issno"] + " 期【" + dr["code"] + "】：中奖了！,成本：" + yucemodel5list.Count + "元，奖金：" + sing + " 元， 盈利：" + yingli + " 元，累计盈利：" + leijiamount);
 
                 }
                 else
@@ -127,20 +138,12 @@ namespace TEST
                     buzhong次数 = buzhong次数 + 1;
                     leijiamount = leijiamount - yucemodel5list.Count;
                     Console.ForegroundColor = ConsoleColor.Red;
-                    Console.WriteLine(row["issno"] + "期【" + dr["code"] + "】：没中奖！, 成本：" + yucemodel5list.Count + "元，奖金：0 元， 亏损：" + yucemodel5list.Count + " 元，累计盈利：" + leijiamount);
+                    Console.WriteLine(dr["issno"] + "期【" + dr["code"] + "】：没中奖！, 成本：" + yucemodel5list.Count + "元，奖金：0 元， 亏损：" + yucemodel5list.Count + " 元，累计盈利：" + leijiamount);
                 }
 
-
-
+                index++;
+                first = new NumberModel5() { N1 = next.N1, N2 = next.N2, N3 = next.N3, N4 = next.N4, N5 = next.N5 };
             }
-
-           
-
-
-      
-
-         
-
 
         }
 

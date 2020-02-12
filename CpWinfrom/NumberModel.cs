@@ -69,5 +69,23 @@ namespace CpWinfrom
 
             return number;
         }
+
+        public string GetAesc() {
+
+            List<int> list = new List<int>();
+            list.Add(N1);
+            list.Add(N2);
+            list.Add(N3);
+            list.Add(N4);
+
+            list.Sort();
+
+            string s = string.Empty;
+            foreach (var item in list)
+            {
+                s = s + item.ToString();
+            }
+            return s;
+        }
     }
 }

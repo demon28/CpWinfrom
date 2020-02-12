@@ -21,11 +21,11 @@ namespace CpWinfrom
         {
             InitializeComponent();
         }
-
+        //https://kaijiang.aicai.com/open/historyIssue.do?gameIndex=203&issueNo=20001
         string url = "https://kaijiang.aicai.com/open/historyIssue.do";
         string arg1 = "gameIndex=203";
         string arg2key = "issueNo";
-        string arg2value = "19001";
+        string arg2value = "20001";
 
         private void button1_Click(object sender, EventArgs e)
         {

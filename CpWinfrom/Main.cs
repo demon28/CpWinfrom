@@ -1027,6 +1027,35 @@ namespace CpWinfrom
             #endregion
 
 
+            #region  三字现
+
+            if (this.ck_sanzixian.Checked)
+            {
+
+
+
+
+                char[] psan = tb_sanzixian.Text.ToCharArray();
+                if (psan.Length>4)
+                {
+                    MessageBox.Show("上期号码长度大于4");
+                    return;
+                }
+                List<int> sanlist = new List<int>();
+
+                foreach (var item in psan)
+                {
+                    sanlist.Add(Convert.ToInt32(item.ToString() ));
+                }
+
+                SanZiXian(sanlist, ref DelnumberModels);
+            }
+
+
+            #endregion
+
+
+
             #region 杀胆码 杀跨度  杀胆必须是最后一项
 
             if (ck_杀跨度.Checked)
@@ -1070,6 +1099,46 @@ namespace CpWinfrom
             #endregion
             // 杀胆码必须是最后一项
 
+        }
+
+        private void SanZiXian(List<int> sanlist, ref List<NumberModel> delnumberModels)
+        {
+
+            foreach (var item in AllNumer.GetAllNumer())
+            {
+                string str = string.Empty;
+                List<int> list = new List<int>();
+                list.Add(item.N1);
+                list.Add(item.N2);
+                list.Add(item.N3);
+                list.Add(item.N4);
+
+                list.Sort();
+
+                foreach (var k in list)
+                {
+                    str= str + k.ToString();
+                }
+
+                sanlist.Sort();
+
+                string v1 = sanlist[0].ToString() + sanlist[1].ToString() + sanlist[2].ToString();
+                string v2 = sanlist[1].ToString() + sanlist[2].ToString() + sanlist[3].ToString();
+
+                if (str.Contains(v1)|| str.Contains(v2))
+                {
+                    Add(item,ref delnumberModels);
+                }
+
+            }
+        }
+        private static void Add(NumberModel item, ref List<NumberModel> numberModels)
+        {
+
+            if (numberModels.Count(S => S.N1 == item.N1 && S.N2 == item.N2 && S.N3 == item.N3 && S.N4 == item.N4) == 0)
+            {
+                numberModels.Add(item);
+            }
         }
 
         private void button14_Click(object sender, EventArgs e)
